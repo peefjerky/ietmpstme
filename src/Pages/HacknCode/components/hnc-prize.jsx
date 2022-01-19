@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 /* import CountUp from "react-countup"; */
-/* import "../../../css/hnc-prize.scss"; */
+import "../../../css/hnc-prize.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

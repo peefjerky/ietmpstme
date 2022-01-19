@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 /* eslint-disable jsx-a11y/img-redundant-alt */
+
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
@@ -40,7 +41,7 @@ const Header = () => {
           </button>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
-         {/*  <div id="tiltjs" className="align-items-center text-center mx-auto">
+          {/*  <div id="tiltjs" className="align-items-center text-center mx-auto">
             <Tilt
               className="Tilt align-items-center mx-auto"
               options={{ max: 50 }}
@@ -51,7 +52,6 @@ const Header = () => {
               </div>
             </Tilt>
           </div> */}
-
         </div>
       </div>
     </div>
