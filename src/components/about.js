@@ -18,14 +18,11 @@ const About = () => {
                 <small>What is IET</small>
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
+                The Institution of Engineering and Technology, IET, is a
+                multidisciplinary professional engineering institution based in
+                the United Kingdom. It seeks to inspire, inform, and influence
+                the global engineering community to usher it towards a brighter,
+                more prosperous future.
               </p>
               {/*  ! Figure this out
             <div className="iconCircle1"></div> */}
@@ -39,14 +36,11 @@ const About = () => {
                 <small>More About Us</small>
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
+                As a diverse home across engineering and technology, the IET,
+                since its inception as the Society of Telegraph Engineers in
+                1871, and then as the Institution of Electrical Engineers, has
+                strived indefatigably to share knowledge that helps make better
+                sense of the world.
               </p>
             </div>
           </div>
