@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Hnc_header from "./components/hnc_header";
 import Hnc_prize from "./components/hnc-prize";
 import Hnc_sponsors from "./components/hnc_sponsors";

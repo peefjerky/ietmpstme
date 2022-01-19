@@ -2,7 +2,7 @@ import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { SocialIcon } from "react-social-icons";
-import { useState } from "react";
+/* import { useState } from "react"; */
 import "../css/footer.scss";
 import { Link } from "react-router-dom";
 

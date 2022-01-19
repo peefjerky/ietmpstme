@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from "./context";
-import ReactDOM from "react-dom";
+/* import ReactDOM from "react-dom"; */
 import NavBar from "./components/navbar.js";
-import Header from "./components/header.js";
-import About from "./components/about";
-import Event from "./components/event.js";
+/* import Header from "./components/header.js"; */
+/* import About from "./components/about";
+import Event from "./components/event.js"; */
 import Footer from "./components/footer.js";
 import Contact from "./components/contact";
-import Tingle from "./components/tinglejs.js";
+/* import Tingle from "./components/tinglejs.js"; */
 import Modal from "./components/modalb4";
-import GoToTop from "./components/goToTop";
+/* import GoToTop from "./components/goToTop"; */
 import HomePage from "./components/homePage";
 import "./App.css";
 import NotFound from "./components/notFound";
-import createReactClass from "create-react-class";
+/* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
-import {
+/* import {
   Link,
   Button,
   Element,
@@ -24,12 +24,12 @@ import {
   animateScroll as scroll,
   scrollSpy,
   scroller,
-} from "react-scroll";
+} from "react-scroll"; */
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "boxicons";
 import Hack_n_code from "./Pages/HacknCode/hack-n-code";
-import locationChange from "./Hooks/hear-for-location";
+/* import locationChange from "./Hooks/hear-for-location"; */
 
 function App() {
   useEffect(() => {
@@ -93,7 +93,7 @@ function App() {
   return (
     <Provider>
       <BrowserRouter>
-      {/*   <GoToTop></GoToTop> */}
+        {/*   <GoToTop></GoToTop> */}
         <LocationChange
           sexyfunctions={() => {
             changeGlass();

@@ -4,11 +4,11 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import iet_logo from "../images/IET_LOGO.png";
 import "boxicons";
 import { Link } from "react-router-dom";
-import * as Scroll from "react-scroll";
-import { useState } from "react";
+/* import * as Scroll from "react-scroll"; */
+/* import { useState } from "react"; */
 import "../App.css";
-import Event from "./event.js";
-let slink = Scroll.Link;
+/* import Event from "./event.js"; */
+/* let slink = Scroll.Link; */
 const NavBar = (props) => {
   /*   document.addEventListener("load", () => {
     document.addEventListener("scroll", (e) => {

@@ -2,7 +2,8 @@ import React from "react";
 import "../css/eventcard.scss";
 export default function EventCard(props) {
   const { id, title, excerpt, imageUrl, backgroundcolor } = props;
-  let eventModals = "#myModal" + `${id}`;
+  /*   let eventModals = "#myModal" + `${id}`; */
+  console.log(id);
   return (
     <div className="container" id="eventCard">
       <div className="row gy-2">
@@ -20,7 +21,7 @@ export default function EventCard(props) {
             <div className="card-body">
               <h4 className="card-title">{title}</h4>
               <p className="card-text">{excerpt}</p>
-             {/*  <button
+              {/*  <button
                 className="btn btn-primary stretched-link"
                 data-bs-toggle="modal"
                 data-bs-target={eventModals}
