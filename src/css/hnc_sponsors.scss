@@ -1,0 +1,30 @@
+#hncSponsors {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: rgb(195, 196, 255);
+  }
+  #sponsorsContanier {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(107, 107, 107, 0.3) 0%,
+      rgba(0, 0, 0, 0.2) 0%
+    );
+    backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem);
+
+    height: 300px;
+
+    /*  margin: 100px 50px 50px 50px; */
+
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 20px;
+
+    box-shadow: 10px 4px 32px -20px;
+    h3 {
+      text-align: center !important;
+    }
+  }
+}

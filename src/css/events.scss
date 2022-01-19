@@ -1,0 +1,17 @@
+/* !============ For eventTest.js ============  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+#eventContainer {
+  position: relative;
+
+  h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(160, 70, 180, 0.8);
+    text-decoration-thickness: 5px;
+    padding: 3px;
+  }
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+#myModal1,
+#myModal2,
+#myModal3,
+#myModal4 {
+  .modal-content {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .modal-title {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+  }
+
+  .modal-body {
+    overflow-y: hidden;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 70px 0 70px;
+    h1 {
+      font-size: 29px;
+      padding: 3px;
+    }
+    h2 {
+      font-size: 24px;
+      padding: 3px;
+    }
+    p {
+      font-size: 18px;
+      padding: 3px;
+    }
+  }
+  @media (max-width: 768px) {
+    .modal-body {
+      margin: 0 20px 0 20px;
+    }
+  }
+}
+
+#myModal2 {
+  .modal-content {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .modal-title {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+  }
+
+  .modal-body {
+    overflow-y: hidden;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 70px 0 70px;
+    h1 {
+      font-size: 29px;
+      padding: 3px;
+    }
+    h2 {
+      font-size: 24px;
+      padding: 3px;
+    }
+    p {
+      font-size: 18px;
+      padding: 3px;
+    }
+  }
+  @media (max-width: 768px) {
+    .modal-body {
+      margin: 0 20px 0 20px;
+    }
+  }
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(1.2rem);
+  -webkit-backdrop-filter: blur(1.2rem);
+  .modal-header .close {
+    margin-left: -14px;
+  }
+
+  button.close {
+    padding: 2px;
+  }
+}

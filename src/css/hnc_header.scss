@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&family=Poppins:wght@100;300;400;500;600;700&family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+#hncHeaderContainer {
+  .hnc_typist {
+    // src: url("///Assets/fonts/OCRA.ttf");
+    font-family: "VT323", monospace;
+    /* font-family: "OCRA"; */
+    font-size: 76px;
+    margin-bottom: 50px;
+    color: rgb(195, 196, 255);
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: rgb(87, 255, 185);
+  }
+
+  .badge {
+    background-color: rgba(99, 102, 241, 1);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  #btn {
+    background: linear-gradient(
+      90deg,
+      rgba(99, 102, 241, 1) 0%,
+      rgba(195, 196, 255, 1) 100%
+    );
+    color: rgb(12, 12, 29);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-size: 1.2em;
+    height: 3.5rem;
+    width: 12rem;
+  }
+
+  #discbtn {
+    background-color: #7289da;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-size: 1.2em;
+    height: 3.5rem;
+    width: 19rem;
+    overflow-y: hidden;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    will-change: transform;
+    border: none;
+  }
+
+  #discbtn:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    #hnc_svgimg {
+      margin-top: 50px;
+    }
+    .hnc_typist {
+      font-size: 50px;
+    }
+    #btn,
+    #discbtn {
+      height: 2.5rem;
+      width: 15rem;
+      font-size: 1.075em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
+}

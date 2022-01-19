@@ -1,0 +1,66 @@
+#eventCard {
+  .card {
+    //background: rgba(160, 70, 180, 0.5);
+    margin: 5px;
+    text-align: left;
+
+    /* background: rgba(255, 255, 255, 0.25); */
+    // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); */
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    /*   color: #ffffff; */
+    backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(500px);
+
+    .card-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      overflow-y: hidden;
+    }
+    img {
+      border-radius: 20px;
+      padding: 5px;
+    }
+    .card-body {
+      padding: 15px;
+      font-family: "Montserrat";
+      font-size: 1.2em;
+    }
+    .btn {
+      border-radius: 2.5rem;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      background: #a177ff;
+      padding: 6px 15px;
+      margin-top: 5px;
+
+      i {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+
+    .btn:hover {
+      background: #8c5bff;
+    }
+    transition: 500ms ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: 500ms ease-in-out;
+  }
+  @media (max-width: 768px) {
+    .card {
+      /*  margin: 30px 0 30px 0; */
+      font-size: 0.72em;
+    }
+  }
+}

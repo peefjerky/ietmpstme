@@ -1,0 +1,74 @@
+#hncFaq {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: rgb(195, 196, 255);
+  }
+  /* .accordion {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(107, 107, 107, 0.3) 0%,
+      rgba(0, 0, 0, 0.2) 0%
+    );
+    backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 20px;
+
+    box-shadow: 10px 4px 32px -20px;
+  } */
+  .accordion-button {
+    background-color: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(
+      135deg,
+      rgba(99, 102, 241, 0.7) -10%,
+      rgba(0, 0, 0, 0.4) 80%
+    );
+    /*  background: rgb(3, 2, 5, 0.85); */
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(1rem);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: rgb(195, 196, 255);
+  }
+  .accordion-body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255, 0.8);
+  }
+
+  .accordion-item {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(107, 107, 107, 0.3) 0%,
+      rgba(0, 0, 0, 0.2) 0%
+    );
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
+
+    border-radius: 20px;
+
+    box-shadow: 10px 4px 32px -20px;
+  }
+  /*.accordion-button::after {
+    visibility: hidden;
+  } */
+  @media (max-width: 768px) {
+    .accordion-button {
+      font-size: 1.075rem;
+    }
+    /* .accordion-header {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    } */
+    .accordion-body{
+      font-size: 0.9em;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+/* 5a53d9  adb2ee*/
+#aboutContainer {
+  position: relative;
+  overflow: visible;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(35, 188, 255, 0.4)
+  );
+
+  border-radius: 20px;
+  /* 030205 */
+  .card-body {
+    /*  background: rgba(162, 81, 255, 0); */
+    background: rgb(255, 255, 255, 1);
+    /*    background: linear-gradient(
+      135deg,
+      rgba(90, 83, 217, 0.2) 0%,
+      rgba(173, 178, 238, 0.8) 100%
+    ); */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    z-index: 12;
+    font-family: "Montserrat", sans-serif;
+    /* border: 2px solid rgba(255, 255, 255, 1); */
+    font-size: 1.2em;
+    overflow: visible;
+  }
+  .card {
+    box-shadow: 5px 7px 14px -2px rgb(39, 39, 39, 0.1);
+    margin: 30px 50px 30px 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 12;
+    transition: ease-in-out 700ms;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 700ms;
+  }
+
+  .card-title {
+    padding: 3px;
+    small {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      /*  color: rgb(90, 83, 217); */
+      color: rgba(160, 70, 180, 0.9);
+    }
+  }
+  @media (max-width: 768px) {
+    .card {
+     /*  margin: 30px 0 30px 0; */
+      font-size: 0.72em;
+    }
+  }
+}
+
+/* *============== Circles ==============*  */
+
+.circle4,
+.circle5 {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: rgb(140, 48, 255);
+  /*   background: linear-gradient(
+    135deg,
+    rgba(141, 48, 255, 0.205) 0%,
+    rgba(72, 0, 129, 1) 100%
+  ); */
+  background: linear-gradient(
+    135deg,
+    rgba(90, 83, 217, 0.4) 0%,
+    rgba(173, 178, 238, 1) 100%
+  );
+  top: 10%;
+  left: 6%;
+  filter: blur(19px);
+  z-index: 11;
+}
+.circle5 {
+  height: 95px;
+  width: 95px;
+  top: 65%;
+  left: 87%;
+}
+
+/* .iconCircle1 {
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  background: rgb(115, 0, 255);
+  top: -20%;
+  left: 45%;
+
+} */

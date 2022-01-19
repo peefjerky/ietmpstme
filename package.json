@@ -1,0 +1,59 @@
+{
+  "name": "iet-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "aos": "^2.3.4",
+    "boxicons": "^2.1.1",
+    "create-react-class": "^15.7.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.0.0",
+    "react-countup": "^6.1.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
+    "react-social-icons": "^5.5.1",
+    "react-tilt": "^0.1.4",
+    "tilt.js": "^1.2.1",
+    "tingle.js": "^0.16.0",
+    "typed.js": "^2.0.12",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.37.5",
+    "sass-loader": "^10.2.0",
+    "webpack": "^4.44.2"
+  }
+}
