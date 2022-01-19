@@ -6,6 +6,12 @@
   margin-bottom: 100px;
   position: relative;
 
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    /* color: rgb(100, 102, 255); */
+    color: rgba(160, 70, 180, 0.8);
+  }
   .typist {
     font-family: "Playfair Display", serif;
     font-weight: 600;
@@ -42,14 +48,16 @@
   }
 
   #btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
-    height: 40px;
-    width: 170px;
-    font-size: 1.2rem;
+    height: 60px;
+    width: 190px;
+    font-size: 1.5rem;
   }
   #btn:hover {
     transform: scale(1.1);

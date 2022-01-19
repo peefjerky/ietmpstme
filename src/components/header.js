@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import TypedReactHooksDemo from "./animation.js";
 import "boxicons";
 import "../css/header.scss";
+import { Link } from "react-router-dom";
 /* import Tilt from "react-tilt";
 import iet_logo from "../images/IET_LOGO.png"; */
 
@@ -30,7 +31,10 @@ const Header = () => {
             decades. We believe in inspiring and enabling the youth of today to
             use their innovation to make a better world for tomorrow.
           </div>
-      <button id="btn" /* onClick={changeStyle} */>Explore Events!</button>
+          <h1 className="mt-5 p-2">Check out our latest event!</h1>
+          <Link to="/hackncode">
+            <button id="btn" /* onClick={changeStyle} */>HacknCode</button>
+          </Link>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           {/*  <div id="tiltjs" className="align-items-center text-center mx-auto">

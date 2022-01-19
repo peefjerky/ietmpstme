@@ -26,9 +26,9 @@ const Footer = (props) => {
             <h5 className="textdark pb-2">
               <b>More Links</b>
             </h5>
-            <a href="/" className="textdark d-block pb-2">
+            {/*  <a href="/" className="textdark d-block pb-2">
               Events
-            </a>
+            </a> */}
             <a href="/" className="textdark d-block pb-2">
               Home
             </a>
