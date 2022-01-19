@@ -3,26 +3,20 @@
 
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/js/bootstrap.min.js";
 import TypedReactHooksDemo from "./animation.js";
 import "boxicons";
 import "../css/header.scss";
-import "tilt.js";
 /* import Tilt from "react-tilt";
 import iet_logo from "../images/IET_LOGO.png"; */
 
 const Header = () => {
-  const [style, setStyle] = useState("typist");
-  const changeStyle = () => {
-    console.log("you just clicked");
-    setStyle("typist2");
-  };
   return (
     <div className="container-fluid my-5" id="headerContainer">
       <div className="row align-items-center my-5">
         <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
-          <div className={style}>
+          <div className="typist">
             {/*  <box-icon name="quote" id="quote" color="black" size="100px"></box-icon>  */}
             <TypedReactHooksDemo />
           </div>
@@ -36,9 +30,7 @@ const Header = () => {
             decades. We believe in inspiring and enabling the youth of today to
             use their innovation to make a better world for tomorrow.
           </div>
-          <button id="btn" onClick={changeStyle}>
-            Explore Events!
-          </button>
+      <button id="btn" /* onClick={changeStyle} */>Explore Events!</button>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           {/*  <div id="tiltjs" className="align-items-center text-center mx-auto">
