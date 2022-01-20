@@ -9,9 +9,9 @@ const Hnc_header = () => {
       <div className="row align-items-center my-5 mx-sm-3 mx-md-5 mx-lg-5">
         <div className="col-sm-12 col-md-12 col-lg-6 align-items-lg-left align-items-md-center mb-5">
           <div>
-            <span className="badge text-lg-start ">24 Hour Hackathon</span>
-            <br></br>
-            <span className="badge text-lg-start">26th - 27th March</span>
+            <span className="badge text-lg-start my-2">24 Hour Hackathon</span>
+            <br />
+            <span className="badge text-lg-start my-2">26th - 27th March</span>
           </div>
           <div className="hnc_typist mt-5">
             <HnCTypedReactHooks />
@@ -25,7 +25,7 @@ const Hnc_header = () => {
             <button className="mx-3 d-inline-block align-items-center" id="btn">
               Register Now
             </button>
-            <button className="mx-3 d-inline-block mb-3" id="discbtn">
+            <button className="mx-3 d-inline-block mb-3 mt-3" id="discbtn">
               {/*  <box-icon
                 name="discord"
                 type="logo"
