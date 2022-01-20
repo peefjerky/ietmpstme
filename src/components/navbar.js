@@ -56,10 +56,10 @@ const NavBar = (props) => {
 
             {/*  <a href="/" className="nav-item nav-link mx-1 my-auto">
               Gallery
-            </a>
+          </a>*/}
             <Link to="/contact" className="nav-item nav-link mx-1 my-auto">
               Contact Us
-            </Link> */}
+            </Link> 
           </div>
         </div>
       </div>

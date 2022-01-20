@@ -1,35 +1,38 @@
 import React from "react";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useState } from "react";
+// import { useLocation } from "react-router-dom";
 import "../App";
 
 
-/* import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
+import {
+  Link
 } from "react-scroll";
-import { escapeSelector, isWindow } from "jquery"; */
+/* import { escapeSelector, isWindow } from "jquery"; */
 
 export default function GoToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [pathname]);
+  const [visible, setVisible] = useState(false)
+  
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 500){
+      setVisible(true)
+    } 
+    else if (scrolled <= 500){
+      setVisible(false)
+    }
+  };
+  window.addEventListener('scroll', toggleVisible);
+
   //return null;
   return (
     <div
       className="toTopButton"
-      onClick={GoToTop}
+      style={{display: visible ? 'inline' : 'none'}}
     >
-      <div className="upIcon">
+      <Link to="toTop" className="upIcon" spy={true} smooth={true}>
         {" "}
         <box-icon name="up-arrow" color="white" crossOrigin></box-icon>
-      </div>
+      </Link>
     </div>
   );
 }

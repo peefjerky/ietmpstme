@@ -10,7 +10,7 @@ import Footer from "./components/footer.js";
 import Contact from "./components/contact";
 /* import Tingle from "./components/tinglejs.js"; */
 import Modal from "./components/modalb4";
-/* import GoToTop from "./components/goToTop"; */
+import GoToTop from "./components/goToTop";
 import HomePage from "./components/homePage";
 import "./App.css";
 import NotFound from "./components/notFound";
@@ -93,7 +93,6 @@ function App() {
   return (
     <Provider>
       <BrowserRouter>
-        {/*   <GoToTop></GoToTop> */}
         <LocationChange
           sexyfunctions={() => {
             changeGlass();
@@ -114,7 +113,7 @@ function App() {
             <div className={defCircle2}></div>
             <div className={defCircle3}></div>
 
-            <div className="foreground">
+            <div className="foreground" id="toTop">
               {/*  <button
                 className="btn btn-info"
                 style={{ position: "absolute", top: "50px" }}
@@ -155,6 +154,7 @@ function App() {
 
           {/* <Tingle /> */}
         </div>
+        <GoToTop></GoToTop>
       </BrowserRouter>
     </Provider>
   );
