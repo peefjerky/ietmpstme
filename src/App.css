@@ -29,13 +29,14 @@ body {
   height: 0;
 }
 .background {
-  /* position: relative; */
+  position: relative;
   background: rgb(255, 255, 255);
   overflow: hidden;
 }
 .background2 {
   overflow: hidden;
   background: rgb(0, 0, 0);
+  position: relative;
 }
 
 .foreground {
@@ -132,9 +133,14 @@ a:hover {
   position: absolute;
   height: 40rem;
   width: 40rem;
-  top: -30%;
-  left: -30%;
+
   border-radius: 50%;
+
+  filter: blur(32px);
+}
+.circle1 {
+  top: -10%;
+  left: -30%;
   background: rgb(140, 48, 255);
   background: rgb(160, 70, 180);
   background: linear-gradient(
@@ -142,7 +148,6 @@ a:hover {
     rgba(160, 70, 180, 1) 0%,
     rgba(249, 222, 255, 1) 100%
   );
-  filter: blur(32px);
 }
 
 .circle2 {
@@ -178,7 +183,7 @@ a:hover {
   position: absolute;
   height: 800px;
   width: 100vw;
-  top: -60%;
+  top: -13%;
   border-radius: 50%;
   background: linear-gradient(53deg, #6366f1, #57ffb9);
 
@@ -216,10 +221,14 @@ a:hover {
     border: none;
   }
   .circle1 {
-    top: -10%;
+    top: -2%;
     left: -10%;
     height: 15em;
     width: 15em;
+  }
+  .background {
+    position: relative;
+    overflow-x: hidden;
   }
 }
 
