@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
 /* import ReactDOM from "react-dom"; */
 import NavBar from "./components/navbar.js";
@@ -16,6 +16,8 @@ import "./App.css";
 import NotFound from "./components/notFound";
 /* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
+import { AnimatePresence } from "framer-motion/dist/framer-motion";
+
 /* import {
   Link,
   Button,
@@ -32,6 +34,8 @@ import Hack_n_code from "./Pages/HacknCode/hack-n-code";
 /* import locationChange from "./Hooks/hear-for-location"; */
 
 function App() {
+  const AniLocation = useLocation();
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -92,51 +96,51 @@ function App() {
 
   return (
     <Provider>
-      <BrowserRouter>
-        {/*   <GoToTop></GoToTop> */}
-        <LocationChange
-          sexyfunctions={() => {
-            changeGlass();
-            changeBg();
-            changeCircle1();
-            changeCircle2();
-            changeCircle3();
-            changeGradient();
-            changeFooter();
-            changeNav();
-          }}
-          revert={revertChanges}
-        />
+      {/*   <GoToTop></GoToTop> */}
+      <LocationChange
+        sexyfunctions={() => {
+          changeGlass();
+          changeBg();
+          changeCircle1();
+          changeCircle2();
+          changeCircle3();
+          changeGradient();
+          changeFooter();
+          changeNav();
+        }}
+        revert={revertChanges}
+      />
 
-        <div className="container_main" id="Main">
-          <div className={defBg}>
-            <div className={defCircle1}></div>
-            <div className={defCircle2}></div>
-            <div className={defCircle3}></div>
+      <div className="container_main" id="Main">
+        <div className={defBg}>
+          <div className={defCircle1}></div>
+          <div className={defCircle2}></div>
+          <div className={defCircle3}></div>
 
-            <div className="foreground">
-              {/*  <button
+          <div className="foreground">
+            {/*  <button
                 className="btn btn-info"
                 style={{ position: "absolute", top: "50px" }}
                 onClick={changeBg}
               >
                 Changebg
               </button> */}
-              <NavBar
-                data={() => {
-                  changeGlass();
-                  changeBg();
-                  changeCircle1();
-                  changeCircle2();
-                  changeCircle3();
-                  changeGradient();
-                  changeFooter();
-                  changeNav();
-                }}
-                defaultNav={defNav}
-              />
-              <section className={defGlass}>
-                <Routes>
+            <NavBar
+              data={() => {
+                changeGlass();
+                changeBg();
+                changeCircle1();
+                changeCircle2();
+                changeCircle3();
+                changeGradient();
+                changeFooter();
+                changeNav();
+              }}
+              defaultNav={defNav}
+            />
+            <section className={defGlass}>
+              <AnimatePresence>
+                <Routes anilocation={AniLocation} key={AniLocation.key}>
                   <Route exact path="/" element={<HomePage />} />
                   <Route exact path="/contact" element={<Contact />}></Route>
                   <Route
@@ -146,16 +150,15 @@ function App() {
                   ></Route>
                   <Route exact path="*" element={<NotFound />}></Route>
                 </Routes>
-
-                <Footer bgtint={defGradient} footer2={defFooter} />
-              </section>
-            </div>
+              </AnimatePresence>
+              <Footer bgtint={defGradient} footer2={defFooter} />
+            </section>
           </div>
-          <Modal />
-
-          {/* <Tingle /> */}
         </div>
-      </BrowserRouter>
+        <Modal />
+
+        {/* <Tingle /> */}
+      </div>
     </Provider>
   );
 }

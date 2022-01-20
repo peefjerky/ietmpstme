@@ -10,6 +10,7 @@
     "aos": "^2.3.4",
     "boxicons": "^2.1.1",
     "create-react-class": "^15.7.0",
+    "framer-motion": "^6.0.0",
     "jquery": "^3.6.0",
     "react": "^16.0.0",
     "react-countup": "^6.1.0",
