@@ -42,12 +42,12 @@ const NavBar = (props) => {
         </button>
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav">
-            {/* <a href="/" className="nav-item nav-link my-auto">
+            <Link to="aboutContainer" className="nav-item nav-link my-auto" spy={true} smooth={true} >
               About
-            </a>
-            <a href="/" className="nav-item nav-link mx-1 my-auto">
+            </Link>
+            <Link to="eventContainer" className="nav-item nav-link mx-1 my-auto" spy={true} smooth={true}>
               Events
-            </a> */}
+            </Link> 
             {/*  <Link to="/hackncode">
               <button id="navbtn" className="nav-item nav-link mx-1 my-auto">
                 Hack n' Code
@@ -57,7 +57,7 @@ const NavBar = (props) => {
             {/*  <a href="/" className="nav-item nav-link mx-1 my-auto">
               Gallery
           </a>*/}
-            <Link to="/contact" className="nav-item nav-link mx-1 my-auto">
+            <Link to="/contact" className="nav-item nav-link mx-1 my-auto" spy={true} smooth={true}>
               Contact Us
             </Link> 
           </div>
