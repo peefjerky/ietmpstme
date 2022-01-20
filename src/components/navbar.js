@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import iet_logo from "../images/IET_LOGO.png";
 import "boxicons";
-import { Link } from "react-router-dom";
+import { Link as RLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 /* import * as Scroll from "react-scroll"; */
 /* import { useState } from "react"; */
 /* import "../App.css"; */
@@ -25,11 +26,11 @@ const NavBar = (props) => {
             // height="3%"
           />
         </a>
-        <Link to="/hackncode">
+        <RLink to="/hackncode">
           <button id="navbtn" className="nav-item nav-link mx-auto my-auto">
             Hack n' Code
           </button>
-        </Link>
+        </RLink>
         {/*  <button className="btn ml-auto mx-3" id="demo">
           Contact Us
         </button> */}
@@ -42,12 +43,25 @@ const NavBar = (props) => {
         </button>
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav">
-            {/* <a href="/" className="nav-item nav-link my-auto">
+            <ScrollLink
+              to="aboutContainer"
+              className="nav-item nav-link my-auto"
+              spy={true}
+              smooth={true}
+              offset={-50}
+            >
               About
-            </a>
-            <a href="/" className="nav-item nav-link mx-1 my-auto">
+            </ScrollLink>
+            <ScrollLink
+              to="eventContainer"
+              className="nav-item nav-link mx-1 my-auto"
+              spy={true}
+              smooth={true}
+              offset={-145}
+            >
               Events
-            </a> */}
+            </ScrollLink>
+
             {/*  <Link to="/hackncode">
               <button id="navbtn" className="nav-item nav-link mx-1 my-auto">
                 Hack n' Code
@@ -56,10 +70,10 @@ const NavBar = (props) => {
 
             {/*  <a href="/" className="nav-item nav-link mx-1 my-auto">
               Gallery
-            </a>
-            <Link to="/contact" className="nav-item nav-link mx-1 my-auto">
+          </a>*/}
+            <RLink to="/contact" className="nav-item nav-link mx-1 my-auto">
               Contact Us
-            </Link> */}
+            </RLink>
           </div>
         </div>
       </div>

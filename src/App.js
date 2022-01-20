@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
 /* import ReactDOM from "react-dom"; */
 import NavBar from "./components/navbar.js";
@@ -10,7 +10,7 @@ import Footer from "./components/footer.js";
 import Contact from "./components/contact";
 /* import Tingle from "./components/tinglejs.js"; */
 import Modal from "./components/modalb4";
-/* import GoToTop from "./components/goToTop"; */
+import GoToTop from "./components/goToTop";
 import HomePage from "./components/homePage";
 import "./App.css";
 import NotFound from "./components/notFound";
@@ -117,8 +117,31 @@ function App() {
           <div className={defCircle2}></div>
           <div className={defCircle3}></div>
 
-          <div className="foreground">
+          <div className="foreground" id="toTop">
             {/*  <button
+      <BrowserRouter>
+        <LocationChange
+          sexyfunctions={() => {
+            changeGlass();
+            changeBg();
+            changeCircle1();
+            changeCircle2();
+            changeCircle3();
+            changeGradient();
+            changeFooter();
+            changeNav();
+          }}
+          revert={revertChanges}
+        />
+
+        <div className="container_main" id="Main">
+          <div className={defBg}>
+            <div className={defCircle1}></div>
+            <div className={defCircle2}></div>
+            <div className={defCircle3}></div>
+
+            <div className="foreground" id="toTop">
+              {/*  <button
                 className="btn btn-info"
                 style={{ position: "absolute", top: "50px" }}
                 onClick={changeBg}
@@ -159,6 +182,7 @@ function App() {
 
         {/* <Tingle /> */}
       </div>
+      <GoToTop></GoToTop>
     </Provider>
   );
 }

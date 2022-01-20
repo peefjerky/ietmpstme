@@ -3,6 +3,7 @@
 html,
 body {
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -230,6 +231,21 @@ a:hover {
     position: relative;
     overflow-x: hidden;
   }
+  .toTopButton {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .upIcon {
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 }
 
 /* !===To Top Button===! */
@@ -243,11 +259,21 @@ a:hover {
   bottom: 50px;
   right: 70px;
   z-index: 14;
+  transition: 700ms ease-in-out;
 }
+
 .upIcon {
-  width: 40%;
-  height: 40%;
-  margin: 15px auto;
-  /* padding: auto; */
-  position: relative;
+  width: 50%;
+  height: 50%;
+  padding: 17.5px !important;
+  position: absolute;
+}
+
+Link {
+  scroll-behavior: smooth;
+}
+
+.nlink {
+  text-decoration: underline;
+  color: rgb(170, 18, 137);
 }

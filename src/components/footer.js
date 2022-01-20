@@ -29,10 +29,10 @@ const Footer = (props) => {
             {/*  <a href="/" className="textdark d-block pb-2">
               Events
             </a> */}
-            <a href="/" className="textdark d-block pb-2">
+            <a href="/" className="textdark d-block pb-2 nlink">
               Home
             </a>
-            <Link to="/contact" className="textdark d-block pb-2">
+            <Link to="/contact" className="textdark d-block pb-2 nlink">
               Contact Us
             </Link>
           </div>
@@ -50,14 +50,14 @@ const Footer = (props) => {
               className="social-icons"
               url="https://instagram.com/ietmpstme"
             />
-            {/* <SocialIcon
+             <SocialIcon
               className="social-icons"
-              url="https://github.com/jaketrent"
+              url="https://www.facebook.com/ietmpstme/"
             />
             <SocialIcon
               className="social-icons"
-              url="https://twitter.com/jaketrent"
-            /> */}
+              url="https://in.linkedin.com/company/iet-mpstme"
+            />
           </div>
         </div>
 

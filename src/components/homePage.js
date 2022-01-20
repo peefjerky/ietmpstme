@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div>
       <Header />
-      <About />
+      <About  />
       <Event />
     </div>
   );

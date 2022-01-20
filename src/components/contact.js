@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import "../css/contact.scss";
+import { motion } from "framer-motion/dist/framer-motion";
 
 class Contact extends Component {
   state = {
@@ -22,7 +23,7 @@ class Contact extends Component {
     const { name } = this.state;
     if (isSuccessful) {
       this.setState({
-        submitMessage: `Thank you ${name}. I will contact you soon!`,
+        submitMessage: `Thank you ${name}. We will contact you soon!`,
         submitMessageTextColor: "text-success",
       });
     } else {
@@ -37,11 +38,22 @@ class Contact extends Component {
     const { submitMessageTextColor, submitMessage } = this.state;
 
     return (
-      <div className="container-fluid my-3" id="contactContainer">
+      <motion.div
+        className="container-fluid my-3"
+        id="contactContainer"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h1 className="text-center py-5">Thank you for your interest!</h1>
         <div className="row justify-content-center">
           <div className="col-11 col-md-5 col-lg-5">
-            <form onSubmit={this.onSubmit} className="px-1">
+            <form
+              className="px-1"
+              action="https://getform.io/f/90c8b4cf-7f67-4e95-87ee-ec0f747ab56a"
+              method="POST"
+              onSubmit={this.onSubmit}
+            >
               <div className="form-group">
                 <label htmlFor="name">Name *</label>
                 <input
@@ -49,6 +61,7 @@ class Contact extends Component {
                   name="name"
                   className="form-control"
                   onChange={this.onChange}
+                  required
                 />
               </div>
               <div className="form-group my-3">
@@ -58,6 +71,7 @@ class Contact extends Component {
                   name="email"
                   className="form-control"
                   onChange={this.onChange}
+                  required
                 />
               </div>
               <div className="form-group my-3">
@@ -70,6 +84,7 @@ class Contact extends Component {
                   rows="5"
                   placeholder="Put your queries here"
                   onChange={this.onChange}
+                  required
                 ></textarea>
               </div>
               <button type="submit" className="float-start my-3" id="btn">
@@ -81,7 +96,7 @@ class Contact extends Component {
         <div className="py-5 mx-2 text-center">
           <h5 className={submitMessageTextColor}>{submitMessage}</h5>
         </div>
-      </div>
+      </motion.div>
     );
   }
 }
