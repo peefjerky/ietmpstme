@@ -1,61 +1,67 @@
 /* ! ==========> Z-index > 3 <========== */
 
-html {
+html,
+body {
   overflow-x: hidden !important;
 }
 
 * {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
-
-/* #root {
-  overflow: auto;
-}
- */
+/*
 .background,
 .foreground {
-  width: 100%;
   height: 100%;
-  position: absolute;
+  width: 100%;
+   position: absolute;
   top: 0;
   left: 0;
   overflow: auto;
 
-  /* overflow:hidden; */
+  overflow:hidden;
 }
-
+ */
 /* ?Try this */
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 .background {
-  /*   background: rgb(248, 225, 240);
-  background: linear-gradient(
-    135deg,
-    rgba(248, 225, 240, 1) 0%,
-    rgba(243, 160, 254, 1) 45%,
-    rgba(87, 79, 184, 1) 100%
-  ); */
-  /*   background: rgb(205, 232, 248);
-  background: linear-gradient(
-    135deg,
-    rgba(205, 232, 248, 1) 0%,
-    rgba(212, 228, 252, 1) 50%,
-    rgba(226, 213, 251, 1) 100%
-  ); */
+  /* position: relative; */
   background: rgb(255, 255, 255);
+  overflow: hidden;
 }
-.foreground {
-  /* !Try making this smaller so that you get a card layout */
-  z-index: 10;
-  /*   border-radius: 20px;
-  margin: 50px 50px 50px 50px; */
+.background2 {
+  overflow: hidden;
+  background: rgb(0, 0, 0);
 }
 
+.foreground {
+  z-index: 10;
+  position: relative;
+}
+.glass {
+  /* ?Try this */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  backdrop-filter: blur(5rem);
+  -webkit-backdrop-filter: blur(5rem);
+  position: relative;
+  margin: 100px 50px 50px 50px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  /* ?Try this */
+  border-radius: 20px;
+  /* overflow-y: visible; */
+  box-shadow: 10px 4px 32px -20px;
+  height: max-content;
+  overflow: hidden;
+}
 .glass2 {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -73,57 +79,8 @@ html {
   border: 2px solid rgba(255, 255, 255, 0.2);
 
   border-radius: 20px;
-
-  box-shadow: 10px 4px 32px -20px;
   height: max-content;
   overflow: hidden;
-}
-/*
-.glass2:before {
-  content: "";
-  height: 150%;
-  width: 150%;
-  position: absolute;
-  top: -25%;
-  left: -25%;
-  background: conic-gradient(
-    #fd004c,
-    #fe9000,
-    #fff020,
-    #3edf4b,
-    #3363ff,
-    #b102b7,
-    #fd004c
-  );
-  animation: spin 1.5s infinite ease-in-out;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-.glass2:after {
-  content: "";
-  position: absolute;
-  background: #000000;
-  height: 96%;
-  width: 96%;
-  top: 2%;
-  left: 2%;
-  border-radius: 20px;
-} */
-.background2 {
-  /*  width: 100%;
-  height: 100%; */
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  background: rgb(0, 0, 0);
 }
 
 a,
@@ -160,6 +117,7 @@ a:hover {
 #btn:hover {
   transform: scale(1.1);
 }
+
 #collapseNav {
   -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 2.55);
   transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 2.55);
@@ -168,29 +126,6 @@ a:hover {
 
 /* !================= Blurred elements =================! */
 
-.glass {
-  /* ?Try this */
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
-  backdrop-filter: blur(5rem);
-  -webkit-backdrop-filter: blur(5rem);
-  /*  z-index: 3; */
-  position: relative;
-  /* ?Try this */
-  margin: 100px 50px 50px 50px;
-  /* height: 100%; */
-  /*width: 100vw; */
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  /* ?Try this */
-  border-radius: 20px;
-  /* overflow-y: visible; */
-  box-shadow: 10px 4px 32px -20px; /* rgba(90, 84, 217, 1) */
-  height: max-content;
-}
 .circle1,
 .circle2,
 .circle3 {
@@ -208,12 +143,6 @@ a:hover {
     rgba(249, 222, 255, 1) 100%
   );
   filter: blur(32px);
-  /*   background: linear-gradient(
-    135deg,
-    rgba(90, 83, 217, 0.4) 0%,
-    rgba(173, 178, 238, 1) 100%
-  ); */
-  z-index: 2;
 }
 
 .circle2 {
@@ -251,13 +180,6 @@ a:hover {
   width: 100vw;
   top: -60%;
   border-radius: 50%;
-  /*  background: rgb(140, 48, 255);
-  background: rgb(160, 70, 180); */
-  /*  background: linear-gradient(
-    135deg,
-    rgba(99, 102, 241, 1) 0%,
-    rgba(105, 64, 255, 0.8) 100%
-  ); */
   background: linear-gradient(53deg, #6366f1, #57ffb9);
 
   background-size: 400% 400%;
@@ -281,24 +203,16 @@ a:hover {
 .container_main {
   width: 100%;
   height: 100%;
-  /* ?-> WHY? <- */
-  /*   position: absolute; */
-}
-
-#root {
-  height: 100%;
-  width: 100%;
-  overflow: auto;
 }
 @media (max-width: 768px) {
   .glass {
-    margin: 0 !important;
-    padding: 0;
+    margin: 0;
+    padding-top: 8vh;
     border: none;
   }
   .glass2 {
-    margin: 0 !important;
-    padding: 0;
+    margin: 0;
+    padding-top: 8vh;
     border: none;
   }
   .circle1 {

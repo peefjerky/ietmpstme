@@ -107,14 +107,14 @@ function App() {
           }}
           revert={revertChanges}
         />
+
         <div className="container_main" id="Main">
           <div className={defBg}>
             <div className={defCircle1}></div>
             <div className={defCircle2}></div>
             <div className={defCircle3}></div>
-          </div>
-          <div className="foreground">
-            <main>
+
+            <div className="foreground">
               {/*  <button
                 className="btn btn-info"
                 style={{ position: "absolute", top: "50px" }}
@@ -149,7 +149,7 @@ function App() {
 
                 <Footer bgtint={defGradient} footer2={defFooter} />
               </section>
-            </main>
+            </div>
           </div>
           <Modal />
 

@@ -26,7 +26,6 @@
       rgba(99, 102, 241, 0.7) -10%,
       rgba(0, 0, 0, 0.4) 80%
     );
-    /*  background: rgb(3, 2, 5, 0.85); */
     backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(1rem);
     font-family: "Montserrat", sans-serif;
@@ -34,6 +33,10 @@
     margin-bottom: 5px;
     font-weight: 700;
     color: rgb(195, 196, 255);
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   .accordion-body {
     font-family: "Montserrat", sans-serif;
@@ -41,7 +44,6 @@
     margin-bottom: 5px;
     color: rgb(255, 255, 255, 0.8);
   }
-
   .accordion-item {
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -67,7 +69,7 @@
       padding-top: 4px;
       padding-bottom: 4px;
     } */
-    .accordion-body{
+    .accordion-body {
       font-size: 0.9em;
     }
   }

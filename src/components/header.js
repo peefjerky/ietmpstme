@@ -19,7 +19,7 @@ const Header = () => {
         <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           <div className="typist">
             {/*  <box-icon name="quote" id="quote" color="black" size="100px"></box-icon>  */}
-            <TypedReactHooksDemo />
+          <TypedReactHooksDemo />
           </div>
           <div className="quote-small">
             We at IET aim to <span className="highlight1">inspire</span>,{" "}
