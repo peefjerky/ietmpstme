@@ -36,7 +36,7 @@ const Hnc_faq = () => {
                 className="col-sm-12 col-md-6 col-lg-6"
                 data-aos="slide-left"
               >
-                {hnc_faqs.slice(5, 8).map((hncfaqs) => (
+                {hnc_faqs.slice(4, 8).map((hncfaqs) => (
                   <div key={hncfaqs.id} className="align-items-center ">
                     <Hnc_faq_accordian
                       id={hncfaqs.id}

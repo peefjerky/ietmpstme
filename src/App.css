@@ -36,7 +36,21 @@ body {
 }
 .background2 {
   overflow: hidden;
-  background: rgb(0, 0, 0);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(46, 49, 78, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(46, 49, 78, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(46, 49, 78, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   position: relative;
 }
 
@@ -175,7 +189,6 @@ a:hover {
   );
 }
 
-.circle2hide,
 .circle3hide {
   visibility: hidden;
 }
@@ -187,12 +200,28 @@ a:hover {
   top: -13%;
   border-radius: 50%;
   background: linear-gradient(53deg, #6366f1, #57ffb9);
+  /*  background: rgb(97, 100, 255);
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(97, 100, 255, 1) 0%,
+    rgba(255, 72, 142, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(97, 100, 255, 1) 0%,
+    rgba(255, 72, 142, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(97, 100, 255, 1) 0%,
+    rgba(255, 72, 142, 1) 100%
+  ); */
 
-  background-size: 400% 400%;
+  /*  background-size: 400% 400%; */
   animation: ChangeColor 10s ease-in-out infinite;
   filter: blur(45px);
 }
-@keyframes ChangeColor {
+/* @keyframes ChangeColor {
   0% {
     background-position: 0% 84%;
   }
@@ -202,6 +231,33 @@ a:hover {
   100% {
     background-position: 0% 84%;
   }
+} */
+
+.circle2hide {
+  position: absolute;
+  height: 120vh;
+  width: 80vw;
+  top: 27%;
+  right: -50%;
+  border-radius: 50%;
+  background: #03001e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    54deg,
+    rgba(236, 56, 188, 1),
+    rgba(115, 3, 192, 0.6),
+    rgba(3, 0, 30, 1)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: linear-gradient(53deg, #f1636a, #57ffb9); */
+  /* background-size: 400% 400%; */
+  animation: ChangeColor 10s ease-in-out infinite;
+  filter: blur(45px);
 }
 
 /* ! ==========> khush <========== */
@@ -256,8 +312,8 @@ a:hover {
   border-radius: 50%;
   background-color: #f398fe;
   position: fixed;
-  bottom: 50px;
-  right: 70px;
+  bottom: 40px;
+  right: 50px;
   z-index: 14;
   transition: 700ms ease-in-out;
 }

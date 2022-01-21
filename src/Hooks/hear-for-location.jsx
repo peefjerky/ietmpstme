@@ -1,16 +1,29 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 const LocationChange = (props) => {
-  const location = useLocation();
-  useEffect(() => {
-    console.log(location.pathname);
-  }, [location]);
+  const { pathname } = useLocation();
 
-  if (location.pathname === "/hackncode") {
-    props.sexyfunctions();
-  } else {
-    props.revert();
-  }
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    console.log(pathname);
+    ScrollToTop();
+    if (pathname === "/hackncode") {
+      props.sexyfunctions();
+    } else {
+      props.revert();
+    }
+    window.addEventListener("load", ScrollToTop);
+    return () => {
+      window.removeEventListener("load", ScrollToTop);
+    };
+  }, [pathname, props]);
+
   return null;
 };
 

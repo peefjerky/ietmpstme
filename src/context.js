@@ -62,10 +62,9 @@ export class Provider extends Component {
       },
       {
         id: "Three",
-        question:
-          "How many problems will we have to solve, and how much time will we get?",
+        question: "Who owns my project?",
         answer:
-          "One problem statement, and 16 hours to come up with a solution.",
+          "The team that develops the project is the owner of the project. We do encourage sharing of code with others in the community or making code open source but it is not required to participate in the event.",
       },
       {
         id: "Four",
@@ -78,11 +77,13 @@ export class Provider extends Component {
         answer:
           "Anyone is welcome to participate in this event. While experience in coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas. Whether this is your first hackathon, or you are an absolute veteran, all that we ask of you is that you are excited to learn about AI. We will provide workshops to help you gain any necessary skills, so don't be scared if you're a beginner! In addition, if you're a designer or business student, your design and pitching skills are also very valuable!",
       },
+
       {
         id: "Six",
-        question: "Who owns my project?",
+        question:
+          "How many problems will we have to solve, and how much time will we get?",
         answer:
-          "The team that develops the project is the owner of the project. We do encourage sharing of code with others in the community or making code open source but it is not required to participate in the event.",
+          "One problem statement, and 16 hours to come up with a solution.",
       },
       {
         id: "Seven",
@@ -149,6 +150,23 @@ export class Provider extends Component {
         id: "Eighteen",
         question: "How large can my team be?",
         answer: "You can have a maximum of X people on your team.",
+      },
+    ],
+    hnc_images: [
+      {
+        id: 1,
+        imgUrl:
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      },
+      {
+        id: 2,
+        imgUrl:
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      },
+      {
+        id: 3,
+        imgUrl:
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
     ],
   };
