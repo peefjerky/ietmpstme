@@ -16,7 +16,7 @@ import "./App.css";
 import NotFound from "./components/notFound";
 /* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
-import { AnimatePresence } from "framer-motion/dist/framer-motion";
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 /* import {
   Link,
@@ -113,8 +113,29 @@ function App() {
 
       <div className="container_main" id="Main">
         <div className={defBg}>
-          <div className={defCircle1}></div>
-          <div className={defCircle2}></div>
+          <motion.div
+            className={defCircle1}
+            initial={{ y: "-100vh" }}
+            animate={{ y: "0vh" }}
+            transition={{
+              duration: 1,
+              delay: 0.4,
+              ease: "easeInOut",
+              /*  repeat: "Infinity",
+              repeatType: "reverse", */
+            }}
+          ></motion.div>
+          <div
+            className={defCircle2}
+            /* initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              repeat: "Infinity",
+              repeatType: "reverse",
+            }} */
+          ></div>
           <div className={defCircle3}></div>
 
           <div className="foreground" id="toTop">

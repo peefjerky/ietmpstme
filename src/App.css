@@ -177,8 +177,8 @@ a:hover {
 }
 
 .circle3 {
-  top: 80%;
-  left: 10%;
+  top: 90%;
+  left: -10%;
   height: 30rem;
   width: 30rem;
   background: rgb(207, 246, 255);
@@ -218,7 +218,7 @@ a:hover {
   ); */
 
   /*  background-size: 400% 400%; */
-  animation: ChangeColor 10s ease-in-out infinite;
+  /*  animation: ChangeColor 10s ease-in-out infinite; */
   filter: blur(45px);
 }
 /* @keyframes ChangeColor {
@@ -310,12 +310,15 @@ a:hover {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: #f398fe;
+  background-color: #f498fe;
+  /* backdrop-filter: blur(5rem);
+  -webkit-backdrop-filter: blur(5rem); */
   position: fixed;
   bottom: 40px;
   right: 50px;
   z-index: 14;
   transition: 700ms ease-in-out;
+  cursor: pointer;
 }
 
 .upIcon {

@@ -17,6 +17,7 @@ const Hnc_information = () => {
             className="card"
             data-aos="slide-right"
             data-aos-easing="ease-in-out"
+            data-aos-duration="800"
           >
             <div className="card-body">
               <h2 className="card-title p-2">Why participate?</h2>
@@ -39,6 +40,7 @@ const Hnc_information = () => {
             className="card my-5"
             data-aos="slide-right"
             data-aos-easing="ease-in-out"
+            data-aos-duration="800"
           >
             <div className="card-body">
               <h2 className="card-title p-2">Who can participate?</h2>

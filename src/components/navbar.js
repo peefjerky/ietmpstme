@@ -58,6 +58,7 @@ const NavBar = (props) => {
               spy={true}
               smooth={true}
               offset={-145}
+
             >
               Events
             </ScrollLink>

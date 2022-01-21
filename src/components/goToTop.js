@@ -20,7 +20,13 @@ export default function GoToTop() {
 
   //return null;
   return (
-    <div className="toTopButton" style={{ opacity: visible ? "100" : "0" }}>
+    <div
+      className="toTopButton"
+      style={{
+        visibility: visible ? "visible" : "hidden",
+        opacity: visible ? 1 : 0,
+      }}
+    >
       <ScrollLink to="toTop" className="upIcon" spy={true} smooth={true}>
         <box-icon name="up-arrow" color="white" crossOrigin></box-icon>
       </ScrollLink>

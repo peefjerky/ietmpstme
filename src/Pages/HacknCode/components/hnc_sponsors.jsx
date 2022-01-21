@@ -17,6 +17,8 @@ const Hnc_sponsors = () => {
           className="col-lg-12 col-sm-12 col-md-12 mt-3 mb-5 align-items-center"
           id="sponsorsContanier"
           data-aos="slide-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
         >
           <div className="align-self-center my-5">
             <div className="my-4">
