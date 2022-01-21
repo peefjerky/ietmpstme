@@ -49,50 +49,50 @@ export class Provider extends Component {
     hnc_faqs: [
       {
         id: "One",
-        question: "What is a hackathon?",
-        answer:
-          "Hackathons have long been staple events in the Technology Industry since the late 1990s. A Hackathon is an intense event that brings together computer programmers like software developers, graphic designers and user interface specialists along with industry process experts and professionals to identify issues and create software solutions, usually within a weekend",
-      },
-      {
-        id: "Two",
         question:
-          "What level of coding should we know to take part in Hack-N-Code 5.0?",
+          "What level of coding should we know to take part in Hack-n-Code 5.0?",
         answer:
           "A very rudimentary understanding of programming, which includes the ability to establish and understand the technological limitations and feasibility, is the minimum requirement. As such, one can make use of pre-existing templates and resources provided by companies such as Wix, Wordpress, etc. to compensate for your lack of technical skills. The importance is on ideation and the ability to present a complete project.",
       },
       {
-        id: "Three",
+        id: "Two",
         question: "What sort of projects are we expected to come up with?",
         answer:
-          "The participants shall be presented with real world problems, and they are allowed to submit a feasible solution for the same in the form of any original project, such as a website, a game, an extension, etc.",
+          "The participants shall be presented with a real world problem, and they are allowed to submit a feasible solution for the same in the form of any original project, such as a website, a game, an extension, etc.",
+      },
+      {
+        id: "Three",
+        question:
+          "How many problems will we have to solve, and how much time will we get?",
+        answer:
+          "One problem statement, and 16 hours to come up with a solution.",
       },
       {
         id: "Four",
-        question: "How many problems will we have to solve?",
-        answer: "One Problem Statement.",
+        question: "How large can a team be?",
+        answer: "You can have a maximum of 4 people on your team.",
       },
       {
         id: "Five",
-        question: "What will be the time constraint for them?",
-        answer: "6 hours.",
+        question: "Who can participate?",
+        answer:
+          "Anyone is welcome to participate in this event. While experience in coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas. Whether this is your first hackathon, or you are an absolute veteran, all that we ask of you is that you are excited to learn about AI. We will provide workshops to help you gain any necessary skills, so don't be scared if you're a beginner! In addition, if you're a designer or business student, your design and pitching skills are also very valuable!",
       },
       {
         id: "Six",
-        question: "What resources would be provided to me?",
+        question: "Who owns my project?",
         answer:
-          "You can use the GitHub Student Developer Pack. Please use this link for accessing the Pack. This link is associated with our event and should help to process your approval faster.",
+          "The team that develops the project is the owner of the project. We do encourage sharing of code with others in the community or making code open source but it is not required to participate in the event.",
       },
       {
         id: "Seven",
-        question:
-          "What is the age restriction to participate in Hack-N-Code 5.0?",
-        answer:
-          "No age limit. (If you’re not an adult, please seek your parents’ permission before participating)",
+        question: "How much will it cost?",
+        answer: "The event is entirely free!",
       },
       {
         id: "Eight",
-        question: "When will we get the problem statement?",
-        answer: "By X a.m. on the first day, i.e., Y March, day.",
+        question: "Will I get a certificate for participating?",
+        answer: "Yes.",
       },
       {
         id: "Nine",
