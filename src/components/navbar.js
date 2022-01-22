@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/navbar.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -12,9 +12,38 @@ import { Link as ScrollLink } from "react-scroll";
 /* import Event from "./event.js"; */
 /* let slink = Scroll.Link; */
 const NavBar = (props) => {
-  /* console.log(props.data); */
+  const [show, setShow] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [bodyOffset, setBodyOffset] = useState(
+    document.body.getBoundingClientRect()
+  );
+  const [scrollDirection, setScrollDirection] = useState();
+  const controlNavbar = () => {
+    setBodyOffset(document.body.getBoundingClientRect());
+    setScrollDirection(lastScrollTop > -bodyOffset.top ? "down" : "up");
+    setLastScrollTop(-bodyOffset.top);
+    if (scrollDirection === "up") {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  });
   return (
-    <nav className="navbar navbar-expand-sm fixed-top" id={props.defaultNav}>
+    <nav
+      className="navbar navbar-expand-sm fixed-top"
+      id={props.defaultNav}
+      style={{
+        visibility: show ? "visible" : "hidden",
+        opacity: show ? 1 : 0,
+      }}
+    >
       <div className="container-fluid mx-3">
         {/*! Fix the icon  */}
         <a href="/" className="navbar-brand">
@@ -58,7 +87,6 @@ const NavBar = (props) => {
               spy={true}
               smooth={true}
               offset={-145}
-
             >
               Events
             </ScrollLink>

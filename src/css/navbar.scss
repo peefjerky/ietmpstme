@@ -12,8 +12,8 @@
   );
   /*  background: rgb(3, 2, 5, 0.85); */
   box-shadow: 2px 4px 32px -10px rgb(39, 39, 39);
-  /*  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem); */
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   border: none;
@@ -22,7 +22,7 @@
     /* color:  rgb(90, 83, 217); */
     color: rgba(160, 70, 180, 1);
   }
-
+  transition: 0.5s ease-in-out;
   /* #btn {
   margin: 5px;
 }
@@ -31,7 +31,6 @@
   margin: 0;
 } */
 }
-
 #Navbar2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -41,15 +40,16 @@
     rgb(87, 112, 255, 0.6) 0%,
     rgba(0, 0, 0, 0.4) 100%
   );
+  transition: 0.5s ease-in-out;
   /*  background: rgb(3, 2, 5, 0.85); */
   box-shadow: 2px 4px 32px -10px rgb(39, 39, 39);
-  /*  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem); */
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   border: none;
   z-index: 14;
-
+  transition: 0.3s ease-in-out;
   a {
     /* color:  rgb(90, 83, 217); */
     color: rgb(255, 255, 255);
