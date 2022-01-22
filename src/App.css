@@ -66,8 +66,8 @@ body {
     rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0.2) 100%
   );
-  backdrop-filter: blur(5rem);
-  -webkit-backdrop-filter: blur(5rem);
+  /*  backdrop-filter: blur(5rem);
+  -webkit-backdrop-filter: blur(5rem); */
   position: relative;
   margin: 100px 50px 50px 50px;
   border: 2px solid rgba(255, 255, 255, 0.7);
@@ -85,9 +85,9 @@ body {
     rgba(107, 107, 107, 0.3) 0%,
     rgba(0, 0, 0, 0.2) 0%
   );
-  backdrop-filter: blur(5rem);
+  /*  backdrop-filter: blur(5rem);
   -webkit-backdrop-filter: blur(5rem);
-
+ */
   position: relative;
 
   margin: 100px 50px 50px 50px;
