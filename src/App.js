@@ -89,10 +89,7 @@ function App() {
     setCircle2,
     setCircle3,
   ]);
-  /*   var glass = document.getElementsByClassName("glass");
-  glass.style.height = "100px";
-  var glassHeight = glass.clientHeight + "px"; */
-
+  /*   const background = useTransform(["#ff008c", "#7700ff", "rgb(230, 255, 0)"]); */
   return (
     <Provider>
       {/*   <GoToTop></GoToTop> */}
@@ -119,7 +116,7 @@ function App() {
             className={defCircle2}
             whileInView={{ scale: 1.8 }}
             transition={{
-              duration: 1,
+              duration: 2,
               delay: 0.4,
               ease: "easeInOut",
               repeat: "Infinity",

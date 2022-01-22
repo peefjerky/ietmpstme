@@ -2,6 +2,7 @@ import React from "react";
 import HnCTypedReactHooks from "../../../components/hnc_animation";
 import "../../../css/hnc_header.scss";
 import LaptopAnimation from "../../../components/laptopanimation";
+
 import "../../../App.css";
 const Hnc_header = () => {
   return (

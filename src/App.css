@@ -291,6 +291,9 @@ a:hover {
     bottom: 10px;
     right: 10px;
   }
+  .circle2hide {
+    right: -40%;
+  }
 }
 
 @media (max-width: 340px) {
@@ -310,9 +313,9 @@ a:hover {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: #f498fe;
-  /* backdrop-filter: blur(5rem);
-  -webkit-backdrop-filter: blur(5rem); */
+  background-color: #f498fee0;
+  /*  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); */
   position: fixed;
   bottom: 40px;
   right: 50px;

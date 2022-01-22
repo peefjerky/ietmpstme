@@ -22,8 +22,12 @@ const NavBar = (props) => {
     setBodyOffset(document.body.getBoundingClientRect());
     setScrollDirection(lastScrollTop > -bodyOffset.top ? "down" : "up");
     setLastScrollTop(-bodyOffset.top);
-    if (scrollDirection === "up") {
-      setShow(false);
+    if (window.scrollY !== 0) {
+      if (scrollDirection === "up") {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
     } else {
       setShow(true);
     }

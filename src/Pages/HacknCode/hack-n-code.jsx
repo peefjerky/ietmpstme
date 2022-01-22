@@ -11,7 +11,7 @@ const Hack_n_code = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
     >
       <Hnc_header />
       <Hnc_prize />
