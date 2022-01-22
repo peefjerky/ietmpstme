@@ -1,26 +1,28 @@
-import React, { useEffect } from "react";
+import React /* , { useEffect }  */ from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../App.css";
 import "boxicons";
-import AOS from "aos";
-import "aos/dist/aos.css";
+/* import AOS from "aos";
+import "aos/dist/aos.css"; */
 import "../css/about.scss";
 
 const About = () => {
-  useEffect(() => {
+  /*   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []); */
   return (
-    <div id="aboutContainer" data-aos="fade-up" data-aos-easing="ease-in-out">
+    <div
+      id="aboutContainer" /* data-aos="fade-up" data-aos-easing="ease-in-out" */
+    >
       <div className="row">
         <div className="col-sm-12 col-md-6 col-lg-6 text-center">
           <div
             className="card"
-            data-aos="slide-right"
+            /*  data-aos="slide-right"
             data-aos-easing="ease-in-out"
-            data-aos-duration="2000"
+            data-aos-duration="2000" */
           >
             <div className="card-body">
               <h1 className="card-title pricing-card-title">
@@ -41,9 +43,9 @@ const About = () => {
         <div className="col-sm-12 col-md-6 col-lg-6 text-center ">
           <div
             className="card"
-            data-aos="slide-left"
+            /* data-aos="slide-left"
             data-aos-easing="ease-in-out"
-            data-aos-duration="2000"
+            data-aos-duration="2000" */
           >
             <div className="card-body">
               <h1 className="card-title pricing-card-title">

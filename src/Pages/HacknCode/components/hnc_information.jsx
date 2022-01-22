@@ -1,23 +1,23 @@
-import React, { useEffect } from "react";
+import React /* , { useEffect } */ from "react";
 import "../../../css/hnc_information.scss";
 import Asset1 from "../../../Assets/SVG/Asset1.svg";
-import AOS from "aos";
-import "aos/dist/aos.css";
+/* import AOS from "aos";
+import "aos/dist/aos.css"; */
 
 const Hnc_information = () => {
-  useEffect(() => {
+  /*  useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []); */
   return (
     <div className="container-fluid my-5" id="hncInformationContainer">
       <div className="row mx-lg-5 mx-md-5 mx-sm-3">
         <div className="col-lg-6 col-md-12 col-lg">
           <div
             className="card"
-            data-aos="slide-right"
+            /* data-aos="slide-right"
             data-aos-easing="ease-in-out"
-            data-aos-duration="800"
+            data-aos-duration="800" */
           >
             <div className="card-body">
               <h2 className="card-title p-2">Why participate?</h2>
@@ -38,9 +38,9 @@ const Hnc_information = () => {
           </div>
           <div
             className="card my-5"
-            data-aos="slide-right"
+            /*  data-aos="slide-right"
             data-aos-easing="ease-in-out"
-            data-aos-duration="800"
+            data-aos-duration="800" */
           >
             <div className="card-body">
               <h2 className="card-title p-2">Who can participate?</h2>

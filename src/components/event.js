@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React /* , { useEffect } */ from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 /* import Modal from "./modalb4"; */
 import "../css/events.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
+/* import AOS from "aos";
+import "aos/dist/aos.css"; */
 import "boxicons";
 import "./tinglejs.js";
 import { Consumer } from "../context";
@@ -12,10 +12,10 @@ import EventCard from "./eventCard";
 /* import {useRef} from "react"; */
 
 const Event = () => {
-  useEffect(() => {
+  /* useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []); */
 
   return (
     <Consumer>
@@ -25,7 +25,7 @@ const Event = () => {
           <div
             className="container-fluid my-5 justify-content-center"
             id="eventContainer"
-            data-aos="fade-up"
+            /*   data-aos="fade-up" */
           >
             <div className="row">
               <div className="container-fluid my-2">

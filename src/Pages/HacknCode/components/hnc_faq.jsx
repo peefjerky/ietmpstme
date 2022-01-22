@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+import React /* , { useEffect } */ from "react";
 import "../../../css/hnc_faq.scss";
 import Hnc_faq_accordian from "./hnc_faq_accordian";
 import { Consumer } from "../../../context.js";
-import AOS from "aos";
-import "aos/dist/aos.css";
+/* import AOS from "aos";
+import "aos/dist/aos.css"; */
 const Hnc_faq = () => {
-  useEffect(() => {
+  /*   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []); */
 
   return (
     <Consumer>
@@ -20,7 +20,7 @@ const Hnc_faq = () => {
               <h1 className="pb-3 text-center">FAQs</h1>
               <div
                 className="col-sm-12 col-md-6 col-lg-6"
-                data-aos="slide-right"
+                /*  data-aos="slide-right" */
               >
                 {hnc_faqs.slice(0, 4).map((hncfaqs) => (
                   <div key={hncfaqs.id} className="align-items-center ">
@@ -34,7 +34,7 @@ const Hnc_faq = () => {
               </div>
               <div
                 className="col-sm-12 col-md-6 col-lg-6"
-                data-aos="slide-left"
+                /* data-aos="slide-left" */
               >
                 {hnc_faqs.slice(4, 8).map((hncfaqs) => (
                   <div key={hncfaqs.id} className="align-items-center ">
