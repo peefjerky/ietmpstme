@@ -235,9 +235,9 @@ a:hover {
 
 .circle2hide {
   position: absolute;
-  height: 120vh;
-  width: 80vw;
-  top: 27%;
+  height: 70vh;
+  width: 60vw;
+  top: 35%;
   right: -50%;
   border-radius: 50%;
   background: #03001e; /* fallback for old browsers */
@@ -257,7 +257,7 @@ a:hover {
   /* background: linear-gradient(53deg, #f1636a, #57ffb9); */
   /* background-size: 400% 400%; */
   animation: ChangeColor 10s ease-in-out infinite;
-  filter: blur(45px);
+  filter: blur(20px);
 }
 
 /* ! ==========> khush <========== */

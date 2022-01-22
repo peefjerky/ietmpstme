@@ -102,18 +102,29 @@ function App() {
         <div className={defBg}>
           <motion.div
             className={defCircle1}
+            /* cy={"-100vh"} */
             initial={{ y: "-100vh" }}
+            /*     y={"-100vh"} */
             animate={{ y: "0vh" }}
+            whileInView={{ scale: 1.3 }}
             transition={{
               duration: 1,
               delay: 0.4,
               ease: "easeInOut",
-              /*  repeat: "Infinity",
+              /* repeat: "Infinity",
               repeatType: "reverse", */
             }}
           ></motion.div>
-          <div
+          <motion.div
             className={defCircle2}
+            whileInView={{ scale: 1.8 }}
+            transition={{
+              duration: 1,
+              delay: 0.4,
+              ease: "easeInOut",
+              repeat: "Infinity",
+              repeatType: "reverse",
+            }}
             /* initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -122,7 +133,7 @@ function App() {
               repeat: "Infinity",
               repeatType: "reverse",
             }} */
-          ></div>
+          ></motion.div>
           <div className={defCircle3}></div>
 
           <div className="foreground" id="toTop">
