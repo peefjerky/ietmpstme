@@ -43,6 +43,7 @@ function App() {
 
   const [defGlass, setGlass] = useState("glass");
   const [defNav, setNav] = useState("Navbar");
+  const [defBoxIcon, setBoxIcon] = useState("#a046b4");
   const [defGradient, setGradient] = useState("footerGradient");
   const [defFooter, setFooter] = useState("footer");
   const [defBg, setBg] = useState("background");
@@ -53,6 +54,7 @@ function App() {
   const onRouteChange = useCallback(() => {
     setGlass("glass2");
     setNav("Navbar2");
+    setBoxIcon("#c3c4ff");
     setGradient("footerGradient2");
     setFooter("footer2");
     setBg("background2");
@@ -62,6 +64,7 @@ function App() {
   }, [
     setGlass,
     setNav,
+    setBoxIcon,
     setGradient,
     setFooter,
     setBg,
@@ -73,6 +76,7 @@ function App() {
   const revertChanges = useCallback(() => {
     setGlass("glass");
     setNav("Navbar");
+    setBoxIcon("#a046b4");
     setGradient("footerGradient");
     setFooter("footer");
     setBg("background");
@@ -82,6 +86,7 @@ function App() {
   }, [
     setGlass,
     setNav,
+    setBoxIcon,
     setGradient,
     setFooter,
     setBg,
@@ -164,7 +169,11 @@ function App() {
               >
                 Changebg
               </button> */}
-            <NavBar data={onRouteChange} defaultNav={defNav} />
+            <NavBar
+              data={onRouteChange}
+              defaultNav={defNav}
+              defaultBoxIcon={defBoxIcon}
+            />
             <section className={defGlass}>
               <AnimatePresence>
                 <Routes anilocation={AniLocation} key={AniLocation.key}>

@@ -72,13 +72,17 @@ const NavBar = (props) => {
           data-bs-toggle="collapse"
           data-bs-target="#collapseNav"
         >
-          <box-icon name="menu" color="black" crossOrigin></box-icon>
+          <box-icon
+            name="menu"
+            color={props.defaultBoxIcon}
+            crossOrigin
+          ></box-icon>
         </button>
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav">
             <ScrollLink
               to="aboutContainer"
-              className="nav-item nav-link my-auto"
+              className="nav-item nav-link my-auto mx-1"
               spy={true}
               smooth={true}
               offset={-50}

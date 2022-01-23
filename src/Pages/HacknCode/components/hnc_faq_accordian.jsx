@@ -9,7 +9,7 @@ const Hnc_faq_accordian = (props) => {
     <div className="col-lg-12 col-12 mx-auto co-md-12 mt-3 align-items-center">
       <div className="accordion" id="accordionPanelsStayOpenExample">
         <div className="accordion-item">
-          <h2 className="accordion-header" id={accordianHeading}>
+          <h3 className="accordion-header" id={accordianHeading}>
             <div
               className="accordion-button"
               type="button"
@@ -20,7 +20,7 @@ const Hnc_faq_accordian = (props) => {
             >
               {question}
             </div>
-          </h2>
+          </h3>
           <div
             id={accordianAriaControls}
             className="accordion-collapse collapse hide"

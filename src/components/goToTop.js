@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 // import { useLocation } from "react-router-dom";
 import "../App";
-import { Link as ScrollLink } from "react-scroll";
+/* import { Link as ScrollLink } from "react-scroll"; */
 /* import { escapeSelector, isWindow } from "jquery"; */
 
 export default function GoToTop() {
@@ -20,16 +20,21 @@ export default function GoToTop() {
 
   //return null;
   return (
+    /* <ScrollLink to="toTop" className="upIcon" spy={true} smooth={true}> */
     <div
       className="toTopButton"
       style={{
         visibility: visible ? "visible" : "hidden",
         opacity: visible ? 1 : 0,
       }}
+      onClick={() => {
+        window.scrollTo({ top: 0, behavious: "smooth" });
+      }}
     >
-      <ScrollLink to="toTop" className="upIcon" spy={true} smooth={true}>
+      <div className="upIcon">
         <box-icon name="up-arrow" color="white" crossOrigin></box-icon>
-      </ScrollLink>
+      </div>
     </div>
+    /* </ScrollLink> */
   );
 }

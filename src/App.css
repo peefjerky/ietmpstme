@@ -288,8 +288,8 @@ a:hover {
     overflow-x: hidden;
   }
   .toTopButton {
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px !important;
+    right: 20px !important;
   }
   .circle2hide {
     right: -40%;
@@ -318,7 +318,7 @@ a:hover {
   -webkit-backdrop-filter: blur(12px); */
   position: fixed;
   bottom: 40px;
-  right: 50px;
+  right: 60px;
   z-index: 14;
   transition: 700ms ease-in-out;
   cursor: pointer;
@@ -328,7 +328,7 @@ a:hover {
   width: 50%;
   height: 50%;
   padding: 17.5px !important;
-  position: absolute;
+  position: relative;
 }
 
 Link {

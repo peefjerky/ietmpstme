@@ -30,7 +30,9 @@ const Hnc_prize = () => {
           <div className="badge mb-4 text-start">PRIZE POOL</div>
         </div>
         <div className="col-lg-6 col-sm-12 col-md-6 align-items-center ">
-          <h2 className="pb-3 text-left">Win exciting prizes!</h2>
+          <h1 className="pb-3 text-left">
+            Win exciting <span>prizes!</span>
+          </h1>
           <p className="my-1">
             Participate and get a chance to win exciting cash prizes and maybe
             even amazing goodies from our sponsors.

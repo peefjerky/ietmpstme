@@ -31,7 +31,7 @@ const Hnc_information = () => {
             /* viewport={{ once: true }} */
           >
             <div className="card-body">
-              <h2 className="card-title p-2">Why participate?</h2>
+              <h3 className="card-title p-2">Why participate?</h3>
               <hr />
               <p className="card-text">
                 Whether you have just started your coding journey or you are
@@ -58,7 +58,7 @@ const Hnc_information = () => {
             /*  viewport={{ once: true }} */
           >
             <div className="card-body">
-              <h2 className="card-title p-2">Who can participate?</h2>
+              <h3 className="card-title p-2">Who can participate?</h3>
               <hr />
               <p className="card-text">
                 HacknCode is an innovative learning platform that offers
@@ -78,7 +78,7 @@ const Hnc_information = () => {
             viewport={{ once: true }}
           >
             <div className="card-body">
-              <h2 className="card-title p-2">Who can participate?</h2>
+              <h3 className="card-title p-2">Who can participate?</h3>
               <hr />
               <p className="card-text">
                 HacknCode is an innovative learning platform that offers

@@ -1,9 +1,9 @@
 import React from "react";
 import "../css/eventcard.scss";
 export default function EventCard(props) {
-  const { id, title, excerpt, imageUrl, backgroundcolor } = props;
+  const { title, excerpt, imageUrl, backgroundcolor } = props;
   /*   let eventModals = "#myModal" + `${id}`; */
-  console.log(id);
+  /* console.log(id); */
 
   return (
     <div className="container" id="eventCard">

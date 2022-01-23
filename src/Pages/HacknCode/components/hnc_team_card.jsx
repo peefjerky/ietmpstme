@@ -1,9 +1,9 @@
 import React from "react";
 import "../../../css/hnc_team.scss";
 export default function Hnc_team_card(props) {
-  const { id, name, position, imageUrl } = props;
+  const { name, position, imageUrl } = props;
   /*   let eventModals = "#myModal" + `${id}`; */
-  console.log(id);
+  /* console.log(id); */
   return (
     <div className="container" id="hncTeamCardContainer">
       <div className="row gy-2">

@@ -11,7 +11,7 @@ const LocationChange = (props) => {
   };
 
   useEffect(() => {
-    console.log(pathname + "This is being rendered");
+    /*   console.log(pathname + "This is being rendered"); */
     ScrollToTop();
     if (pathname === "/hackncode") {
       props.sexyfunctions();
