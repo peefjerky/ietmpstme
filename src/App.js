@@ -119,7 +119,7 @@ function App() {
           ></motion.div>
           <motion.div
             className={defCircle2}
-            whileInView={{ scale: 1.8 }}
+            whileInView={{ scale: 1.8, rotate: 360 }}
             transition={{
               duration: 2,
               delay: 0.4,

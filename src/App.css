@@ -236,9 +236,9 @@ a:hover {
 .circle2hide {
   position: absolute;
   height: 70vh;
-  width: 60vw;
+  width: 70vh;
   top: 30%;
-  right: -50%;
+  right: -20%;
   border-radius: 50%;
   background: #03001e; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -292,7 +292,8 @@ a:hover {
     right: 20px !important;
   }
   .circle2hide {
-    right: -40%;
+    right: -70%;
+    top: 40%;
   }
 }
 
