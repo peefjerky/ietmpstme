@@ -4,6 +4,7 @@ export default function EventCard(props) {
   const { id, title, excerpt, imageUrl, backgroundcolor } = props;
   /*   let eventModals = "#myModal" + `${id}`; */
   console.log(id);
+
   return (
     <div className="container" id="eventCard">
       <div className="row gy-2">

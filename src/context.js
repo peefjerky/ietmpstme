@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+/* import BotsonEventCard from "./Assets/Images/BotsonEventCard.JPG";
+import HnCEventCard from "./Assets/Images/HnCEventCard.JPG";
+import IETalksEventCard from "./Assets/Images/IETalksEventCard.JPG";
+import WorkshopEventCard from "./Assets/Images/WorkshopEventCard.JPG"; */
 const Context = React.createContext();
 
 export class Provider extends Component {
@@ -10,8 +14,7 @@ export class Provider extends Component {
         excerpt:
           "Hack-n-Code is a high-speed hackathon, during which participants code a solution to a problem statement presented before them.",
         body: "Lorem ipsum dolor sit amet",
-        imageUrl:
-          "https://lh3.googleusercontent.com/mCMA0Ylyw5xBBiNjW_rObmMPmSIc0Hsu20sVsm8gxqonpI27lQs3SE4fFBoSCHXicZOUXmw2JFsu6M_ZtAYmJvzhHDRom-vFQaHj-8doJLr1NBvA2RutGLI_u2ghR-JGlVuQJdfVpILjnUn7YfzfBMdAkSdV1txFuOkARvCtXDpWIVWi0qlNzhgxO6Agk1KwKPfAJq575DlFn8s7FbdxFGDJ1jr1VLs87qpvQNI7La0sKoowm-mWNquI_yxptNVE-Txx7e7UbCvvtNCFqs3I2VGSav_gwH2OjJLKQp6QbxJTKAEzepI0R6NIwZtXtKp7sD2fNCijQnI3heHteQO_FYGWYxNDEzGUuGGHv1w2RUnFh5eho2J0Qurf9ZStu13Rd3_UtGAwEBRlQd2mE3bt2rOeQgh6apixI3VlCbpBd02VLmxSQLHlUj40dneR1shOs2lZGRx2s5NcsJ2sXeDV4Wd1H7fhSqZrGghmKYuRwtJh0nONadPDs3mb4Gn0YvGUhV66MR2nryF4gB3myJTVCd3rEsKunRPImgBk8puxdIIrckPRW7b15l-T0Sn_UmikXv8xXVLzpgq3b_LKJDsBkr-qE36nTZPC1xtyZ537wE-9BZOitnW97ippfCnyPZXXu2mS00uGhzOY9KIxRbdoQd5jl3OfirDfsPF8TYoodL9-5FoCI9g8b6BDuz4Ck7lxvS_wsTUwF6_Kx9NfK8t-DDLA=w2522-h1680-no?authuser=0",
+        imageUrl: "HnCImageCard",
         backgroundcolor: "rgba(170, 200, 30, 0.6)",
       },
       {
