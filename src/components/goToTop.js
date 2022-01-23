@@ -28,7 +28,7 @@ export default function GoToTop() {
         opacity: visible ? 1 : 0,
       }}
       onClick={() => {
-        window.scrollTo({ top: 0, behavious: "smooth" });
+        window.scrollTo({ top: 0, behaviour: "smooth" });
       }}
     >
       <div className="upIcon">
