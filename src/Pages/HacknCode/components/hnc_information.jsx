@@ -17,11 +17,20 @@ const Hnc_information = () => {
           className="col-lg-6 col-md-12 col-lg overflow-scroll"
           id="hncCardContainer"
         >
-          <h1 className="my-5 pt-5 text-center">
+          <div className="mb-5 pt-5 text-center">
+            <box-icon
+              name="mouse"
+              animation="fade-down"
+              color="#c3c4ff"
+              size="40px"
+            ></box-icon>
+            <h3 className="mt-3 scrollIcon">SCROLL</h3>
+          </div>
+          <h1 className="text-center">
             Get to learn about <span>competitive coding</span> and much more!
           </h1>
           <motion.div
-            className="card mt-2 mx-sm-2"
+            className="card mt-5 mx-sm-2"
             /* data-aos="slide-right"
             data-aos-easing="ease-in-out"
             data-aos-duration="800" */
@@ -91,7 +100,8 @@ const Hnc_information = () => {
             </div>
           </motion.div> */}
         </div>
-        <div className="col-lg-6 col-md-12 col-lg-6 align-items-center">
+
+        <div className="col-lg-6 col-md-6 col-sm-12 align-items-center">
           <img src={Asset1} className="img-fluid p-5" alt="Hnc_information" />
         </div>
       </div>
