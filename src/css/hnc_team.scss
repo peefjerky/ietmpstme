@@ -1,0 +1,101 @@
+#hncTeamContainer {
+  /*  position: relative; */
+  color: rgb(195, 196, 255);
+  h1 {
+    font-family: "Montserrat", serif;
+    /*  font-size: 3em; */
+    font-weight: 600;
+    /* text-decoration: underline; */
+    /*   text-decoration-color: rgba(160, 70, 180, 0.8); */
+    text-decoration-thickness: 5px;
+    padding: 3px;
+  }
+  mask-image: linear-gradient(
+    to right,
+    transparent -10%,
+    black,
+    transparent 110%
+  );
+
+  -webkit-mask-image: -webkit-linear-gradient(
+    to right,
+    transparent 0%,
+    black,
+    transparent 100%
+  );
+}
+
+#hncTeamCardContainer {
+  .card {
+    background: linear-gradient(
+      135deg,
+      rgba(107, 107, 107, 0.3) 0%,
+      rgba(0, 0, 0, 0.2) 0%
+    );
+    margin: 5px;
+
+    /*  height: 300px; */
+    /* background: rgba(255, 255, 255, 0.25); */
+    // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); */
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    /* position: relative; */
+    /*     overflow-y: visible; */
+    overflow:hidden
+    /*   color: #ffffff; */
+
+    .card-title {
+      font-family: "Montserrat", serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      overflow-y: hidden;
+    }
+    img {
+      /*  position: absolute;
+      top: -50%; */
+      border-radius: 20px;
+      box-shadow: 0px 12px 32px -20px rgba(195, 196, 255, 1);
+      padding: 5px;
+    }
+    .card-body {
+      padding: 15px;
+      font-family: "Montserrat";
+      font-size: 1.2em;
+    }
+    .btn {
+      border-radius: 2.5rem;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      background: #a177ff;
+      padding: 6px 15px;
+      margin-top: 5px;
+
+      i {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+
+    .btn:hover {
+      background: #8c5bff;
+    }
+    transition: 500ms ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: 500ms ease-in-out;
+  }
+  @media (max-width: 768px) {
+    .card {
+      /*  margin: 30px 0 30px 0; */
+      font-size: 0.72em;
+    }
+  }
+}
