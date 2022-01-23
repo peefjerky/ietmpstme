@@ -237,7 +237,7 @@ a:hover {
   position: absolute;
   height: 70vh;
   width: 60vw;
-  top: 35%;
+  top: 30%;
   right: -50%;
   border-radius: 50%;
   background: #03001e; /* fallback for old browsers */

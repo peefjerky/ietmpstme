@@ -13,8 +13,8 @@ export default function EventCard(props) {
             style={{ backgroundColor: `${backgroundcolor}` }}
           >
             <img
-              className="card-img-top"
-              style={{ backgroundSize: "scale-down" }}
+              className="card-img-top img-fluid"
+              /* style={{ backgroundSize: "scale-down" }} */
               src={imageUrl}
               alt={title}
             />

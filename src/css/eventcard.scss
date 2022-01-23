@@ -11,8 +11,8 @@
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.8);
     /*   color: #ffffff; */
-    backdrop-filter: blur(500px);
-    -webkit-backdrop-filter: blur(500px);
+    /*    backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(500px) */
 
     .card-title {
       font-family: "Playfair Display", serif;
@@ -25,6 +25,9 @@
     img {
       border-radius: 20px;
       padding: 5px;
+      /*  max-height: 200px;
+      width: auto;
+      background-size: scale-down; */
     }
     .card-body {
       padding: 15px;

@@ -12,7 +12,7 @@ const Hnc_prize = () => {
 
   return (
     <div className="container-fluid my-5" id="hncPrizeContainer">
-      <div className="row mx-lg-5 mx-md-5 mx-sm-3 mb-5">
+      <div className="row mx-lg-5 mx-md-5 mx-sm-3 mb-5 align-items-center">
         <div className="col-lg-6 col-sm-12 col-md-6 align-items-center mb-5 text-center">
           <div className="countupnumber">
             {/*  <CountUp
