@@ -40,12 +40,15 @@
 @keyframes mug {
   0% {
     transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
   }
   50% {
     transform: translate(0%, -5%);
+    -webkit-transform: translate(0%, -5%);
   }
   100% {
     transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
   }
 }
 
