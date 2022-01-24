@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+
 import "../css/laptopanimation.scss";
 const LaptopAnimation = () => {
   return (
@@ -484,7 +484,7 @@ const LaptopAnimation = () => {
             fill="url(#linear-gradient-5)"
           />
         </g>
-        <motion.g
+        <g
           id="Animate_Mug"
           data-name="Animate Mug"
           initial={{ y: 0 }}
@@ -586,7 +586,7 @@ const LaptopAnimation = () => {
             fill="#fff"
             opacity=".5"
           />
-        </motion.g>
+        </g>
         <path
           transform="translate(-158.41 -155.31)"
           d="m667.86 835.53-317.16-183c-4.61-2.64-4-7.25 1.32-10.54l203.6-117.51c5.27-3.08 13.4-3.51 18-0.66l317.17 183.18c4.61 2.64 4.17 7.25-1.32 10.32l-203.6 117.55c-5.27 3.07-13.4 3.51-18.01 0.66z"
