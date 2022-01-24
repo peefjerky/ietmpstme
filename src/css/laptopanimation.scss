@@ -26,8 +26,18 @@
     filter: drop-shadow(0px 0px 0px transparent);
   }
 }
+@-webkit-keyframes hnc {
+  0% {
+    -webkit-filter: drop-shadow(0px 0px 0px transparent);
+  }
+  50% {
+    -webkit-filter: drop-shadow(10px 10px 25px #57ffb9);
+  }
+  100% {
+    -webkit-filter: drop-shadow(0px 0px 0px transparent);
+  }
+}
 @keyframes mug {
-  /*  transform: translate(0, -100px); */
   0% {
     transform: translate(0%, 0%);
   }
@@ -36,5 +46,17 @@
   }
   100% {
     transform: translate(0%, 0%);
+  }
+}
+
+@-webkit-keyframes mug {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -5%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
   }
 }
