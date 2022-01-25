@@ -19,6 +19,7 @@
     letter-spacing: 4px;
   }
   #hncCardContainer {
+    overflow-x: hidden;
     height: 550px;
     /*   mask-image: -webkit-gradient(
       linear,
@@ -83,7 +84,18 @@
   }
 }
 #hncCardContainer::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0;
+  /* -webkit-appearance: visible; */
+  width: 2px;
+  height: 0px;
+  box-shadow: inset 2px 2px 2px rgb(195, 255, 215);
+  background-color: rgb(195, 196, 255);
+}
+/* #hncCardContainer::-webkit-scrollbar-track {
+  width: 4px;
+  height: 0px;
+  background-color: rgb(237, 245, 242);
+} */
+#hncCardContainer::-webkit-scrollbar-thumb {
+  /* -webkit-appearance: visible; */
+  background-color: rgb(87, 255, 185);
 }

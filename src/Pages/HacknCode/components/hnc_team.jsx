@@ -39,7 +39,7 @@ const Hnc_team = () => {
               </div>
 
               {/* Put your code after this comment */}
-              <div className="row mx-auto d-flex flex-nowrap overflow-auto scrollbar align-items-center">
+              <div className="row mx-auto d-flex flex-nowrap overflow-auto scrollbar align-items-center" id="HnCScroller">
                 {hnc_team.slice(0, 5).map((hnc_team) => (
                   <div
                     key={hnc_team.id}
