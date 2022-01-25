@@ -1,5 +1,11 @@
 #Animate_Mug {
-  animation: mug 2s ease-in-out;
+  /* animation: mug 2s ease-in-out; */
+  -webkit-animation-name: mug;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-name: mug;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
@@ -7,7 +13,13 @@
 }
 
 #HNC_ANIMATION {
-  animation: hnc 2s ease-in-out;
+  /*  animation: hnc 2s ease-in-out; */
+  -webkit-animation-name: hnc;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-name: hnc;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
