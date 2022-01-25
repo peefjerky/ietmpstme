@@ -25,10 +25,10 @@
   );
 
   -webkit-mask-image: -webkit-linear-gradient(
-    to right,
+    180deg,
     transparent 10%,
-    black,
-    transparent 110%
+    #000,
+    transparent 100%
   );
 }
 
