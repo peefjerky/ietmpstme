@@ -1,4 +1,10 @@
 #hncTeamContainer {
+  .scrollIcon {
+    color: rgb(195, 255, 215);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
   /*  position: relative; */
   color: rgb(195, 196, 255);
   h1 {
@@ -11,7 +17,7 @@
     padding: 3px;
     color: rgb(195, 196, 255);
   }
-  /*  mask-image: linear-gradient(
+  mask-image: linear-gradient(
     to right,
     transparent -10%,
     black,
@@ -23,10 +29,29 @@
     transparent -10%,
     black,
     transparent 110%
-  ); */
+  );
 }
 
 #hncTeamCardContainer {
+  img {
+    /*  position: absolute;
+      top: -50%; */
+    border-radius: 20px;
+    padding: 5px;
+    width: auto;
+    height: 200px;
+    /* background-position: center center;
+      background-repeat: no-repeat; */
+    object-fit: cover;
+  }
+  .card-title {
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow-y: hidden;
+  }
   .card {
     background: linear-gradient(
       135deg,
@@ -35,7 +60,7 @@
     );
     margin: 5px;
 
-    /*  height: 300px; */
+    height: 350px;
     /* background: rgba(255, 255, 255, 0.25); */
     // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     /* backdrop-filter: blur(4px);
@@ -44,58 +69,51 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
     /* position: relative; */
     /*     overflow-y: visible; */
-    overflow:hidden
-    /*   color: #ffffff; */
-
-    .card-title {
-      font-family: "Montserrat", serif;
-      font-weight: 600;
-      letter-spacing: 2px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      overflow-y: hidden;
-    }
-    img {
-      /*  position: absolute;
-      top: -50%; */
-      border-radius: 20px;
-      padding: 5px;
-    }
-    .card-body {
-      padding: 15px;
-      font-family: "Montserrat";
-      font-size: 1.2em;
-    }
-    .btn {
-      border-radius: 2.5rem;
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: bold;
-      border: none;
-      background: #a177ff;
-      padding: 6px 15px;
-      margin-top: 5px;
-
-      i {
-        font-size: 14px;
-        font-weight: bold;
-        margin-left: 5px;
-      }
-    }
-
-    .btn:hover {
-      background: #8c5bff;
-    }
+    overflow: hidden;
     transition: 500ms ease-in-out;
+    /*   color: #ffffff; */
   }
+
+  .card-body {
+    padding: 15px;
+    font-family: "Montserrat";
+    font-size: 1.2em;
+  }
+  .card-text {
+    color: rgb(195, 255, 215);
+  }
+  .btn {
+    border-radius: 2.5rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background: #a177ff;
+    padding: 6px 15px;
+    margin-top: 5px;
+
+    i {
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+  }
+
+  .btn:hover {
+    background: #8c5bff;
+  }
+  transition: 500ms ease-in-out;
+
   .card:hover {
     transform: scale(1.05);
     transition: 500ms ease-in-out;
   }
   @media (max-width: 768px) {
-    .card {
-      /*  margin: 30px 0 30px 0; */
+    /* .card {
+       margin: 30px 0 30px 0;
       font-size: 0.72em;
-    }
+       height: auto;
+      width: 180px;
+    } */
   }
 }

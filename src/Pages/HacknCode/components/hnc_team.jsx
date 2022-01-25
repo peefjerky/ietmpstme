@@ -25,16 +25,25 @@ const Hnc_team = () => {
             className="container-fluid my-5 justify-content-center"
             id="hncTeamContainer"
           >
-            <div className="row ">
+            <div className="row">
               <div className="container-fluid my-2">
                 <h1 className="text-center center-square">Team</h1>
+                <div className="mb-2 text-center">
+                  <h5 className="scrollIcon">SCROLL</h5>
+                  <box-icon
+                    name="right-arrow-alt"
+                    color="#c3c4ff"
+                    size="30px"
+                  ></box-icon>
+                </div>
               </div>
+
               {/* Put your code after this comment */}
               <div className="row mx-auto d-flex flex-nowrap overflow-auto scrollbar align-items-center">
-                {hnc_team.slice(0, 1).map((hnc_team) => (
+                {hnc_team.slice(0, 5).map((hnc_team) => (
                   <div
                     key={hnc_team.id}
-                    className="col-12 col-md-4 col-lg-3 mx-auto"
+                    className="col-sm-8 col-md-5 col-lg-3 mx-auto"
                   >
                     <Hnc_team_card
                       id={hnc_team.id}

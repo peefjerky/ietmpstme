@@ -176,43 +176,43 @@ export class Provider extends Component {
     hnc_team: [
       {
         id: 1,
-        name: "Shresth Agrawal",
-        position: "Head of Public Relations",
+        name: "Rashi Jain",
+        position: "Chairperson",
         imgUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/HOPR_HNC_Team.jpg",
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/CP_HNC_Team.jpg",
       },
       {
         id: 2,
         name: "Pratyaksh Jain",
         position: "Vice Chairperson",
         imgUrl:
-          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/VCP_HNC_Team.jpg",
       },
       {
         id: 3,
         name: "Sanskriti Sharma",
         position: "Secretarty",
         imgUrl:
-          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/Secretary_HNC_Team.jpg",
       },
       {
         id: 4,
         name: "Siddharth Sadashiv",
         position: "Treasurer",
         imgUrl:
-          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/Treasurer_HNC_Team.jpg",
       },
       {
         id: 5,
-        name: "Preet Jha",
-        position: "Head of Creatives",
+        name: "Shresth Agrawal",
+        position: "Head of Public Relations",
         imgUrl:
-          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/HOPR_HNC_Team.jpg",
       },
       {
         id: 6,
-        name: "Shresth Agrawal",
-        position: "Head of Public Relations",
+        name: "Preet Jha",
+        position: "Head of Creatives",
         imgUrl:
           "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
