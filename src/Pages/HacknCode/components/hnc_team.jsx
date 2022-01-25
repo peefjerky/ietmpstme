@@ -42,7 +42,9 @@ const Hnc_team = () => {
               <div className="container-fluid my-2">
                 <h1 className="text-center center-square">Team</h1>
                 <div className="mb-2 text-center">
-                  <h5 className="scrollIcon">SCROLL</h5>
+                  <h5 className="scrollIcon" onClick={scrollRight}>
+                    SCROLL
+                  </h5>
                   <box-icon
                     name="left-arrow-alt"
                     color="#c3c4ff"

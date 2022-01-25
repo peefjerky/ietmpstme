@@ -1,8 +1,15 @@
 import React, { Component } from "react";
-/* import BotsonEventCard from "./Assets/Images/BotsonEventCard.JPG";
+import BotsonEventCard from "./Assets/Images/BotsonEventCard.JPG";
 import HnCEventCard from "./Assets/Images/HnCEventCard.JPG";
 import IETalksEventCard from "./Assets/Images/IETalksEventCard.JPG";
-import WorkshopEventCard from "./Assets/Images/WorkshopEventCard.JPG"; */
+import WorkshopEventCard from "./Assets/Images/WorkshopEventCard.JPG";
+
+import CP_HNC_Team from "./Assets/Images/CP_HNC_Team.jpg";
+import VCP_HNC_Team from "./Assets/Images/VCP_HNC_Team.jpg";
+import Secretary_HNC_Team from "./Assets/Images/Secretary_HNC_Team.jpg";
+import Treasurer_HNC_Team from "./Assets/Images/Treasurer_HNC_Team.jpg";
+import HOPR_HNC_Team from "./Assets/Images/HOPR_HNC_Team.jpg";
+
 const Context = React.createContext();
 
 export class Provider extends Component {
@@ -14,8 +21,9 @@ export class Provider extends Component {
         excerpt:
           "Hack-n-Code is a high-speed hackathon, during which participants code a solution to a problem statement presented before them.",
         body: "Lorem ipsum dolor sit amet",
-        imageUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/HnCEventCard.JPG",
+        /* imageUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/HnCEventCard.JPG", */
+        imageUrl: HnCEventCard,
         backgroundcolor: "rgba(170, 200, 30, 0.6)",
       },
       {
@@ -24,8 +32,9 @@ export class Provider extends Component {
         excerpt:
           "Our flagship event, BOTSON, is a 2-day workshop that trains the participants in making a fully functional bot themselves.",
         body: "Lorem ipsum dolor sit amet",
-        imageUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/BotsonEventCard.JPG",
+        /*  imageUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/BotsonEventCard.JPG", */
+        imageUrl: BotsonEventCard,
         backgroundcolor: "rgba(160, 70, 180, 0.6)",
       },
 
@@ -35,8 +44,9 @@ export class Provider extends Component {
         excerpt:
           "IETalks are webinars in which a highly trained professional speaks regarding the working of the enormous industrial world and its nuances",
         body: "",
-        imageUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/IETalksEventCard.JPG",
+        /* imageUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/IETalksEventCard.JPG", */
+        imageUrl: IETalksEventCard,
         backgroundcolor: "rgba(34, 187, 224, 0.6)",
       },
       {
@@ -45,8 +55,9 @@ export class Provider extends Component {
         excerpt:
           "Our workshop aims to teach participants the concepts of a subject through practical demonstrations by an expert in the domain",
         body: "",
-        imageUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/WorkshopEventCard.JPG",
+        /* imageUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/WorkshopEventCard.JPG", */
+        imageUrl: WorkshopEventCard,
         backgroundcolor: "rgba(255, 152, 80, 0.6)",
       },
     ],
@@ -178,36 +189,41 @@ export class Provider extends Component {
         id: 1,
         name: "Rashi Jain",
         position: "Chairperson",
-        imgUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/CP_HNC_Team.jpg",
+        /* imgUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/CP_HNC_Team.jpg", */
+        imgUrl: CP_HNC_Team,
       },
       {
         id: 2,
         name: "Pratyaksh Jain",
         position: "Vice Chairperson",
-        imgUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/VCP_HNC_Team.jpg",
+        /* imgUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/VCP_HNC_Team.jpg", */
+        imgUrl: VCP_HNC_Team,
       },
       {
         id: 3,
         name: "Sanskriti Sharma",
         position: "Secretarty",
-        imgUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/Secretary_HNC_Team.jpg",
+        /* imgUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/Secretary_HNC_Team.jpg", */
+        imgUrl: Secretary_HNC_Team,
       },
       {
         id: 4,
         name: "Siddharth Sadashiv",
         position: "Treasurer",
-        imgUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/Treasurer_HNC_Team.jpg",
+        /* imgUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/Treasurer_HNC_Team.jpg", */
+        imgUrl: Treasurer_HNC_Team,
       },
       {
         id: 5,
         name: "Shresth Agrawal",
         position: "Head of Public Relations",
-        imgUrl:
-          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/HOPR_HNC_Team.jpg",
+        /* imgUrl:
+          "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/HOPR_HNC_Team.jpg", */
+        imgUrl: HOPR_HNC_Team,
       },
       {
         id: 6,
