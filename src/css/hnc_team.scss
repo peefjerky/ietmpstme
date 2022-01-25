@@ -113,14 +113,13 @@
     } */
   }
 }
-#HnCScroller::-webkit-scrollbar {
-  /* -webkit-appearance: visible; */
+/* #HnCScroller::-webkit-scrollbar {
   height: 2px;
-  /*  box-shadow: inset 2px 2px 2px rgb(195, 255, 215); */
+
   background-color: rgb(195, 196, 255);
 }
 
 #HnCScroller::-webkit-scrollbar-thumb {
-  /* -webkit-appearance: visible; */
   background-color: rgb(87, 255, 185);
 }
+ */

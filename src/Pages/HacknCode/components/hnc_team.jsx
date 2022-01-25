@@ -15,7 +15,20 @@ const Hnc_team = () => {
     AOS.init();
     AOS.refresh();
   }, []); */
-
+  const check = document.querySelector("#HnCScroller");
+  const distance = 400;
+  function scrollRight() {
+    check.scrollBy({
+      left: distance,
+      behavior: "smooth",
+    });
+  }
+  function scrollLeft() {
+    check.scrollBy({
+      left: -distance,
+      behavior: "smooth",
+    });
+  }
   return (
     <Consumer>
       {(value) => {
@@ -31,15 +44,26 @@ const Hnc_team = () => {
                 <div className="mb-2 text-center">
                   <h5 className="scrollIcon">SCROLL</h5>
                   <box-icon
+                    name="left-arrow-alt"
+                    color="#c3c4ff"
+                    size="40px"
+                    onClick={scrollLeft}
+                  ></box-icon>
+                  <box-icon
                     name="right-arrow-alt"
                     color="#c3c4ff"
-                    size="30px"
+                    size="40px"
+                    onClick={scrollRight}
                   ></box-icon>
                 </div>
               </div>
 
               {/* Put your code after this comment */}
-              <div className="row mx-auto d-flex flex-nowrap overflow-auto scrollbar align-items-center" id="HnCScroller">
+
+              <div
+                className="row mx-auto d-flex flex-nowrap overflow-auto scrollbar align-items-center"
+                id="HnCScroller"
+              >
                 {hnc_team.slice(0, 5).map((hnc_team) => (
                   <div
                     key={hnc_team.id}

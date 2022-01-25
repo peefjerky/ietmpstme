@@ -10,7 +10,10 @@ const Hnc_information = () => {
     AOS.init();
     AOS.refresh();
   }, []); */
+
+
   return (
+
     <div className="container-fluid my-5" id="hncInformationContainer">
       <div className="row mx-lg-5 mx-md-5 mx-sm-3 align-items-center">
         <div
