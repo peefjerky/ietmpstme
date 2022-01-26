@@ -1,23 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React /* , { useEffect, useState } */ from "react";
 import "../css/navbar.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import iet_logo from "../images/IET_LOGO.png";
 import "boxicons";
 import { Link as RLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-/* import * as Scroll from "react-scroll"; */
-/* import { useState } from "react"; */
-/* import "../App.css"; */
-/* import Event from "./event.js"; */
-/* let slink = Scroll.Link; */
+
 const NavBar = (props) => {
-  const [show, setShow] = useState(true);
+  console.log("change");
+  /*   const [show, setShow] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [bodyOffset, setBodyOffset] = useState(
     document.body.getBoundingClientRect()
   );
   const [scrollDirection, setScrollDirection] = useState();
+
   const controlNavbar = () => {
     setBodyOffset(document.body.getBoundingClientRect());
     setScrollDirection(lastScrollTop > -bodyOffset.top ? "down" : "up");
@@ -34,11 +31,18 @@ const NavBar = (props) => {
   };
 
   useEffect(() => {
+    console.log("Fire");
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  });
+  }, [show, lastScrollTop, bodyOffset, scrollDirection]); */
+
+  /* const checkthis = document.querySelector("#testtest"); */
+  /* console.log(props.defaultNavLink.link1); */
+  /*   console.log(props.defaultNavLink.defNavLink1);
+  console.log(props.defaultNav); */
+  const show = true;
   return (
     <nav
       className="navbar navbar-expand-sm fixed-top"
@@ -49,14 +53,11 @@ const NavBar = (props) => {
       }}
     >
       <div className="container-fluid mx-3">
-        {/*! Fix the icon  */}
         <a href="/" className="navbar-brand">
           <img
-            src={iet_logo}
+            src={props.defaultNavIcon}
             className="image-fluid"
             alt="iet-logo"
-            // width="3%"
-            // height="3%"
           />
         </a>
         <RLink to="/hackncode">
@@ -64,9 +65,6 @@ const NavBar = (props) => {
             Hack n' Code
           </button>
         </RLink>
-        {/*  <button className="btn ml-auto mx-3" id="demo">
-          Contact Us
-        </button> */}
         <button
           className="navbar-toggler"
           data-bs-toggle="collapse"
@@ -81,22 +79,23 @@ const NavBar = (props) => {
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav">
             <ScrollLink
-              to="aboutContainer"
+              to={props.defaultNavLinks.defNavLink1Id}
               className="nav-item nav-link my-auto mx-1"
               spy={true}
               smooth={true}
               offset={-50}
+              id="testtest"
             >
-              About
+              {/* About */} {props.defaultNavLinks.defNavLink1}
             </ScrollLink>
             <ScrollLink
-              to="eventContainer"
+              to={props.defaultNavLinks.defNavLink2Id}
               className="nav-item nav-link mx-1 my-auto"
               spy={true}
               smooth={true}
               offset={-145}
             >
-              Events
+              {props.defaultNavLinks.defNavLink2}
             </ScrollLink>
 
             {/*  <Link to="/hackncode">

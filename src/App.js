@@ -13,6 +13,8 @@ import Modal from "./components/modalb4";
 import GoToTop from "./components/goToTop";
 import HomePage from "./components/homePage";
 import "./App.css";
+import iet_logo from "./images/IET_LOGO.png";
+import iet_blue from "./Assets/Images/IET_Blue.png";
 import NotFound from "./components/notFound";
 /* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
@@ -35,7 +37,6 @@ import Hack_n_code from "./Pages/HacknCode/hack-n-code";
 
 function App() {
   const AniLocation = useLocation();
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -44,6 +45,7 @@ function App() {
   const [defGlass, setGlass] = useState("glass");
   const [defNav, setNav] = useState("Navbar");
   const [defBoxIcon, setBoxIcon] = useState("#a046b4");
+  const [defNavIcon, setNavIcon] = useState(iet_logo);
   const [defGradient, setGradient] = useState("footerGradient");
   const [defFooter, setFooter] = useState("footer");
   const [defBg, setBg] = useState("background");
@@ -51,16 +53,27 @@ function App() {
   const [defCircle2, setCircle2] = useState("circle2");
   const [defCircle3, setCircle3] = useState("circle3");
 
+  const [defNavLink1, setNavLink1] = useState("About");
+  const [defNavLink2, setNavLink2] = useState("Events");
+  const [defNavLink1Id, setNavLink1Id] = useState("aboutContainer");
+  const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
+
   const onRouteChange = useCallback(() => {
+    console.log("onRouteRender");
     setGlass("glass2");
     setNav("Navbar2");
     setBoxIcon("#c3c4ff");
+    setNavIcon(iet_blue);
     setGradient("footerGradient2");
     setFooter("footer2");
     setBg("background2");
     setCircle1("circle1hide");
     setCircle2("circle2hide");
     setCircle3("circle3hide");
+    setNavLink1("Information");
+    setNavLink2("FAQs");
+    setNavLink1Id("hncInformationContainer");
+    setNavLink2Id("hncFaq");
   }, [
     setGlass,
     setNav,
@@ -71,6 +84,8 @@ function App() {
     setCircle1,
     setCircle2,
     setCircle3,
+    setNavLink1,
+    setNavLink2,
   ]);
 
   const revertChanges = useCallback(() => {
@@ -98,7 +113,7 @@ function App() {
   return (
     <Provider>
       {/*   <GoToTop></GoToTop> */}
-      <LocationChange sexyfunctions={onRouteChange} revert={revertChanges} />
+      <LocationChange apply={onRouteChange} revert={revertChanges} />
 
       <div className="container_main" id="Main">
         <div className={defBg}>
@@ -139,40 +154,18 @@ function App() {
           <div className={defCircle3}></div>
 
           <div className="foreground" id="toTop">
-            {/*  <button
-      <BrowserRouter>
-        <LocationChange
-          sexyfunctions={() => {
-            changeGlass();
-            changeBg();
-            changeCircle1();
-            changeCircle2();
-            changeCircle3();
-            changeGradient();
-            changeFooter();
-            changeNav();
-          }}
-          revert={revertChanges}
-        />
-
-        <div className="container_main" id="Main">
-          <div className={defBg}>
-            <div className={defCircle1}></div>
-            <div className={defCircle2}></div>
-            <div className={defCircle3}></div>
-
-            <div className="foreground" id="toTop">
-              {/*  <button
-                className="btn btn-info"
-                style={{ position: "absolute", top: "50px" }}
-                onClick={changeBg}
-              >
-                Changebg
-              </button> */}
             <NavBar
               data={onRouteChange}
               defaultNav={defNav}
               defaultBoxIcon={defBoxIcon}
+              defaultNavIcon={defNavIcon}
+              defaultNavLinks={{
+                defNavLink1,
+                defNavLink2,
+                defNavLink1Id,
+                defNavLink2Id,
+              }}
+              /*  defaultNavLink={{ defNavLink1, defNavLink2 }} */
             />
             <section className={defGlass}>
               <AnimatePresence>
