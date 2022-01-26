@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect /* , useCallback  */ } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
 /* import ReactDOM from "react-dom"; */
@@ -58,7 +58,7 @@ function App() {
   const [defNavLink1Id, setNavLink1Id] = useState("aboutContainer");
   const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
 
-  const onRouteChange = useCallback(() => {
+  const onRouteChange = () => {
     console.log("onRouteRender");
     setGlass("glass2");
     setNav("Navbar2");
@@ -74,7 +74,7 @@ function App() {
     setNavLink2("FAQs");
     setNavLink1Id("hncInformationContainer");
     setNavLink2Id("hncFaq");
-  }, [
+  }; /* , [
     setGlass,
     setNav,
     setBoxIcon,
@@ -86,11 +86,23 @@ function App() {
     setCircle3,
     setNavLink1,
     setNavLink2,
-  ]);
+  ]); */
+  /*defGlass,
+    defNav,
+    defBoxIcon,
+    defGradient,
+    defFooter,
+    defBg,
+    defCircle1,
+    defCircle2,
+    defCircle3,
+    defNavLink1,
+    defNavLink2, */
 
-  const revertChanges = useCallback(() => {
+  const revertChanges = () => {
     setGlass("glass");
     setNav("Navbar");
+    setNavIcon(iet_logo);
     setBoxIcon("#a046b4");
     setGradient("footerGradient");
     setFooter("footer");
@@ -98,7 +110,11 @@ function App() {
     setCircle1("circle1");
     setCircle2("circle2");
     setCircle3("circle3");
-  }, [
+    setNavLink1("About");
+    setNavLink2("Events");
+    setNavLink1Id("aboutContainer");
+    setNavLink2Id("eventContainer");
+  }; /* , [
     setGlass,
     setNav,
     setBoxIcon,
@@ -108,12 +124,28 @@ function App() {
     setCircle1,
     setCircle2,
     setCircle3,
-  ]);
+  ]); */
   /*   const background = useTransform(["#ff008c", "#7700ff", "rgb(230, 255, 0)"]); */
   return (
     <Provider>
       {/*   <GoToTop></GoToTop> */}
-      <LocationChange apply={onRouteChange} revert={revertChanges} />
+      <LocationChange
+        apply={onRouteChange}
+        changes={{
+          defGlass,
+          defNav,
+          defBoxIcon,
+          defGradient,
+          defFooter,
+          defBg,
+          defCircle1,
+          defCircle2,
+          defCircle3,
+          defNavLink1,
+          defNavLink2,
+        }}
+        revert={revertChanges}
+      />
 
       <div className="container_main" id="Main">
         <div className={defBg}>

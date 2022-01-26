@@ -1,14 +1,14 @@
-import React /* , { useEffect, useState } */ from "react";
+import React, { useEffect, useState } from "react";
 import "../css/navbar.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "boxicons";
 import { Link as RLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+/* import getEventListeners from "../../node_modules/geteventlisteners/src/getEventListeners"; */
 
 const NavBar = (props) => {
-  console.log("change");
-  /*   const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [bodyOffset, setBodyOffset] = useState(
     document.body.getBoundingClientRect()
@@ -31,18 +31,17 @@ const NavBar = (props) => {
   };
 
   useEffect(() => {
-    console.log("Fire");
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  }, [show, lastScrollTop, bodyOffset, scrollDirection]); */
+  });
 
   /* const checkthis = document.querySelector("#testtest"); */
   /* console.log(props.defaultNavLink.link1); */
   /*   console.log(props.defaultNavLink.defNavLink1);
   console.log(props.defaultNav); */
-  const show = true;
+  /* const show = true; */
   return (
     <nav
       className="navbar navbar-expand-sm fixed-top"
