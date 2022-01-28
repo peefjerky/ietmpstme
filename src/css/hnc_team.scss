@@ -118,13 +118,8 @@
     } */
   }
 }
-/* #HnCScroller::-webkit-scrollbar {
-  height: 2px;
-
-  background-color: rgb(195, 196, 255);
+#HnCScroller::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
 }
-
-#HnCScroller::-webkit-scrollbar-thumb {
-  background-color: rgb(87, 255, 185);
-}
- */

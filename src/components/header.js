@@ -9,8 +9,6 @@ import TypedReactHooksDemo from "./animation.js";
 import "boxicons";
 import "../css/header.scss";
 import { Link } from "react-router-dom";
-/* import Tilt from "react-tilt";
-import iet_logo from "../images/IET_LOGO.png"; */
 
 const Header = () => {
   return (
@@ -18,8 +16,7 @@ const Header = () => {
       <div className="row align-items-center my-5">
         <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           <div className="typist">
-            {/*  <box-icon name="quote" id="quote" color="black" size="100px"></box-icon>  */}
-          <TypedReactHooksDemo />
+            <TypedReactHooksDemo />
           </div>
           <div className="quote-small">
             We at IET aim to <span className="highlight1">inspire</span>,{" "}
@@ -33,22 +30,10 @@ const Header = () => {
           </div>
           <h1 className="mt-5 p-2">Check out our latest event!</h1>
           <Link to="/hackncode">
-            <button id="btn" /* onClick={changeStyle} */>HacknCode</button>
+            <button id="btn">HacknCode</button>
           </Link>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
-          {/*  <div id="tiltjs" className="align-items-center text-center mx-auto">
-            <Tilt
-              className="Tilt align-items-center mx-auto"
-              options={{ max: 50 }}
-              style={{ height: 250, width: 250 }}
-            >
-              <div className="Tilt-inner">
-                <span>IET</span>
-              </div>
-            </Tilt>
-          </div> */}
-        </div>
+        <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center"></div>
       </div>
     </div>
   );

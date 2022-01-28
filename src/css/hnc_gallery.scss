@@ -44,28 +44,18 @@
     }
   }
   @media (max-width: 768px) {
-    /* #mask {
-      mask-image: linear-gradient(
-        180deg,
-        transparent 10%,
-        black,
-        transparent 100%
-      );
+    #mask {
+      mask-image: none;
 
-      -webkit-mask-image: -webkit-linear-gradient(
-        180deg,
-        transparent 20%,
-        #000,
-        transparent 80%
-      );
-    } */
+      -webkit-mask-image: none;
+    }
     /*   .swiper {
       width: 50%;
     } */
     .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 275px;
+      width: 290px;
       /*  height: 400px; */
 
       img {

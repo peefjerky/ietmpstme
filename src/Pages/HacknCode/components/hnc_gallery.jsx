@@ -22,7 +22,7 @@ const Hnc_gallery = () => {
         const { hnc_images } = value; */
   return (
     <div className="container-fluid my-5" id="hnc_Gallery">
-      <div className="row mx-5 align-items-center">
+      <div className="row mx-lg-5 align-items-center">
         <h1 className="text-center center-square mb-5">Gallery</h1>
         <div className="col-lg-12 col-md-12 col-sm-12" id="mask">
           <Swiper
@@ -32,12 +32,16 @@ const Hnc_gallery = () => {
             slidesPerView={"auto"}
             coverflowEffect={{
               rotate: 50,
-              stretch: 0,
+              stretch: 10,
               depth: 100,
               modifier: 1,
               slideShadows: false,
             }}
+            centeredSlides={true}
+            loop={true}
+            autoplay={true}
             pagination={true}
+            loopedSlides={5}
             className="mySwiper my-5"
           >
             <SwiperSlide>
