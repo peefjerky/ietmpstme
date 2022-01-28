@@ -39,7 +39,7 @@ const Hnc_header = () => {
           </div>
         </div>
         <div
-          className="col-sm-12 col-md-6 col-lg-6 mt-md-5 mt-sm-5 align-itmes-center mx-auto"
+          className="col-sm-12 col-md-8 col-lg-6 mt-md-5 mt-sm-5 align-itmes-center mx-auto"
           id="hnc_svgimg"
         >
           {/*  <h1>Insert Some image</h1> */}
