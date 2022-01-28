@@ -10,6 +10,15 @@ const LocationChange = (props) => {
     });
   };
 
+  /*  const refreshPage = () => {
+    window.location.reload(true);
+  }; */
+
+  /*  if (pathname === "/hackncode") {
+    refreshPage();
+  } else {
+    window.location.reload(false);
+  } */
   useEffect(() => {
     ScrollToTop();
     window.addEventListener("load", ScrollToTop);

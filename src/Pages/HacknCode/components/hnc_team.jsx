@@ -3,18 +3,12 @@ import React /* , { useEffect } */ from "react";
 import "bootstrap/dist/js/bootstrap.min.js"; */
 /* import Modal from "./modalb4"; */
 import "../../../css/hnc_team.scss";
-/* import AOS from "aos";
-import "aos/dist/aos.css"; */
 import "boxicons";
 import { Consumer } from "../../../context";
 import Hnc_team_card from "./hnc_team_card";
 /* import {useRef} from "react"; */
 
 const Hnc_team = () => {
-  /* useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []); */
   const check = document.querySelector("#HnCScroller");
   const distance = 400;
   function scrollRight() {

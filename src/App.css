@@ -85,8 +85,8 @@ body {
     rgba(107, 107, 107, 0.3) 0%,
     rgba(0, 0, 0, 0.2) 0%
   );
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  /*   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); */
 
   position: relative;
 
