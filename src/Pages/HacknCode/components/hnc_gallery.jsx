@@ -37,7 +37,6 @@ const Hnc_gallery = () => {
               modifier: 1,
               slideShadows: false,
             }}
-            centeredSlides={true}
             loop={true}
             autoplay={true}
             pagination={true}

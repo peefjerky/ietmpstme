@@ -8,7 +8,6 @@ import NavBar from "./components/navbar.js";
 import Event from "./components/event.js"; */
 import Footer from "./components/footer.js";
 import Contact from "./components/contact";
-/* import Tingle from "./components/tinglejs.js"; */
 import Modal from "./components/modalb4";
 import GoToTop from "./components/goToTop";
 import HomePage from "./components/homePage";
@@ -19,21 +18,10 @@ import NotFound from "./components/notFound";
 /* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
-
-/* import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll"; */
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "boxicons";
 import Hack_n_code from "./Pages/HacknCode/hack-n-code";
-/* import locationChange from "./Hooks/hear-for-location"; */
 
 function App() {
   const AniLocation = useLocation();

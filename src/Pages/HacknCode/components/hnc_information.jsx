@@ -1,7 +1,8 @@
 import React /* , { useEffect } */ from "react";
 import "../../../css/hnc_information.scss";
-import Asset1 from "../../../Assets/SVG/Asset1.svg";
+/* import Asset1 from "../../../Assets/SVG/Asset1.svg"; */
 import { motion } from "framer-motion/dist/framer-motion";
+import Hnc_animation2 from "../../../components/hnc_animation2";
 /* import AOS from "aos";
 import "aos/dist/aos.css"; */
 
@@ -102,8 +103,9 @@ const Hnc_information = () => {
           </motion.div> */}
         </div>
 
-        <div className="col-lg-6 col-md-6 col-sm-12 align-items-center">
-          <img src={Asset1} className="img-fluid p-5" alt="Hnc_information" />
+        <div className="col-lg-6 col-md-12 col-sm-12 p-5">
+          {/* <img src={Asset1} className="img-fluid p-5" alt="Hnc_information" /> */}
+          <Hnc_animation2 className="img-fluid" />
         </div>
       </div>
     </div>
