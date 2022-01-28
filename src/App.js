@@ -1,4 +1,4 @@
-import React, { useState, useEffect /* , useCallback  */ } from "react";
+import React, { useState /* , useEffect */ /* , useCallback  */ } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
 /* import ReactDOM from "react-dom"; */
@@ -18,17 +18,17 @@ import NotFound from "./components/notFound";
 /* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
+/* import AOS from "aos";
+import "aos/dist/aos.css"; */
 import "boxicons";
 import Hack_n_code from "./Pages/HacknCode/hack-n-code";
 
 function App() {
   const AniLocation = useLocation();
-  useEffect(() => {
+  /*   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []); */
   console.log("main app");
   const [defGlass, setGlass] = useState("glass");
   const [defNav, setNav] = useState("Navbar");
