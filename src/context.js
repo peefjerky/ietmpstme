@@ -214,7 +214,7 @@ export class Provider extends Component {
       {
         id: 3,
         name: "Sanskriti Sharma",
-        position: "Secretarty",
+        position: "Secretary",
         /* imgUrl:
           "https://raw.githubusercontent.com/1DmntdMnky/ietmpstme/master/src/Assets/Images/Secretary_HNC_Team.jpg", */
         imgUrl: Secretary_HNC_Team,
