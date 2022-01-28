@@ -8,8 +8,8 @@ import { Link as ScrollLink } from "react-scroll";
 /* import getEventListeners from "../../node_modules/geteventlisteners/src/getEventListeners"; */
 
 const NavBar = (props) => {
-/*   console.log(props.test.link11); */
- /*  const [show, setShow] = useState(true);
+  /*   console.log(props.test.link11); */
+  const [show, setShow] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [bodyOffset, setBodyOffset] = useState(
     document.body.getBoundingClientRect()
@@ -37,13 +37,12 @@ const NavBar = (props) => {
       window.removeEventListener("scroll", controlNavbar);
     };
   });
- */
+
   /* const checkthis = document.querySelector("#testtest"); */
   /* console.log(props.defaultNavLink.link1); */
   /*   console.log(props.defaultNavLink.defNavLink1);
   console.log(props.defaultNav); */
-  const show = true;
-  return (
+  /*   const show = true */ return (
     <nav
       className="navbar navbar-expand-sm fixed-top"
       id={props.defaultNav}
