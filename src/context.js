@@ -9,6 +9,11 @@ import VCP_HNC_Team from "./Assets/Images/VCP_HNC_Team.jpg";
 import Secretary_HNC_Team from "./Assets/Images/Secretary_HNC_Team.jpg";
 import Treasurer_HNC_Team from "./Assets/Images/Treasurer_HNC_Team.jpg";
 import HOPR_HNC_Team from "./Assets/Images/HOPR_HNC_Team.jpg";
+/* import HnC1 from "./Assets/Images/HnC/HnC1.JPG";
+import HnC2 from "./Assets/Images/HnC/HnC2.JPG";
+import HnC3 from "./Assets/Images/HnC/HnC3.JPG";
+import HnC4 from "./Assets/Images/HnC/HnC4.JPG";
+import HnC5 from "./Assets/Images/HnC/HnC5.JPG"; */
 
 const Context = React.createContext();
 
@@ -170,18 +175,23 @@ export class Provider extends Component {
     hnc_images: [
       {
         id: 1,
-        imgUrl:
-          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        imgUrl: "HnC1",
       },
       {
         id: 2,
-        imgUrl:
-          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        imgUrl: "HnC2",
       },
       {
         id: 3,
-        imgUrl:
-          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        imgUrl: "HnC3",
+      },
+      {
+        id: 4,
+        imgUrl: "HnC4",
+      },
+      {
+        id: 5,
+        imgUrl: "HnC5",
       },
     ],
     hnc_team: [

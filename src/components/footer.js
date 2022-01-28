@@ -12,8 +12,9 @@ const year = new Date().getFullYear();
 
 const Footer = (props) => {
   //const [defGradient, setGradient] = useState(props);
-
+ /* console.log(props.test.link11); */
   return (
+
     <div className="container-fluid mt-5" id="footerBackground">
       <div className={props.bgtint}></div>
       <div

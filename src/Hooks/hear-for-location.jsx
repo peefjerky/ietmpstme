@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 const LocationChange = (props) => {
   const { pathname } = useLocation();
-
+  /* console.log(props.changes.defNavLinkss.link11); */
   const ScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -39,6 +39,7 @@ const LocationChange = (props) => {
     props?.changes?.defCircle3, // eslint-disable-line react-hooks/exhaustive-deps
     props?.changes?.defNavLink1, // eslint-disable-line react-hooks/exhaustive-deps
     props?.changes?.defNavLink2, // eslint-disable-line react-hooks/exhaustive-deps
+    /* props?.changes?.defNavLinkss.link11, //eslinke-disable-line react-hooks/exhaustive-deps */
   ]);
 
   return null;

@@ -8,6 +8,7 @@ import { Link as ScrollLink } from "react-scroll";
 /* import getEventListeners from "../../node_modules/geteventlisteners/src/getEventListeners"; */
 
 const NavBar = (props) => {
+/*   console.log(props.test.link11); */
   const [show, setShow] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [bodyOffset, setBodyOffset] = useState(

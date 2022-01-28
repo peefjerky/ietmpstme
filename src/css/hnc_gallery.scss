@@ -1,3 +1,78 @@
-/* #hnc_Gallery {
+#hnc_Gallery {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+    /* text-decoration: underline; */
+    /*   text-decoration-color: rgba(160, 70, 180, 0.8); */
+    /* text-decoration-thickness: 5px; */
+    padding: 3px;
+    color: rgb(195, 196, 255);
+  }
+  .swiper {
+    width: 100%;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+  }
+
+  #mask {
+    mask-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      black,
+      transparent 100%
+    );
+
+    -webkit-mask-image: -webkit-linear-gradient(
+      180deg,
+      transparent 0%,
+      #000,
+      transparent 100%
+    );
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    /*  height: 500px; */
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    /* #mask {
+      mask-image: linear-gradient(
+        180deg,
+        transparent 10%,
+        black,
+        transparent 100%
+      );
+
+      -webkit-mask-image: -webkit-linear-gradient(
+        180deg,
+        transparent 20%,
+        #000,
+        transparent 80%
+      );
+    } */
+    /*   .swiper {
+      width: 50%;
+    } */
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 275px;
+      /*  height: 400px; */
+
+      img {
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
 }
- */

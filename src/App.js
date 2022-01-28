@@ -41,7 +41,7 @@ function App() {
     AOS.init();
     AOS.refresh();
   }, []);
-
+  console.log("main app");
   const [defGlass, setGlass] = useState("glass");
   const [defNav, setNav] = useState("Navbar");
   const [defBoxIcon, setBoxIcon] = useState("#a046b4");
@@ -52,11 +52,18 @@ function App() {
   const [defCircle1, setCircle1] = useState("circle1");
   const [defCircle2, setCircle2] = useState("circle2");
   const [defCircle3, setCircle3] = useState("circle3");
-
   const [defNavLink1, setNavLink1] = useState("About");
   const [defNavLink2, setNavLink2] = useState("Events");
   const [defNavLink1Id, setNavLink1Id] = useState("aboutContainer");
   const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
+
+  /*   const [defNavLinkss, setNavLinkss] = useState({
+    link11: "About",
+    link11Id: "About Container",
+  });
+ */
+  /*   const link11 = defNavLinkss.link11;
+  const link11Id = defNavLinkss.link11Id; */
 
   const onRouteChange = () => {
     console.log("onRouteRender");
@@ -74,6 +81,7 @@ function App() {
     setNavLink2("FAQs");
     setNavLink1Id("hncInformationContainer");
     setNavLink2Id("hncFaq");
+    /*  setNavLinkss({ ...defNavLinkss, link11: "Information" }); */
   }; /* , [
     setGlass,
     setNav,
@@ -143,6 +151,7 @@ function App() {
           defCircle3,
           defNavLink1,
           defNavLink2,
+          /*  defNavLinkss, */
         }}
         revert={revertChanges}
       />
@@ -197,6 +206,7 @@ function App() {
                 defNavLink1Id,
                 defNavLink2Id,
               }}
+
               /*  defaultNavLink={{ defNavLink1, defNavLink2 }} */
             />
             <section className={defGlass}>
@@ -212,7 +222,11 @@ function App() {
                   <Route exact path="*" element={<NotFound />}></Route>
                 </Routes>
               </AnimatePresence>
-              <Footer bgtint={defGradient} footer2={defFooter} />
+              <Footer
+                bgtint={defGradient}
+                footer2={defFooter}
+                /* test={defNavLinkss} */
+              />
             </section>
           </div>
         </div>

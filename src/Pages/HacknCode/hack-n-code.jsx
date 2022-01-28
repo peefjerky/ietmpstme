@@ -6,8 +6,9 @@ import Hnc_faq from "./components/hnc_faq";
 import Hnc_information from "./components/hnc_information";
 import { motion } from "framer-motion/dist/framer-motion";
 import Hnc_team from "./components/hnc_team";
-/* import Hnc_gallery from "./components/hnc_gallery"; */
+import Hnc_gallery from "./components/hnc_gallery";
 const Hack_n_code = () => {
+  console.log("HnC");
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,7 +18,7 @@ const Hack_n_code = () => {
       <Hnc_header />
       <Hnc_prize />
       <Hnc_information />
-      {/*   <Hnc_gallery /> */}
+      <Hnc_gallery />
       <Hnc_team />
       <Hnc_sponsors />
       <Hnc_faq />
