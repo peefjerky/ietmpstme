@@ -11,8 +11,8 @@
       rgba(107, 107, 107, 0.3) 0%,
       rgba(0, 0, 0, 0.2) 0%
     );
-    backdrop-filter: blur(5rem);
-    -webkit-backdrop-filter: blur(5rem);
+    /* backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem); */
 
     height: 300px;
 
@@ -22,7 +22,7 @@
 
     border-radius: 20px;
 
-    box-shadow: 10px 4px 32px -20px;
+    /* box-shadow: 10px 4px 32px -20px; */
     h3 {
       text-align: center !important;
     }
