@@ -10,10 +10,6 @@ const LocationChange = (props) => {
     });
   };
 
-  /*  const refreshPage = () => {
-    window.location.reload(true);
-  }; */
-
   /*  if (pathname === "/hackncode") {
     refreshPage();
   } else {
@@ -25,7 +21,8 @@ const LocationChange = (props) => {
     return () => {
       window.removeEventListener("load", ScrollToTop);
     };
-  });
+  }, []);
+
   useEffect(() => {
     if (pathname === "/hackncode") {
       props.apply();
@@ -50,6 +47,15 @@ const LocationChange = (props) => {
     props?.changes?.defNavLink2, // eslint-disable-line react-hooks/exhaustive-deps
     /* props?.changes?.defNavLinkss.link11, //eslinke-disable-line react-hooks/exhaustive-deps */
   ]);
+  /*   useEffect(() => {
+    const refreshPage = () => {
+      window.location.reload(true);
+    };
+    window.addEventListener("load", refreshPage);
+    return () => {
+      window.removeEventListener("load", refreshPage);
+    };
+  }, []); */
 
   return null;
 };

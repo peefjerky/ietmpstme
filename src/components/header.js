@@ -8,7 +8,17 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import TypedReactHooksDemo from "./animation.js";
 import "boxicons";
 import "../css/header.scss";
+import Atropos from "atropos/react/atropos-react.esm.js";
+import "atropos/atropos.scss";
 import { Link } from "react-router-dom";
+import BG from "../Assets/Images/HnCAtropos/BG.png";
+import Gradients from "../Assets/Images/HnCAtropos/Gradients.png";
+import Matrix from "../Assets/Images/HnCAtropos/Matrix.png";
+import Text from "../Assets/Images/HnCAtropos/Text.png";
+/* import BG_Logo from "../Assets/Images/HnCAtropos/BG_Logo.svg";
+import Gradients_Logo from "../Assets/Images/HnCAtropos/Gradient_Logo.svg";
+import Matrix_Logo from "../Assets/Images/HnCAtropos/Matrix_Logo.svg";
+import Text_Logo from "../Assets/Images/HnCAtropos/Text_Logo.svg"; */
 
 const Header = () => {
   return (
@@ -29,11 +39,44 @@ const Header = () => {
             use their innovation to make a better world for tomorrow.
           </div>
           <h1 className="mt-5 p-2">Check out our latest event!</h1>
-          <Link to="/hackncode">
-            <button id="btn">HacknCode</button>
-          </Link>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center"></div>
+        <div
+          className="col-sm-12 col-md-12 col-lg-12 text-center"
+          id="atroposContainer"
+        >
+          <Atropos
+            className="hncAtropos mx-auto my-5"
+            rotateXMax={5}
+            rotateYMax={5}
+            alwaysActive={false}
+            activeOffset={30}
+          >
+            <img src={BG} id="atroposBG" data-atropos-offset="-5" alt="BG" />
+            <img
+              src={Gradients}
+              id="atroposGradient"
+              data-atropos-offset="-4.5"
+              alt="Gradients"
+            />
+            <img
+              src={Matrix}
+              id="atroposMatrix"
+              data-atropos-offset="5"
+              alt="Matrix"
+            />
+            <img
+              src={Text}
+              id="atroposText"
+              data-atropos-offset="10"
+              alt="Text"
+            />
+            <Link to="/hackncode">
+              <button id="btn" data-atropos-offset="12">
+                Register now!
+              </button>
+            </Link>
+          </Atropos>
+        </div>
       </div>
     </div>
   );
