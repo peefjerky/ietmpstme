@@ -65,7 +65,7 @@
       margin-top: 50px;
     }
     .hnc_typist {
-      font-size: 50px;
+      font-size: 60px;
     }
     #btn,
     #discbtn {
@@ -75,6 +75,11 @@
     }
     p {
       font-size: 0.9em;
+    }
+  }
+  @media (max-width: 320px) {
+    .hnc_typist {
+      font-size: 50px;
     }
   }
 }

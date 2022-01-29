@@ -10,7 +10,7 @@ import Hnc_team_card from "./hnc_team_card";
 
 const Hnc_team = () => {
   const check = document.querySelector("#HnCScroller");
-  const distance = 400;
+  const distance = 100;
   function scrollRight() {
     check.scrollBy({
       left: distance,
@@ -35,29 +35,13 @@ const Hnc_team = () => {
             <div className="row">
               <div className="container-fluid my-2">
                 <h1 className="text-center center-square">Team</h1>
-                <div className="mb-2 text-center">
-                  <h5 className="scrollIcon" onClick={scrollRight}>
-                    SCROLL
-                  </h5>
-                  <box-icon
-                    name="left-arrow-alt"
-                    color="#c3c4ff"
-                    size="40px"
-                    onClick={scrollLeft}
-                  ></box-icon>
-                  <box-icon
-                    name="right-arrow-alt"
-                    color="#c3c4ff"
-                    size="40px"
-                    onClick={scrollRight}
-                  ></box-icon>
-                </div>
               </div>
 
               {/* Put your code after this comment */}
 
               <div
                 className="row mx-auto d-flex flex-nowrap overflow-auto scrollbar align-items-center"
+                /*   className="row mx-auto align-items-center" */
                 id="HnCScroller"
               >
                 {hnc_team.slice(0, 5).map((hnc_team) => (
@@ -73,6 +57,23 @@ const Hnc_team = () => {
                     />
                   </div>
                 ))}
+              </div>
+              <div className="mt-2 text-center">
+                <box-icon
+                  name="left-arrow-alt"
+                  color="#c3c4ff"
+                  size="40px"
+                  onClick={scrollLeft}
+                ></box-icon>
+                <box-icon
+                  name="right-arrow-alt"
+                  color="#c3c4ff"
+                  size="40px"
+                  onClick={scrollRight}
+                ></box-icon>
+                <h5 className="scrollIcon" onClick={scrollRight}>
+                  SCROLL
+                </h5>
               </div>
             </div>
           </div>

@@ -9,21 +9,14 @@ const Hnc_sponsors = () => {
   }, []); */
   return (
     <div className="container-fluid my-5 text-center" id="hncSponsors">
-      <div className="row mx-5">
-        <h1 className="pb-3" /* data-aos="fade-in" */>Our Sponsor</h1>
+      <h1 className="mb-3">Our Sponsors</h1>
+      <div className="row mx-5 align-items-center text-center">
         <div
-          className="col-lg-12 col-sm-12 col-md-12 mt-3 mb-5 align-items-center"
+          className="col-lg-12 col-sm-12 col-md-12 mt-3 mb-5"
           id="sponsorsContanier"
-          /*   data-aos="slide-up"
-          data-aos-duration="800"
-          data-aos-easing="ease-in-out" */
         >
-          <div className="align-self-center my-5">
-            <div className="my-4">
-              <h3 className="text-white align-self-center my-5">
-                Coming Soon!
-              </h3>
-            </div>
+          <div className="my-5">
+            <h3 className="text-white align-middle my-5">Coming Soon!</h3>
           </div>
         </div>
       </div>

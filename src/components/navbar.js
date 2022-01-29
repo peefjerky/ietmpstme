@@ -46,7 +46,7 @@ const NavBar = (props) => {
         opacity: show ? 1 : 0,
       }}
     >
-      <div className="container-fluid mx-3">
+      <div className="container-fluid mx-auto">
         <a href="/" className="navbar-brand">
           <img
             src={props.defaultNavIcon}
@@ -54,11 +54,13 @@ const NavBar = (props) => {
             alt="iet-logo"
           />
         </a>
+
         <RLink to="/hackncode">
-          <button id="navbtn" className="nav-item nav-link mx-auto my-auto">
+          <button id="navbtn" className="nav-item nav-link ms-auto my-auto">
             Hack n' Code
           </button>
         </RLink>
+
         <button
           className="navbar-toggler"
           data-bs-toggle="collapse"
@@ -74,7 +76,7 @@ const NavBar = (props) => {
           <div className="navbar-nav">
             <ScrollLink
               to={props.defaultNavLinks.defNavLink1Id}
-              className="nav-item nav-link my-auto mx-1"
+              className="nav-item nav-link my-auto mx-auto"
               spy={true}
               smooth={true}
               offset={-50}
@@ -84,7 +86,7 @@ const NavBar = (props) => {
             </ScrollLink>
             <ScrollLink
               to={props.defaultNavLinks.defNavLink2Id}
-              className="nav-item nav-link mx-1 my-auto"
+              className="nav-item nav-link mx-auto my-auto"
               spy={true}
               smooth={true}
               offset={-145}
@@ -101,7 +103,7 @@ const NavBar = (props) => {
             {/*  <a href="/" className="nav-item nav-link mx-1 my-auto">
               Gallery
           </a>*/}
-            <RLink to="/contact" className="nav-item nav-link mx-1 my-auto">
+            <RLink to="/contact" className="nav-item nav-link mx-auto my-auto">
               Contact Us
             </RLink>
           </div>
