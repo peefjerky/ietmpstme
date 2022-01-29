@@ -2,8 +2,11 @@ import React from "react";
 /* import { Consumer } from "../../../context"; */
 import "../../../css/hnc_gallery.scss";
 /* import { useRef, useState } from "react"; */
-import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
-import "swiper/swiper.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+/* import "swiper/swiper.scss"; */
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 import HnC1 from "../../../Assets/Images/HnC/HnC1.JPG";
 import HnC2 from "../../../Assets/Images/HnC/HnC2.JPG";
 import HnC3 from "../../../Assets/Images/HnC/HnC3.JPG";

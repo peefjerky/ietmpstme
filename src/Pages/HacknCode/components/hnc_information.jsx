@@ -1,7 +1,7 @@
 import React /* , { useEffect } */ from "react";
 import "../../../css/hnc_information.scss";
 /* import Asset1 from "../../../Assets/SVG/Asset1.svg"; */
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import Hnc_animation2 from "../../../components/hnc_animation2";
 /* import AOS from "aos";
 import "aos/dist/aos.css"; */

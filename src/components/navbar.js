@@ -46,7 +46,7 @@ const NavBar = (props) => {
         opacity: show ? 1 : 0,
       }}
     >
-      <div className="container-fluid mx-auto">
+      <div className="container-fluid mx-3">
         <a href="/" className="navbar-brand">
           <img
             src={props.defaultNavIcon}

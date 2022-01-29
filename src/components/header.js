@@ -8,13 +8,13 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import TypedReactHooksDemo from "./animation.js";
 import "boxicons";
 import "../css/header.scss";
-import Atropos from "atropos/react/atropos-react.esm.js";
-import "atropos/atropos.scss";
+/* import Atropos from "atropos";
+import "atropos/scss"; */
 import { Link } from "react-router-dom";
-import BG from "../Assets/Images/HnCAtropos/BG.png";
+/* import BG from "../Assets/Images/HnCAtropos/BG.png";
 import Gradients from "../Assets/Images/HnCAtropos/Gradients.png";
 import Matrix from "../Assets/Images/HnCAtropos/Matrix.png";
-import Text from "../Assets/Images/HnCAtropos/Text.png";
+import Text from "../Assets/Images/HnCAtropos/Text.png"; */
 
 const Header = () => {
   return (
@@ -40,11 +40,11 @@ const Header = () => {
           className="col-sm-12 col-md-12 col-lg-12 text-center"
           id="atroposContainer"
         >
-          <Atropos
+          {/*           <Atropos
             className="hncAtropos mx-auto my-5"
             rotateXMax={5}
             rotateYMax={5}
-            alwaysActive={false}
+            alwaysActive={true}
             activeOffset={30}
           >
             <img src={BG} id="atroposBG" data-atropos-offset="-5" alt="BG" />
@@ -66,12 +66,12 @@ const Header = () => {
               data-atropos-offset="10"
               alt="Text"
             />
-            <Link to="/hackncode">
-              <button id="btn" data-atropos-offset="12">
-                Register now!
-              </button>
-            </Link>
-          </Atropos>
+          </Atropos> */}
+          <Link to="/hackncode">
+            <button id="btn" /* data-atropos-offset="12" */>
+              Hack n' Code
+            </button>
+          </Link>
         </div>
       </div>
     </div>

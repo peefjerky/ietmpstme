@@ -4,7 +4,7 @@ import Hnc_prize from "./components/hnc-prize";
 import Hnc_sponsors from "./components/hnc_sponsors";
 import Hnc_faq from "./components/hnc_faq";
 import Hnc_information from "./components/hnc_information";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import Hnc_team from "./components/hnc_team";
 import Hnc_gallery from "./components/hnc_gallery";
 const Hack_n_code = () => {

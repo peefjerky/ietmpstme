@@ -17,7 +17,7 @@ import iet_blue from "./Assets/Images/IET_Blue.png";
 import NotFound from "./components/notFound";
 /* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { motion, AnimatePresence } from "framer-motion"
 /* import AOS from "aos";
 import "aos/dist/aos.css"; */
 import "boxicons";

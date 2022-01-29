@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import "../css/contact.scss";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 class Contact extends Component {
   state = {
