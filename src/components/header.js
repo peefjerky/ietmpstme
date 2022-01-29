@@ -15,10 +15,6 @@ import BG from "../Assets/Images/HnCAtropos/BG.png";
 import Gradients from "../Assets/Images/HnCAtropos/Gradients.png";
 import Matrix from "../Assets/Images/HnCAtropos/Matrix.png";
 import Text from "../Assets/Images/HnCAtropos/Text.png";
-/* import BG_Logo from "../Assets/Images/HnCAtropos/BG_Logo.svg";
-import Gradients_Logo from "../Assets/Images/HnCAtropos/Gradient_Logo.svg";
-import Matrix_Logo from "../Assets/Images/HnCAtropos/Matrix_Logo.svg";
-import Text_Logo from "../Assets/Images/HnCAtropos/Text_Logo.svg"; */
 
 const Header = () => {
   return (
