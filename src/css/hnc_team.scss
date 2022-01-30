@@ -126,6 +126,16 @@
       width: 180px;
     } */
   }
+  @media (max-width: 320px) {
+    .card {
+      height: 315px;
+      width: 165px;
+      img {
+        width: auto;
+        height: 140px;
+      }
+    }
+  }
 }
 #HnCScroller::-webkit-scrollbar {
   height: 0px;
