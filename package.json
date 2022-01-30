@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.7.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -19,6 +20,7 @@
     "react-scripts": "^5.0.0",
     "react-scroll": "^1.8.4",
     "react-social-icons": "^5.10.0",
+    "react-spinners": "^0.11.0",
     "sass": "^1.49.0",
     "swiper": "^7.4.1",
     "typed.js": "^2.0.12",
@@ -49,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.7.2",
     "bootstrap": "^5.1.3"
   }
 }

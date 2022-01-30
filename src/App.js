@@ -17,11 +17,15 @@ import iet_blue from "./Assets/Images/IET_Blue.png";
 import NotFound from "./components/notFound";
 /* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
+import Hnc_Loading from "./components/hnc_loading";
 /* import AOS from "aos";
 import "aos/dist/aos.css"; */
 import "boxicons";
-import Hack_n_code from "./Pages/HacknCode/hack-n-code";
+/* import Hack_n_code from "./Pages/HacknCode/hack-n-code"; */
+const Lazy_Hack_n_code = React.lazy(() =>
+  import("./Pages/HacknCode/hack-n-code")
+);
 
 function App() {
   const AniLocation = useLocation();
@@ -198,18 +202,22 @@ function App() {
               /*  defaultNavLink={{ defNavLink1, defNavLink2 }} */
             />
             <section className={defGlass}>
-              <AnimatePresence>
-                <Routes anilocation={AniLocation} key={AniLocation.key}>
-                  <Route exact path="/" element={<HomePage />} />
-                  <Route exact path="/contact" element={<Contact />}></Route>
-                  <Route
-                    exact
-                    path="/hackncode"
-                    element={<Hack_n_code />}
-                  ></Route>
-                  <Route exact path="*" element={<NotFound />}></Route>
-                </Routes>
-              </AnimatePresence>
+              <React.Suspense fallback={<Hnc_Loading />}>
+                <AnimatePresence>
+                  <Routes anilocation={AniLocation} key={AniLocation.key}>
+                    <Route exact path="/" element={<HomePage />} />
+                    <Route exact path="/contact" element={<Contact />}></Route>
+
+                    <Route
+                      exact
+                      path="/hackncode"
+                      element={<Lazy_Hack_n_code />}
+                    ></Route>
+
+                    <Route exact path="*" element={<NotFound />}></Route>
+                  </Routes>
+                </AnimatePresence>
+              </React.Suspense>
               <Footer
                 bgtint={defGradient}
                 footer2={defFooter}
