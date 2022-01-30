@@ -12,12 +12,6 @@ ReactDOM.render(
     <App />
   </BrowserRouter>,
   document.getElementById("root")
-  /*  <BrowserRouter>
-    <Routes>
-      <Route exact path="/" element={<App></App>}></Route>
-      <Route exact path="/hack-n-code" element={<hack_n_code />}></Route>
-    </Routes>
-  </BrowserRouter> */
 );
 
 reportWebVitals();
