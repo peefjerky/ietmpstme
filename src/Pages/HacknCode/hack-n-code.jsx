@@ -7,6 +7,7 @@ import Hnc_information from "./components/hnc_information";
 import { motion } from "framer-motion";
 import Hnc_team from "./components/hnc_team";
 import Hnc_gallery from "./components/hnc_gallery";
+
 const Hack_n_code = () => {
   console.log("HnC");
   return (

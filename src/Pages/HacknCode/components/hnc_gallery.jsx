@@ -16,6 +16,7 @@ import HnC5 from "../../../Assets/Images/HnC/HnC5.JPG";
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 
 SwiperCore.use([EffectCoverflow, Pagination]);
+
 const Hnc_gallery = () => {
   /*   return (
     <Consumer>
@@ -42,6 +43,8 @@ const Hnc_gallery = () => {
             /* pagination={{ dynamicBullets: true, type: "bullets" }} */
             pagination={false}
             loopedSlides={5}
+            /* modules={Lazy} */
+            /*  lazy={true} */
             className="mySwiper my-5"
           >
             <SwiperSlide>
