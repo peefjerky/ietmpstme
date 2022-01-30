@@ -12,7 +12,7 @@ const Hnc_team = () => {
   const check = document.querySelector("#HnCScroller");
   const distance = 100;
   function scrollRight() {
-    check.scrollBy({
+   check.scrollBy({
       left: distance,
       behavior: "smooth",
     });
