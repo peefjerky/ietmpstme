@@ -1,39 +1,27 @@
 import React, { useState /* , useEffect */ /* , useCallback  */ } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
-/* import ReactDOM from "react-dom"; */
 import NavBar from "./components/navbar.js";
-/* import Header from "./components/header.js"; */
-/* import About from "./components/about";
-import Event from "./components/event.js"; */
 import Footer from "./components/footer.js";
 import Contact from "./components/contact";
-import Modal from "./components/modalb4";
+/* import Modal from "./components/modalb4"; */
 import GoToTop from "./components/goToTop";
 import HomePage from "./components/homePage";
 import "./App.css";
 import iet_logo from "./images/IET_LOGO.png";
 import iet_blue from "./Assets/Images/IET_Blue.png";
 import NotFound from "./components/notFound";
-/* import createReactClass from "create-react-class"; */
 import LocationChange from "./Hooks/hear-for-location";
 import { motion, AnimatePresence } from "framer-motion";
 import Hnc_Loading from "./components/hnc_loading";
-/* import AOS from "aos";
-import "aos/dist/aos.css"; */
 import "boxicons";
-/* import Hack_n_code from "./Pages/HacknCode/hack-n-code"; */
+
 const Lazy_Hack_n_code = React.lazy(() =>
   import("./Pages/HacknCode/hack-n-code")
 );
 
 function App() {
   const AniLocation = useLocation();
-  /*   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []); */
-  console.log("main app");
   const [defGlass, setGlass] = useState("glass");
   const [defNav, setNav] = useState("Navbar");
   const [defBoxIcon, setBoxIcon] = useState("#a046b4");
@@ -49,14 +37,7 @@ function App() {
   const [defNavLink1Id, setNavLink1Id] = useState("aboutContainer");
   const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
 
-  /*   const [defNavLinkss, setNavLinkss] = useState({
-    link11: "About",
-    link11Id: "About Container",
-  });
- */
-  /*   const link11 = defNavLinkss.link11;
-  const link11Id = defNavLinkss.link11Id; */
-
+  //* This function will run when there is a route change to /hackncode
   const onRouteChange = () => {
     console.log("onRouteRender");
     setGlass("glass2");
@@ -73,31 +54,7 @@ function App() {
     setNavLink2("FAQs");
     setNavLink1Id("hncInformationContainer");
     setNavLink2Id("hncFaq");
-    /*  setNavLinkss({ ...defNavLinkss, link11: "Information" }); */
-  }; /* , [
-    setGlass,
-    setNav,
-    setBoxIcon,
-    setGradient,
-    setFooter,
-    setBg,
-    setCircle1,
-    setCircle2,
-    setCircle3,
-    setNavLink1,
-    setNavLink2,
-  ]); */
-  /*defGlass,
-    defNav,
-    defBoxIcon,
-    defGradient,
-    defFooter,
-    defBg,
-    defCircle1,
-    defCircle2,
-    defCircle3,
-    defNavLink1,
-    defNavLink2, */
+  };
 
   const revertChanges = () => {
     setGlass("glass");
@@ -114,21 +71,9 @@ function App() {
     setNavLink2("Events");
     setNavLink1Id("aboutContainer");
     setNavLink2Id("eventContainer");
-  }; /* , [
-    setGlass,
-    setNav,
-    setBoxIcon,
-    setGradient,
-    setFooter,
-    setBg,
-    setCircle1,
-    setCircle2,
-    setCircle3,
-  ]); */
-  /*   const background = useTransform(["#ff008c", "#7700ff", "rgb(230, 255, 0)"]); */
+  };
   return (
     <Provider>
-      {/*   <GoToTop></GoToTop> */}
       <LocationChange
         apply={onRouteChange}
         changes={{
@@ -143,26 +88,22 @@ function App() {
           defCircle3,
           defNavLink1,
           defNavLink2,
-          /*  defNavLinkss, */
         }}
         revert={revertChanges}
       />
 
       <div className="container_main" id="Main">
+        {/*//* Background */}
         <div className={defBg}>
           <motion.div
             className={defCircle1}
-            /* cy={"-100vh"} */
-            initial={{ y: "-100vh" }}
-            /*     y={"-100vh"} */
+            initial={{ y: "-100vh¯" }}
             animate={{ y: "0vh" }}
             whileInView={{ scale: 1.3 }}
             transition={{
               duration: 1,
               delay: 0.4,
               ease: "easeInOut",
-              /* repeat: "Infinity",
-              repeatType: "reverse", */
             }}
           ></motion.div>
           <motion.div
@@ -175,17 +116,19 @@ function App() {
               repeat: "Infinity",
               repeatType: "reverse",
             }}
-            /* initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          ></motion.div>
+          <motion.div
+            className={defCircle3}
+            whileInView={{ scale: 1.1, rotate: 720, y: "30%" }}
             transition={{
               duration: 2,
+              delay: 0.4,
               ease: "easeInOut",
               repeat: "Infinity",
               repeatType: "reverse",
-            }} */
+            }}
           ></motion.div>
-          <div className={defCircle3}></div>
-
+          {/*//* Foreground */}
           <div className="foreground" id="toTop">
             <NavBar
               data={onRouteChange}
@@ -198,37 +141,28 @@ function App() {
                 defNavLink1Id,
                 defNavLink2Id,
               }}
-
-              /*  defaultNavLink={{ defNavLink1, defNavLink2 }} */
             />
             <section className={defGlass}>
+              {/*//* Routes */}
               <React.Suspense fallback={<Hnc_Loading />}>
                 <AnimatePresence>
                   <Routes anilocation={AniLocation} key={AniLocation.key}>
                     <Route exact path="/" element={<HomePage />} />
                     <Route exact path="/contact" element={<Contact />}></Route>
-
                     <Route
                       exact
                       path="/hackncode"
                       element={<Lazy_Hack_n_code />}
                     ></Route>
-
                     <Route exact path="*" element={<NotFound />}></Route>
                   </Routes>
                 </AnimatePresence>
               </React.Suspense>
-              <Footer
-                bgtint={defGradient}
-                footer2={defFooter}
-                /* test={defNavLinkss} */
-              />
+              <Footer bgtint={defGradient} footer2={defFooter} />
             </section>
           </div>
         </div>
-        <Modal />
-
-        {/* <Tingle /> */}
+        {/* //!Disabled modal for Now <Modal /> */}
       </div>
       <GoToTop></GoToTop>
     </Provider>
