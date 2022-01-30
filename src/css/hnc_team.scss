@@ -61,6 +61,7 @@
     );
     margin: 5px;
     height: 375px;
+    width: 200px;
     /* background: rgba(255, 255, 255, 0.25); */
     // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     /* backdrop-filter: blur(4px);
@@ -109,6 +110,15 @@
     transition: 500ms ease-in-out;
   }
   @media (max-width: 768px) {
+    .card {
+      height: 295px;
+      width: 165px;
+      img {
+        width: auto;
+        height: 140px;
+      }
+    }
+
     /* .card {
        margin: 30px 0 30px 0;
       font-size: 0.72em;

@@ -7,27 +7,27 @@ export default function Hnc_team_card(props) {
   return (
     <div className="container" id="hncTeamCardContainer">
       {/* <div className="row "> */}
-      <div className="col-auto">
-        <div className="card my-5 text-center">
-          <img
-            className="card-img-top"
-            style={{ backgroundSize: "scale-down" }}
-            src={imageUrl}
-            alt={name}
-          />
-          <div className="card-body">
-            <h4 className="card-title">{name}</h4>
-            <p className="card-text my-3">{position}</p>
-            {/*  <button
+      {/*  <div className="col-auto"> */}
+      <div className="card my-5 text-center">
+        <img
+          className="card-img-top"
+          style={{ backgroundSize: "scale-down" }}
+          src={imageUrl}
+          alt={name}
+        />
+        <div className="card-body">
+          <h4 className="card-title">{name}</h4>
+          <p className="card-text mt-3">{position}</p>
+          {/*  <button
                 className="btn btn-primary stretched-link"
                 data-bs-toggle="modal"
                 data-bs-target={eventModals}
               >
                 More <i className="fa fa-angle-right"></i>
               </button> */}
-          </div>
         </div>
       </div>
+      {/* </div> */}
       {/*    </div> */}
     </div>
   );

@@ -45,10 +45,7 @@ const Hnc_team = () => {
                 id="HnCScroller"
               >
                 {hnc_team.slice(0, 5).map((hnc_team) => (
-                  <div
-                    key={hnc_team.id}
-                    className="col-sm-8 col-md-5 col-lg-3 mx-auto"
-                  >
+                  <div key={hnc_team.id} className="col-auto">
                     <Hnc_team_card
                       id={hnc_team.id}
                       name={hnc_team.name}
