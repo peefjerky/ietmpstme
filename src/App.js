@@ -8,8 +8,8 @@ import Contact from "./components/contact";
 import GoToTop from "./components/goToTop";
 import HomePage from "./components/homePage";
 import "./App.css";
-import iet_logo from "./images/IET_LOGO.png";
-import iet_blue from "./Assets/Images/IET_Blue.png";
+import iet_logo from "./Assets/Images/IET_LOGO.webp";
+import iet_blue from "./Assets/Images/IET_Blue.webp";
 import NotFound from "./components/notFound";
 import LocationChange from "./Hooks/hear-for-location";
 import { motion, AnimatePresence } from "framer-motion";
@@ -38,6 +38,7 @@ function App() {
   const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
 
   //* This function will run when there is a route change to /hackncode
+
   const onRouteChange = () => {
     console.log("onRouteRender");
     setGlass("glass2");

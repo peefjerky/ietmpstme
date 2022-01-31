@@ -16,7 +16,7 @@ const Hnc_Loading = () => {
       >
         <div
           className="col-lg-12 col-md-12 col-sm-12 my-5 mx-auto"
-        id="styledLoadingContainer"
+          id="styledLoadingContainer"
           /* style={{ height: "100vh" }} */
         >
           <ScaleLoader

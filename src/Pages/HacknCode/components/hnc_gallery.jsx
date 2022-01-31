@@ -7,11 +7,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 /* import "swiper/css/pagination"; */
-import HnC1 from "../../../Assets/Images/HnC/HnC1.JPG";
-import HnC2 from "../../../Assets/Images/HnC/HnC2.JPG";
-import HnC3 from "../../../Assets/Images/HnC/HnC3.JPG";
-import HnC4 from "../../../Assets/Images/HnC/HnC4.JPG";
-import HnC5 from "../../../Assets/Images/HnC/HnC5.JPG";
+import HnC1 from "../../../Assets/Images/HnC/HnC1.webp";
+import HnC2 from "../../../Assets/Images/HnC/HnC2.webp";
+import HnC3 from "../../../Assets/Images/HnC/HnC3.webp";
+import HnC4 from "../../../Assets/Images/HnC/HnC4.webp";
+import HnC5 from "../../../Assets/Images/HnC/HnC5.webp";
 
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 

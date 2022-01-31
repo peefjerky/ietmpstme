@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import BotsonEventCard from "./Assets/Images/BotsonEventCard.JPG";
-import HnCEventCard from "./Assets/Images/HnCEventCard.JPG";
-import IETalksEventCard from "./Assets/Images/IETalksEventCard.JPG";
-import WorkshopEventCard from "./Assets/Images/WorkshopEventCard.JPG";
+import BotsonEventCard from "./Assets/Images/BotsonEventCard.webp";
+import HnCEventCard from "./Assets/Images/HnCEventCard.webp";
+import IETalksEventCard from "./Assets/Images/IETalksEventCard.webp";
+import WorkshopEventCard from "./Assets/Images/WorkshopEventCard.webp";
 
-import CP_HNC_Team from "./Assets/Images/CP_HNC_Team.jpg";
-import VCP_HNC_Team from "./Assets/Images/VCP_HNC_Team.jpg";
-import Secretary_HNC_Team from "./Assets/Images/Secretary_HNC_Team.jpg";
-import Treasurer_HNC_Team from "./Assets/Images/Treasurer_HNC_Team.jpg";
-import HOPR_HNC_Team from "./Assets/Images/HOPR_HNC_Team.jpg";
+import CP_HNC_Team from "./Assets/Images/CP_HNC_Team.webp";
+import VCP_HNC_Team from "./Assets/Images/VCP_HNC_Team.webp";
+import Secretary_HNC_Team from "./Assets/Images/Secretary_HNC_Team.webp";
+import Treasurer_HNC_Team from "./Assets/Images/Treasurer_HNC_Team.webp";
+import HOPR_HNC_Team from "./Assets/Images/HOPR_HNC_Team.webp";
 /* import HnC1 from "./Assets/Images/HnC/HnC1.JPG";
 import HnC2 from "./Assets/Images/HnC/HnC2.JPG";
 import HnC3 from "./Assets/Images/HnC/HnC3.JPG";
