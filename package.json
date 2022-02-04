@@ -1,6 +1,6 @@
 {
   "name": "iet-website",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -10,7 +10,7 @@
     "atropos": "^1.0.1",
     "boxicons": "^2.1.1",
     "create-react-class": "^15.7.0",
-    "framer-motion": "^6.2.3",
+    "framer-motion": "^6.2.4",
     "geteventlisteners": "^1.1.0",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
@@ -21,7 +21,6 @@
     "react-scroll": "^1.8.4",
     "react-social-icons": "^5.10.0",
     "react-spinners": "^0.11.0",
-    "react-window": "^1.8.6",
     "sass": "^1.49.0",
     "swiper": "^7.4.1",
     "typed.js": "^2.0.12",
