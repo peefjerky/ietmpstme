@@ -1,5 +1,6 @@
 import React from "react";
 import HnCTypedReactHooks from "../../../components/hnc_animation";
+/* import { FixedSizeList } from "react-window"; */
 import "../../../css/hnc_header.scss";
 import LaptopAnimation from "../../../components/laptopanimation";
 
@@ -44,7 +45,14 @@ const Hnc_header = () => {
         >
           {/*  <h1>Insert Some image</h1> */}
           {/* <img src={Asset6} className="img-fluid" alt="LaptopImage"></img> */}
+          {/*  <FixedSizeList
+            height={150}
+            itemCount={998}
+            itemSize={300}
+            width={300}
+          > */}
           <LaptopAnimation />
+          {/*  </FixedSizeList> */}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 const LocationChange = (props) => {
   const { pathname } = useLocation();
@@ -23,7 +23,7 @@ const LocationChange = (props) => {
     };
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (pathname === "/hackncode") {
       props.apply();
       console.log("hear-for-location");

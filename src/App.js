@@ -92,13 +92,12 @@ function App() {
         }}
         revert={revertChanges}
       />
-
       <div className="container_main" id="Main">
         {/*//* Background */}
         <div className={defBg}>
           <motion.div
             className={defCircle1}
-            initial={{ y: "-100vh¯" }}
+            initial={{ y: "-100vh" }}
             animate={{ y: "0vh" }}
             whileInView={{ scale: 1.3 }}
             transition={{

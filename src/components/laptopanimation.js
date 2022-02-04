@@ -2175,4 +2175,4 @@ const LaptopAnimation = () => {
     </div>
   );
 };
-export default LaptopAnimation;
+export default React.memo(LaptopAnimation);

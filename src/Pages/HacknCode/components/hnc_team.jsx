@@ -11,7 +11,7 @@ import Hnc_team_card from "./hnc_team_card";
 const Hnc_team = () => {
   const check = document.querySelector("#HnCScroller");
   const distance = 100;
-  function scrollRight() {
+  /* function scrollRight() {
    check.scrollBy({
       left: distance,
       behavior: "smooth",
@@ -22,7 +22,7 @@ const Hnc_team = () => {
       left: -distance,
       behavior: "smooth",
     });
-  }
+  } */
   return (
     <Consumer>
       {(value) => {
@@ -60,15 +60,15 @@ const Hnc_team = () => {
                   name="left-arrow-alt"
                   color="#c3c4ff"
                   size="40px"
-                  onClick={scrollLeft}
+                  /* onClick={scrollLeft} */
                 ></box-icon>
                 <box-icon
                   name="right-arrow-alt"
                   color="#c3c4ff"
                   size="40px"
-                  onClick={scrollRight}
+                  /*  onClick={scrollRight} */
                 ></box-icon>
-                <h5 className="scrollIcon" onClick={scrollRight}>
+                <h5 className="scrollIcon" /* onClick={scrollRight} */>
                   SCROLL
                 </h5>
               </div>
