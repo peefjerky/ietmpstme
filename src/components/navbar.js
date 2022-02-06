@@ -103,9 +103,9 @@ const NavBar = (props) => {
             {/*  <a href="/" className="nav-item nav-link mx-1 my-auto">
               Gallery
           </a>*/}
-            <RLink to="/contact" className="nav-item nav-link mx-auto my-auto">
+            {/*            <RLink to="/contact" className="nav-item nav-link mx-auto my-auto">
               Contact Us
-            </RLink>
+            </RLink> */}
           </div>
         </div>
       </div>

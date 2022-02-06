@@ -6,15 +6,14 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import { SocialIcon } from "react-social-icons";
 /* import { useState } from "react"; */
 import "../css/footer.scss";
-import { Link } from "react-router-dom";
+/* import { Link } from "react-router-dom"; */
 
 const year = new Date().getFullYear();
 
 const Footer = (props) => {
   //const [defGradient, setGradient] = useState(props);
- /* console.log(props.test.link11); */
+  /* console.log(props.test.link11); */
   return (
-
     <div className="container-fluid mt-5" id="footerBackground">
       <div className={props.bgtint}></div>
       <div
@@ -33,9 +32,9 @@ const Footer = (props) => {
             <a href="/" className="textdark d-block pb-2 nlink">
               Home
             </a>
-            <Link to="/contact" className="textdark d-block pb-2 nlink">
+            {/* <Link to="/contact" className="textdark d-block pb-2 nlink">
               Contact Us
-            </Link>
+            </Link> */}
           </div>
           <div className="col-12 col-md-4 textdark text-justify align-items-center py-3 px-2">
             <span className="my-auto" id="footerHeading">
@@ -51,7 +50,7 @@ const Footer = (props) => {
               className="social-icons"
               url="https://instagram.com/ietmpstme"
             />
-             <SocialIcon
+            <SocialIcon
               className="social-icons"
               url="https://www.facebook.com/ietmpstme/"
             />

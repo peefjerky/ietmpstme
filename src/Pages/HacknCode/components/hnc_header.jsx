@@ -25,18 +25,24 @@ const Hnc_header = () => {
               problems which have plagued mankind for decades.
             </p>
             <button className="mx-3 d-inline-block align-items-center" id="btn">
-              Register Now
+              <a
+                className="text-light stretched-link"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfnUXoyOuXkLSQOwEAABxTjdrP2r3CDA-5gKdIlfeaX2BJd0Q/viewform"
+              >
+                Register Now!
+              </a>
             </button>
-            <button className="mx-3 d-inline-block mb-3 mt-3" id="discbtn">
-              {/*  <box-icon
-                name="discord"
-                type="logo"
-                color="#ffffff"
-                id="disclogo"
-
-              ></box-icon> */}
+            {/* <button
+              className="disabled mx-3 d-inline-block mb-3 mt-3"
+              disabled
+              id="discbtn"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              title="Work In Progress"
+              data-bs-content="Hold on! The Discord server is still being made for y'all!"
+            >
               Join Our Discord!
-            </button>
+            </button> */}
           </div>
         </div>
         <div
