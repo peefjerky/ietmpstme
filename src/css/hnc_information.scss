@@ -96,20 +96,15 @@
     } */
   }
 }
-#hncCardContainer::-webkit-scrollbar {
-  /* -webkit-appearance: visible; */
+/* #hncCardContainer::-webkit-scrollbar {
+  -webkit-appearance: visible;
   width: 2px;
   height: 0px;
   box-shadow: inset 2px 2px 2px rgb(195, 255, 215);
   background-color: rgb(195, 196, 255);
 }
-/* #hncCardContainer::-webkit-scrollbar-track {
-  width: 4px;
-  height: 0px;
-  background-color: rgb(237, 245, 242);
-} */
 #hncCardContainer::-webkit-scrollbar-thumb {
-  /* -webkit-appearance: visible; */
+  -webkit-appearance: visible;
   background-color: rgb(87, 255, 185);
   cursor: grab;
-}
+} */
