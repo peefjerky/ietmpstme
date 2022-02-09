@@ -9,7 +9,7 @@ import Hnc_team from "./components/hnc_team";
 import Hnc_gallery from "./components/hnc_gallery";
 
 const Hack_n_code = () => {
-  console.log("HnC");
+  /* console.log("HnC"); */
   return (
     <motion.div
       initial={{ opacity: 0 }}

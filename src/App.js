@@ -40,7 +40,7 @@ function App() {
   //* This function will run when there is a route change to /hackncode
 
   const onRouteChange = () => {
-    console.log("onRouteRender");
+    /*  console.log("onRouteRender"); */
     setGlass("glass2");
     setNav("Navbar2");
     setBoxIcon("#c3c4ff");

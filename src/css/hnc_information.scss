@@ -51,25 +51,9 @@
     font-weight: 700;
     letter-spacing: 4px;
   }
-  #hncCardContainer {
+  /*  #hncCardContainer {
     overflow-x: hidden;
     height: 550px;
-    /*   mask-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0)),
-      rgba(0, 0, 0, 1),
-      to(rgba(0, 0, 0, 0))
-    );
-    -webkit-mask-image: -webkit-gradient(
-      linear,
-      left top,
-      left middle,
-      left bottom,
-      from(rgba(0, 0, 0, 1)),
-      to(rgba(0, 0, 0, 0))
-    ); */
 
     mask-image: linear-gradient(transparent 1%, black, transparent 100%);
 
@@ -78,7 +62,7 @@
       black,
       transparent 100%
     );
-  }
+  } */
 
   .card {
     background: rgb(255, 255, 255);
@@ -87,10 +71,6 @@
       rgba(107, 107, 107, 0.3) 0%,
       rgba(0, 0, 0, 0.2) 0%
     );
-    /* backdrop-filter: blur(5rem);
-    -webkit-backdrop-filter: blur(5rem); */
-
-    /*  margin: 100px 50px 50px 50px; */
 
     border: 2px solid rgba(255, 255, 255, 0.2);
 
@@ -111,9 +91,9 @@
     p {
       font-size: 0.9em;
     }
-    #hncCardContainer {
+    /*     #hncCardContainer {
       height: 500px;
-    }
+    } */
   }
 }
 #hncCardContainer::-webkit-scrollbar {

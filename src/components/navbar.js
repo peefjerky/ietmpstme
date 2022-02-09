@@ -55,12 +55,6 @@ const NavBar = (props) => {
           />
         </a>
 
-        <RLink to="/hackncode">
-          <button id="navbtn" className="nav-item nav-link ms-auto my-auto">
-            Hack n' Code
-          </button>
-        </RLink>
-
         <button
           className="navbar-toggler"
           data-bs-toggle="collapse"
@@ -74,6 +68,14 @@ const NavBar = (props) => {
         </button>
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav">
+            <RLink to="/hackncode">
+              <button
+                id="navbtn"
+                className="nav-item nav-link mx-auto mx-lg-2 mx-md-2 mx-sm-2 my-3 my-lg-auto my-sm-auto my-md-auto"
+              >
+                Hack n' Code
+              </button>
+            </RLink>
             <ScrollLink
               to={props.defaultNavLinks.defNavLink1Id}
               className="nav-item nav-link my-auto mx-auto"

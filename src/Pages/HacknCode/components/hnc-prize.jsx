@@ -12,7 +12,7 @@ const Hnc_prize = () => {
 
   return (
     <div className="container-fluid my-5" id="hncPrizeContainer">
-      <div className="row mx-lg-5 mx-md-5 mx-sm-3 mb-5 align-items-center">
+      <div className="row mx-lg-5 mx-md-5 mx-sm-3 mx-3 mb-5 align-items-center">
         <div className="col-lg-6 col-sm-12 col-md-6 align-items-center mb-5 text-center">
           <div className="countupnumber">
             {/*  <CountUp
@@ -29,13 +29,14 @@ const Hnc_prize = () => {
           </div>
           <div className="badge mb-4 text-start">PRIZE POOL</div>
         </div>
-        <div className="col-lg-6 col-sm-12 col-md-6 align-items-center ">
-          <h1 className="pb-3 text-left">
+        <div className="col-lg-6 col-sm-12 col-md-6 align-items-center text-center text-sm-center text-md-start text-lg-start">
+          <h1 className="pb-3">
             Win exciting <span>prizes!</span>
           </h1>
           <p className="my-1">
-            Participate and get a chance to win exciting cash prizes and maybe
-            even amazing goodies from our sponsors.
+            Participate and get a chance to win exciting
+            <strong> cash prizes</strong> and maybe even amazing goodies from
+            our sponsors.
           </p>
         </div>
       </div>

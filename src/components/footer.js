@@ -11,8 +11,6 @@ import "../css/footer.scss";
 const year = new Date().getFullYear();
 
 const Footer = (props) => {
-  //const [defGradient, setGradient] = useState(props);
-  /* console.log(props.test.link11); */
   return (
     <div className="container-fluid mt-5" id="footerBackground">
       <div className={props.bgtint}></div>
@@ -26,15 +24,9 @@ const Footer = (props) => {
             <h5 className="textdark pb-2">
               <b>More Links</b>
             </h5>
-            {/*  <a href="/" className="textdark d-block pb-2">
-              Events
-            </a> */}
             <a href="/" className="textdark d-block pb-2 nlink">
               Home
             </a>
-            {/* <Link to="/contact" className="textdark d-block pb-2 nlink">
-              Contact Us
-            </Link> */}
           </div>
           <div className="col-12 col-md-4 textdark text-justify align-items-center py-3 px-2">
             <span className="my-auto" id="footerHeading">
@@ -45,7 +37,6 @@ const Footer = (props) => {
             <h5 className="textdark pb-2">
               <b>Social</b>
             </h5>
-            {/* ! Import correct logos */}
             <SocialIcon
               className="social-icons"
               url="https://instagram.com/ietmpstme"

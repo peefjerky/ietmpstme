@@ -7,13 +7,16 @@ import LaptopAnimation from "../../../components/laptopanimation";
 import "../../../App.css";
 const Hnc_header = () => {
   return (
-    <div className="container-fluid my-5 text-lg-left" id="hncHeaderContainer">
-      <div className="row align-items-center my-5 mx-sm-3 mx-md-5 mx-lg-5">
-        <div className="col-sm-12 col-md-12 col-lg-6 align-items-lg-left align-items-md-center mb-5">
+    <div
+      className="container-fluid my-5 text-lg-start text-sm-center text-center"
+      id="hncHeaderContainer"
+    >
+      <div className="row align-items-center my-5 mx-3 mx-md-5 mx-lg-5">
+        <div className="col-sm-12 col-md-12 col-lg-6 mb-5">
           <div>
-            <span className="badge text-lg-start my-2">24 Hour Hackathon</span>
+            <span className="badge my-2">24 Hour Hackathon</span>
             <br />
-            <span className="badge text-lg-start my-2">26th - 27th March</span>
+            <span className="badge my-2">26th - 27th March</span>
           </div>
           <div className="hnc_typist mt-5">
             <HnCTypedReactHooks />
