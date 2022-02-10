@@ -20,12 +20,13 @@ import LocationChange from "./Hooks/hear-for-location";
 import { motion, AnimatePresence } from "framer-motion";
 import Hnc_Loading from "./components/hnc_loading";
 import "boxicons";
-import Hnc_submission from "./Pages/HacknCode/components/hnc_submission";
 
 const Lazy_Hack_n_code = React.lazy(() =>
   import("./Pages/HacknCode/hack-n-code")
 );
-
+const Lazy_Hnc_submission = React.lazy(() =>
+  import("./Pages/HacknCode/components/hnc_submission")
+);
 function App() {
   const AniLocation = useLocation();
   const [defGlass, setGlass] = useState("glass");
@@ -189,7 +190,7 @@ function App() {
                     <Route
                       exact
                       path="/hackncode/submission"
-                      element={<Hnc_submission />}
+                      element={<Lazy_Hnc_submission />}
                     ></Route>
                     <Route exact path="*" element={<NotFound />}></Route>
                   </Routes>
