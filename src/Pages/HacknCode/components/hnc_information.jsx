@@ -52,7 +52,7 @@ const Hnc_information = () => {
                 against other professionals and also
                 <strong> boost their CVs</strong> by winning. Besides you can
                 always just aim for the prize and maybe if you are lucky and
-                creative you will richer than when you first started.
+                creative you will be richer than when you first started.
               </p>
             </div>
           </motion.div>
