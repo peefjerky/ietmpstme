@@ -1,4 +1,8 @@
-import React, { useState /* , useEffect */ /* , useCallback  */ } from "react";
+import React, {
+  useEffect,
+  useLayoutEffect,
+  useState /* , useEffect */ /* , useCallback  */,
+} from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
 import NavBar from "./components/navbar.js";
@@ -15,6 +19,7 @@ import LocationChange from "./Hooks/hear-for-location";
 import { motion, AnimatePresence } from "framer-motion";
 import Hnc_Loading from "./components/hnc_loading";
 import "boxicons";
+import Hnc_submission from "./Pages/HacknCode/components/hnc_submission";
 
 const Lazy_Hack_n_code = React.lazy(() =>
   import("./Pages/HacknCode/hack-n-code")
@@ -36,6 +41,7 @@ function App() {
   const [defNavLink2, setNavLink2] = useState("Events");
   const [defNavLink1Id, setNavLink1Id] = useState("aboutContainer");
   const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
+  const [isVisible, setIsVisible] = useState(false);
 
   //* This function will run when there is a route change to /hackncode
 
@@ -73,6 +79,17 @@ function App() {
     setNavLink1Id("aboutContainer");
     setNavLink2Id("eventContainer");
   };
+
+  const submission = useLocation();
+
+  useLayoutEffect(() => {
+    if (submission.pathname === "/hackncode/submission") {
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  }, [submission.pathname]);
+
   return (
     <Provider>
       <LocationChange
@@ -107,6 +124,10 @@ function App() {
             }}
           ></motion.div>
           <motion.div
+            style={{
+              visibility: isVisible ? "visible" : "hidden",
+              opacity: isVisible ? 1 : 0,
+            }}
             className={defCircle2}
             whileInView={{ scale: 1.8, rotate: 360 }}
             transition={{
@@ -118,6 +139,10 @@ function App() {
             }}
           ></motion.div>
           <motion.div
+            style={{
+              visibility: isVisible ? "visible" : "hidden",
+              opacity: isVisible ? 1 : 0,
+            }}
             className={defCircle3}
             whileInView={{ scale: 1.1, rotate: 720, y: "30%" }}
             transition={{
@@ -153,6 +178,11 @@ function App() {
                       exact
                       path="/hackncode"
                       element={<Lazy_Hack_n_code />}
+                    ></Route>
+                    <Route
+                      exact
+                      path="/hackncode/submission"
+                      element={<Hnc_submission />}
                     ></Route>
                     <Route exact path="*" element={<NotFound />}></Route>
                   </Routes>
