@@ -50,7 +50,7 @@ function App() {
     ReactGA.initialize("G-5196BRMP9B");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-
+  console.log(window.location.pathname + window.location.search);
   const onRouteChange = () => {
     /*  console.log("onRouteRender"); */
     setGlass("glass2");
