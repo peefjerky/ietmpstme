@@ -4,8 +4,8 @@ import "../../../css/hnc_submission.scss";
 const Hnc_submission = () => {
   return (
     <div className="container-fluid my-5" id="hncSubmission">
-      <div className="row mx-3 mx-sm-5 mx-md-5 mx-lg-5 px-5">
-        <div className="col-sm-12 col-lg-12 col-md-12 px-5">
+      <div className="row mx-3 mx-sm-5 mx-md-5 mx-lg-5 px-0 px-lg-5 px-sm-5 px-md-5">
+        <div className="col-sm-12 col-lg-12 col-md-12 px-0 px-lg-5 px-sm-5 px-md-5">
           <h1 className="text-center">IMPORTANT INFORMATION</h1>
           <hr />
           <h3 className="mt-5">Themes</h3>
@@ -87,7 +87,7 @@ const Hnc_submission = () => {
             </li>
           </ul>
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-5">
+        <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-0 px-lg-5 px-sm-5 px-md-5">
           <h1 className="mt-5 text-center">HOW TO SUBMIT YOUR PROJECTS</h1>
           <hr />
         </div>
