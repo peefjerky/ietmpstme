@@ -5,6 +5,7 @@ import React, {
 } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
+
 import NavBar from "./components/navbar.js";
 import Footer from "./components/footer.js";
 import Contact from "./components/contact";
@@ -160,6 +161,7 @@ function App() {
               defaultNav={defNav}
               defaultBoxIcon={defBoxIcon}
               defaultNavIcon={defNavIcon}
+              defaultVisibility={isVisible}
               defaultNavLinks={{
                 defNavLink1,
                 defNavLink2,

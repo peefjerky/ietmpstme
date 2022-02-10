@@ -78,6 +78,10 @@ const NavBar = (props) => {
             </RLink>
             <ScrollLink
               to={props.defaultNavLinks.defNavLink1Id}
+              style={{
+                visibility: props.defaultVisibility ? "visible" : "hidden",
+                opacity: props.defaultVisibility ? 1 : 0,
+              }}
               className="nav-item nav-link my-auto mx-auto"
               spy={true}
               smooth={true}
@@ -88,6 +92,10 @@ const NavBar = (props) => {
             </ScrollLink>
             <ScrollLink
               to={props.defaultNavLinks.defNavLink2Id}
+              style={{
+                visibility: props.defaultVisibility ? "visible" : "hidden",
+                opacity: props.defaultVisibility ? 1 : 0,
+              }}
               className="nav-item nav-link mx-auto my-auto"
               spy={true}
               smooth={true}

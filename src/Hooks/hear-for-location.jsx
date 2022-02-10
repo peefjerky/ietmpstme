@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
+import ReactGA from "react-ga";
 const LocationChange = (props) => {
   const { pathname } = useLocation();
   /* console.log(props.changes.defNavLinkss.link11); */
@@ -9,7 +10,10 @@ const LocationChange = (props) => {
       behaviour: "smooth",
     });
   };
-
+  useEffect(() => {
+    ReactGA.initialize("G-YXK3MJ7227");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   /*  if (pathname === "/hackncode") {
     refreshPage();
   } else {
