@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
-/* import ReactGA from "react-ga"; */
+
 const LocationChange = (props) => {
   const { pathname } = useLocation();
 
