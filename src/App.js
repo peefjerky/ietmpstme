@@ -47,7 +47,7 @@ function App() {
   //* This function will run when there is a route change to /hackncode
 
   useEffect(() => {
-    ReactGA.initialize("G-YXK3MJ7227");
+    ReactGA.initialize("G-5196BRMP9B");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
