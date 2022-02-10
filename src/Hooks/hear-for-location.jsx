@@ -1,24 +1,16 @@
 import { useEffect, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
-import ReactGA from "react-ga";
+/* import ReactGA from "react-ga"; */
 const LocationChange = (props) => {
   const { pathname } = useLocation();
-  /* console.log(props.changes.defNavLinkss.link11); */
+
   const ScrollToTop = () => {
     window.scrollTo({
       top: 0,
       behaviour: "smooth",
     });
   };
-  useEffect(() => {
-    ReactGA.initialize("G-YXK3MJ7227");
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-  /*  if (pathname === "/hackncode") {
-    refreshPage();
-  } else {
-    window.location.reload(false);
-  } */
+
   useEffect(() => {
     ScrollToTop();
     window.addEventListener("load", ScrollToTop);
@@ -50,27 +42,7 @@ const LocationChange = (props) => {
     props?.changes?.defNavLink2, // eslint-disable-line react-hooks/exhaustive-deps
     /* props?.changes?.defNavLinkss.link11, //eslinke-disable-line react-hooks/exhaustive-deps */
   ]);
-  /*   useEffect(() => {
-    const refreshPage = () => {
-      window.location.reload(true);
-    };
-    window.addEventListener("load", refreshPage);
-    return () => {
-      window.removeEventListener("load", refreshPage);
-    };
-  }, []); */
 
   return null;
 };
-/*  props?.changes?.defGlass,
-          props?.changes?.defNav,
-          props?.changes?.defBoxIcon,
-          props?.changes?.defGradient,
-          props?.changes?.defFooter,
-          props?.changes?.defBg,
-          props?.changes?.defCircle1,
-          props?.changes?.defCircle2,
-          props?.changes?.defCircle3,
-          props?.changes?.defNavLink1,
-          props?.changes?.defNavLink2, */
 export default LocationChange;

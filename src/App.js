@@ -5,7 +5,7 @@ import React, {
 } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Provider } from "./context";
-
+import ReactGA from "react-ga";
 import NavBar from "./components/navbar.js";
 import Footer from "./components/footer.js";
 import Contact from "./components/contact";
@@ -45,6 +45,11 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
 
   //* This function will run when there is a route change to /hackncode
+
+  useEffect(() => {
+    ReactGA.initialize("G-YXK3MJ7227");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   const onRouteChange = () => {
     /*  console.log("onRouteRender"); */
