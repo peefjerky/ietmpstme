@@ -30,7 +30,7 @@ const Hnc_header = () => {
             <button className="mx-3 d-inline-block align-items-center" id="btn">
               <a
                 className="text-light stretched-link"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfnUXoyOuXkLSQOwEAABxTjdrP2r3CDA-5gKdIlfeaX2BJd0Q/viewform"
+                href="https://lu.ma/HacknCode"
               >
                 Register Now!
               </a>
