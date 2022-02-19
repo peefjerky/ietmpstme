@@ -3,7 +3,6 @@ import HnCTypedReactHooks from "../../../components/hnc_animation";
 /* import { FixedSizeList } from "react-window"; */
 import "../../../css/hnc_header.scss";
 import LaptopAnimation from "../../../components/laptopanimation";
-
 import "../../../App.css";
 const Hnc_header = () => {
   return (

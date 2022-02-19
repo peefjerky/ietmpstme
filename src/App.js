@@ -20,7 +20,8 @@ import LocationChange from "./Hooks/hear-for-location";
 import { motion, AnimatePresence } from "framer-motion";
 import Hnc_Loading from "./components/hnc_loading";
 import "boxicons";
-
+import Hnc_modal_popup from "./Pages/HacknCode/components/hnc_modal_popup";
+/* import Modal from "./components/modalb4"; */
 const Lazy_Hack_n_code = React.lazy(() =>
   import("./Pages/HacknCode/hack-n-code")
 );
@@ -44,12 +45,19 @@ function App() {
   const [defNavLink1Id, setNavLink1Id] = useState("aboutContainer");
   const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
   const [isVisible, setIsVisible] = useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
 
   //* This function will run when there is a route change to /hackncode
 
   useEffect(() => {
     ReactGA.initialize("G-5196BRMP9B");
     ReactGA.send(window.location.pathname + window.location.search);
+  }, []);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setModalShow(true);
+    }, 3000);
   }, []);
 
   const onRouteChange = () => {
@@ -68,6 +76,7 @@ function App() {
     setNavLink2("FAQs");
     setNavLink1Id("hncInformationContainer");
     setNavLink2Id("hncFaq");
+    setModalShow(false);
   };
 
   const revertChanges = () => {
@@ -200,7 +209,20 @@ function App() {
             </section>
           </div>
         </div>
+        {/*   <motion.div
+          initial={{ y: "-100vh" }}
+          animate={{ y: 10 }}
+          transition={{
+            duration: 2,
+            delay: 4,
+            ease: "easeInOut",
+          }}
+        > */}
+        <Hnc_modal_popup show={modalShow} onHide={() => setModalShow(false)} />
+        {/* </motion.div> */}
+
         {/* //!Disabled modal for Now <Modal /> */}
+        {/* <Modal></Modal> */}
       </div>
       <GoToTop></GoToTop>
     </Provider>
