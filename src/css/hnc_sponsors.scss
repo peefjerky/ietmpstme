@@ -27,4 +27,26 @@
       text-align: center !important;
     }
   }
+  @media (max-width: 768px) {
+    // make sponsor gallery responsive
+    #sponsorsContanier {
+      height: 100%;
+      width: auto;
+      margin: 0px;
+      padding: 0px;
+    }
+    .sponn{
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    img{
+      align-items: center !important;
+      justify-content: center !important;
+      width: 55% !important;
+      height: 55% !important;
+      padding-left: 0 !important;
+      // magin left and right 0 top and bottom 20px
+      margin: 1rem 5rem !important;
+    }
+  }
 }
