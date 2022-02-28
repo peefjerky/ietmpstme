@@ -18,26 +18,30 @@ const Hnc_sponsors = () => {
         id="sponsorsContanier"
       >
         <div className="d-flex flex-row sponn">
-          <img
-            src={github}
-            alt="sponsor1"
-            className="img-fluid"
-            style={{ height: "100px", width: "100px", marginRight: "5rem", marginLeft: "5rem" }}
-          />
-
-          <img
-            src={earthhack}
-            alt="sponsor2"
-            className="img-fluid"
-            style={{ height: "100px", width: "450px", marginRight: "5rem", marginLeft: "8rem" }}
-          />
-
-          <img
-            src={mlsa}
-            alt="sponsor3"
-            className="img-fluid"
-            style={{ height: "150px", marginRight: "5rem", marginLeft: "5rem" }}
-          />
+          <a href="https://github.com">
+            <img
+              src={github}
+              alt="sponsor1"
+              className="img-fluid"
+              style={{ height: "100px", width: "100px", marginRight: "5rem", marginLeft: "5rem" }}
+            />
+          </a>
+          <a href="https://earthhacks.io/">
+            <img
+              src={earthhack}
+              alt="sponsor2"
+              className="img-fluid"
+              style={{ height: "100px", width: "450px", marginRight: "5rem", marginLeft: "8rem" }}
+            />
+          </a>
+          <a href="https://studentambassadors.microsoft.com/">
+            <img
+              src={mlsa}
+              alt="sponsor3"
+              className="img-fluid"
+              style={{ height: "150px", marginRight: "5rem", marginLeft: "5rem" }}
+            />
+          </a>
         </div>
       </div>
     </div>
