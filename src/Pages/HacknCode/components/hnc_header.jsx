@@ -3,9 +3,19 @@ import HnCTypedReactHooks from "../../../components/hnc_animation";
 /* import { FixedSizeList } from "react-window"; */
 import "../../../css/hnc_header.scss";
 import LaptopAnimation from "../../../components/laptopanimation";
-import Devfolio_Button from "../../../Assets/Images/Sponsors/Devfolio_Button.png";
+/* import Devfolio_Button from "../../../Assets/Images/Sponsors/Devfolio_Button.png"; */
 import "../../../App.css";
 const Hnc_header = () => {
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <div
       className="container-fluid my-5 text-lg-start text-sm-center text-center"
@@ -27,7 +37,7 @@ const Hnc_header = () => {
               encourage students to find new and innovative solutions to
               problems which have plagued mankind for decades.
             </p>
-            <button
+            {/* <button
               className="mx-3 d-inline-block align-items-center"
               id="btn_reg"
             >
@@ -43,7 +53,13 @@ const Hnc_header = () => {
               >
                 Apply with Devfolio
               </a>
-            </button>
+            </button> */}
+            <div
+              className="apply-button"
+              data-hackathon-slug="hackncode-5"
+              data-button-theme="light"
+              style={{ height: "44px", width: "312px" }}
+            ></div>
             {/* <button
               className="disabled mx-3 d-inline-block mb-3 mt-3"
               disabled
