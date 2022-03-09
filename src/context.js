@@ -103,7 +103,7 @@ export class Provider extends Component {
         question:
           "How many problems will we have to solve, and how much time will we get?",
         answer:
-          "One problem statement, and 16 hours to come up with a solution.",
+          "One problem statement, and 24 hours to come up with a solution.",
       },
       {
         id: "Seven",

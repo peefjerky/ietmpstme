@@ -3,6 +3,7 @@ import HnCTypedReactHooks from "../../../components/hnc_animation";
 /* import { FixedSizeList } from "react-window"; */
 import "../../../css/hnc_header.scss";
 import LaptopAnimation from "../../../components/laptopanimation";
+import Devfolio_Button from "../../../Assets/Images/Sponsors/Devfolio_Button.png";
 import "../../../App.css";
 const Hnc_header = () => {
   return (
@@ -26,12 +27,21 @@ const Hnc_header = () => {
               encourage students to find new and innovative solutions to
               problems which have plagued mankind for decades.
             </p>
-            <button className="mx-3 d-inline-block align-items-center" id="btn">
+            <button
+              className="mx-3 d-inline-block align-items-center"
+              id="btn_reg"
+            >
+              <img
+                src={Devfolio_Button}
+                style={{ height: "20px", width: "20px" }}
+                alt="Devfolio"
+                className="img-fluid me-3"
+              />
               <a
                 className="text-light stretched-link"
                 href="https://lu.ma/HacknCode"
               >
-                Register Now!
+                Apply with Devfolio
               </a>
             </button>
             {/* <button

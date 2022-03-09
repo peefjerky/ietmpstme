@@ -14,7 +14,7 @@
     /* backdrop-filter: blur(5rem);
     -webkit-backdrop-filter: blur(5rem); */
 
-    height: 300px;
+    /* height: 300px; */
 
     /*  margin: 100px 50px 50px 50px; */
 
@@ -35,11 +35,7 @@
       margin: 0px;
       padding: 0px;
     }
-    .sponn{
-      display: flex !important;
-      flex-direction: column !important;
-    }
-    img{
+    img {
       align-items: center !important;
       justify-content: center !important;
       width: 55% !important;
