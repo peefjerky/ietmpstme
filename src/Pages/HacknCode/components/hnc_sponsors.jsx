@@ -19,7 +19,7 @@ const Hnc_sponsors = () => {
     <div className="container-fluid my-5 text-center" id="hncSponsors">
       <h1 className="my-5">Our Sponsors</h1>
       <div
-        className="row mx-5 align-items-center text-center py-5"
+        className="row mx-0 mx-md-5 mx-sm-0 mx-lg-5 align-items-center text-center py-5"
         id="sponsorsContanier"
       >
         <div className="col-12 col-lg-12 col-md-12 col-sm-12">
