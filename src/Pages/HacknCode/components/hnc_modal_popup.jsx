@@ -1,11 +1,21 @@
 import React from "react";
 import "../../../css/hnc_modal_popup.scss";
 import { Modal } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+/* import { Button } from "react-bootstrap"; */
 import LaptopAnimation from "../../../components/laptopanimation";
 import HnCTypedReactHooks from "../../../components/hnc_animation";
 
 const Hnc_modal_popup = (props) => {
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <Modal
       id="Hnc_Modal"
@@ -37,7 +47,7 @@ const Hnc_modal_popup = (props) => {
                 to encourage students to find new and innovative solutions to
                 problems which have plagued mankind for decades.
               </p>
-              <button
+              {/* <button
                 className="mx-3 d-inline-block align-items-center"
                 id="btn"
               >
@@ -47,7 +57,13 @@ const Hnc_modal_popup = (props) => {
                 >
                   Register Now!
                 </a>
-              </button>
+              </button> */}
+              <div
+                className="apply-button"
+                data-hackathon-slug="hackncode"
+                data-button-theme="light"
+                style={{ height: "44px", width: "312px" }}
+              ></div>
             </div>
           </div>
 
