@@ -60,7 +60,7 @@ const Hnc_modal_popup = (props) => {
               </button> */}
               <div
                 className="apply-button"
-                data-hackathon-slug="hackncode"
+                data-hackathon-slug="hackncode-5"
                 data-button-theme="light"
                 style={{ height: "44px", width: "312px" }}
               ></div>
