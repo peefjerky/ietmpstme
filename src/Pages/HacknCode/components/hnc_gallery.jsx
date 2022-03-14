@@ -13,6 +13,7 @@ import HnC2 from "../../../Assets/Images/HnC/HnC2.webp";
 import HnC3 from "../../../Assets/Images/HnC/HnC3.webp";
 import HnC4 from "../../../Assets/Images/HnC/HnC4.webp";
 import HnC5 from "../../../Assets/Images/HnC/HnC5.webp";
+import HnC6 from "../../../Assets/Images/HnC/HnC6.webp";
 
 import SwiperCore, { Autoplay, EffectCoverflow, Lazy } from "swiper";
 
@@ -53,7 +54,12 @@ const Hnc_gallery = () => {
               <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={HnC2} alt="HnC 2019" className="swiper-lazy" />
+              <img
+                src={HnC6}
+                alt="HnC 2019"
+                className="swiper-lazy"
+                style={{ objectFit: "cover", height: "350px" }}
+              />
               <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
             <SwiperSlide>
