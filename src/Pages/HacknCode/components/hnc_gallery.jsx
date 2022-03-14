@@ -74,6 +74,10 @@ const Hnc_gallery = () => {
               <img src={HnC5} alt="HnC 2019" className="swiper-lazy" />
               <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
+            <SwiperSlide>
+              <img src={HnC2} alt="HnC 2019" className="swiper-lazy" />
+              <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
