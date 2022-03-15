@@ -57,8 +57,8 @@ const Hnc_gallery = () => {
               <img
                 src={HnC6}
                 alt="HnC 2019"
-                className="swiper-lazy"
-                style={{ objectFit: "cover", height: "350px" }}
+                className="swiper-lazy specialImage"
+                /* style={{ objectFit: "cover", height: "350px" }} */
               />
               <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
