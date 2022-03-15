@@ -1,7 +1,7 @@
 import React /* , { useEffect } */ from "react";
 import "../../../css/hnc_sponsors.scss";
 import github from "../../../Assets/Images/GitHub.png";
-import earthhack from "../../../Assets/Images/Sponsors/Earth+Hacks.webp";
+import earthhack from "../../../Assets/Images/Sponsors/earthhacks.webp";
 import mlsa from "../../../Assets/Images/mlsa.webp";
 import devfolio_logo from "../../../Assets/Images/Sponsors/Devfolio_Logo-White.png";
 import polygon_logo from "../../../Assets/Images/Sponsors/Polygon_Logo-White.png";
