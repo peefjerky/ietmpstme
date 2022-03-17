@@ -4,6 +4,7 @@ import { Modal } from "react-bootstrap";
 /* import { Button } from "react-bootstrap"; */
 import LaptopAnimation from "../../../components/laptopanimation";
 import HnCTypedReactHooks from "../../../components/hnc_animation";
+import { Link } from "react-router-dom";
 
 const Hnc_modal_popup = (props) => {
   React.useEffect(() => {
@@ -47,23 +48,26 @@ const Hnc_modal_popup = (props) => {
                 to encourage students to find new and innovative solutions to
                 problems which have plagued mankind for decades.
               </p>
-              {/* <button
-                className="mx-3 d-inline-block align-items-center"
-                id="btn"
-              >
-                <a
+              <Link to="/hackncode">
+                <button
+                  className="mx-3 d-inline-block align-items-center"
+                  id="btn"
+                >
+                  {/*  <a
                   className="text-light stretched-link"
                   href="https://lu.ma/HacknCode"
                 >
                   Register Now!
-                </a>
-              </button> */}
-              <div
+                </a> */}
+                  Register Now!
+                </button>
+              </Link>
+              {/*  <div
                 className="apply-button"
                 data-hackathon-slug="hackncode-5"
                 data-button-theme="light"
                 style={{ height: "44px", width: "312px" }}
-              ></div>
+              ></div> */}
             </div>
           </div>
 
