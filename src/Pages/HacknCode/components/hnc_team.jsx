@@ -10,8 +10,8 @@ import Hnc_team_card from "./hnc_team_card";
 /* import {useRef} from "react"; */
 
 const Hnc_team = () => {
-  const check = document.querySelector("#HnCScroller");
-  const distance = 100;
+  /*   const check = document.querySelector("#HnCScroller");
+  const distance = 100; */
   /* function scrollRight() {
    check.scrollBy({
       left: distance,
