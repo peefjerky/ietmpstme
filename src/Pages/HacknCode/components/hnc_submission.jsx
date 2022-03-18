@@ -13,7 +13,6 @@ const Hnc_submission = () => {
   const getSize = () => {
     const newWidth = myRef.current.clientWidth;
     setWidth(newWidth - 20);
-    console.log(newWidth);
   };
   useEffect(() => {
     getSize();
