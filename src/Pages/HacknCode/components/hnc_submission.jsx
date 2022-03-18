@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../../css/hnc_submission.scss";
+import ScaleLoader from "react-spinners/ScaleLoader";
 import guidePDF from "../../../Assets/PDF/HnCGuide.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const Hnc_submission = () => {
   const [numPages, setNumPages] = useState(null);
@@ -116,8 +118,21 @@ const Hnc_submission = () => {
           <hr />
           <Document
             file={guidePDF}
+            className="text-center"
             onLoadSuccess={onDocumentLoadSuccess}
             renderMode={"canvas"}
+            loading={
+              /*  <div className="text-center">
+                <p>Loading PDF</p>
+              </div> */
+              <ScaleLoader
+                color={"#57ffb9"}
+                loading={true}
+                height={50}
+                width={4}
+                margin={2}
+              />
+            }
           >
             {Array.from(new Array(numPages), (el, index) => (
               <Page
