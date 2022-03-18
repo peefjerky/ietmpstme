@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../css/hnc_submission.scss";
-
+import guidePDF from "../../../Assets/PDF/HnCGuide.pdf";
+import { Document, Page } from "react-pdf";
 const Hnc_submission = () => {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPageNumber(1);
+  }
+
+  function changePage(offset) {
+    setPageNumber((prevPageNumber) => prevPageNumber + offset);
+  }
+
+  function previousPage() {
+    changePage(-1);
+  }
+
+  function nextPage() {
+    changePage(1);
+  }
+
   return (
     <div className="container-fluid my-5" id="hncSubmission">
       <div className="row mx-3 mx-sm-5 mx-md-5 mx-lg-5 px-0 px-lg-5 px-sm-5 px-md-5">
@@ -90,6 +111,28 @@ const Hnc_submission = () => {
         <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-0 px-lg-5 px-sm-5 px-md-5">
           <h1 className="mt-5 text-center">HOW TO SUBMIT YOUR PROJECTS</h1>
           <hr />
+          <Document file={guidePDF} onLoadSuccess={onDocumentLoadSuccess}>
+            <Page pageNumber={pageNumber} />
+          </Document>
+          <div>
+            <p>
+              Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+            </p>
+            <button
+              type="button"
+              disabled={pageNumber <= 1}
+              onClick={previousPage}
+            >
+              Previous
+            </button>
+            <button
+              type="button"
+              disabled={pageNumber >= numPages}
+              onClick={nextPage}
+            >
+              Next
+            </button>
+          </div>
         </div>
       </div>
     </div>
