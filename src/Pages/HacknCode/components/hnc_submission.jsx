@@ -1,32 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../../../css/hnc_submission.scss";
 import guidePDF from "../../../Assets/PDF/HnCGuide.pdf";
-import { Document, Page } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const Hnc_submission = () => {
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
+  const [width, setWidth] = useState();
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
-    setPageNumber(1);
   }
+  const myRef = useRef();
+  const getSize = () => {
+    const newWidth = myRef.current.clientWidth;
+    setWidth(newWidth - 20);
+    console.log(newWidth);
+  };
+  useEffect(() => {
+    getSize();
+  }, []);
+  useEffect(() => {
+    window.addEventListener("resize", getSize);
 
-  function changePage(offset) {
-    setPageNumber((prevPageNumber) => prevPageNumber + offset);
-  }
-
-  function previousPage() {
-    changePage(-1);
-  }
-
-  function nextPage() {
-    changePage(1);
-  }
+    return () => {
+      window.removeEventListener("resize", getSize);
+    };
+  }, []);
 
   return (
-    <div className="container-fluid my-5" id="hncSubmission">
-      <div className="row mx-3 mx-sm-5 mx-md-5 mx-lg-5 px-0 px-lg-5 px-sm-5 px-md-5">
-        <div className="col-sm-12 col-lg-12 col-md-12 px-0 px-lg-5 px-sm-5 px-md-5">
+    <div className="container-fluid" id="hncSubmission">
+      <div className="row mx-3 mx-sm-5 mx-md-5 mx-lg-5 px-0 px-lg-5 px-sm-5 px-md-5 align-items-center">
+        {/* <div className="col-sm-12 col-lg-12 col-md-12 px-0 px-lg-5 px-sm-5 px-md-5">
           <h1 className="text-center">IMPORTANT INFORMATION</h1>
           <hr />
           <h3 className="mt-5">Themes</h3>
@@ -75,7 +78,7 @@ const Hnc_submission = () => {
               Build an application to educate children about financial planning
             </li>
           </ul>
-          {/* //!Entertainment*/}
+          {}
           <h4 className="mt-5">Entertainment</h4>
           <ul>
             <li>
@@ -107,32 +110,26 @@ const Hnc_submission = () => {
               from wherever they are
             </li>
           </ul>
-        </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-0 px-lg-5 px-sm-5 px-md-5">
-          <h1 className="mt-5 text-center">HOW TO SUBMIT YOUR PROJECTS</h1>
+        </div> */}
+        {/* <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-0 px-lg-5 px-sm-5 px-md-5"> */}
+        <div className="col-lg-12 col-md-12 col-sm-12 mb-5" ref={myRef}>
+          <h1 className="mt-5 text-center">GUIDELINES</h1>
           <hr />
-          <Document file={guidePDF} onLoadSuccess={onDocumentLoadSuccess}>
-            <Page pageNumber={pageNumber} />
+          <Document
+            file={guidePDF}
+            onLoadSuccess={onDocumentLoadSuccess}
+            renderMode={"canvas"}
+          >
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page
+                key={`page_${index + 1}`}
+                pageNumber={index + 1}
+                /* width={width - 500} */
+                /* width={Math.round(width / 1.35)} */
+                width={width}
+              />
+            ))}
           </Document>
-          <div>
-            <p>
-              Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-            </p>
-            <button
-              type="button"
-              disabled={pageNumber <= 1}
-              onClick={previousPage}
-            >
-              Previous
-            </button>
-            <button
-              type="button"
-              disabled={pageNumber >= numPages}
-              onClick={nextPage}
-            >
-              Next
-            </button>
-          </div>
         </div>
       </div>
     </div>

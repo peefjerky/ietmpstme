@@ -3,6 +3,7 @@ import HnCTypedReactHooks from "../../../components/hnc_animation";
 /* import { FixedSizeList } from "react-window"; */
 import "../../../css/hnc_header.scss";
 import LaptopAnimation from "../../../components/laptopanimation";
+import { Link } from "react-router-dom";
 /* import Devfolio_Button from "../../../Assets/Images/Sponsors/Devfolio_Button.png"; */
 import "../../../App.css";
 const Hnc_header = () => {
@@ -71,6 +72,15 @@ const Hnc_header = () => {
             >
               Join Our Discord!
             </button> */}
+            <p className="my-3">Confused about how to register?</p>
+            <Link to="/guidelines">
+              <button
+                className="d-inline-block align-items-center"
+                id="btn_reg"
+              >
+                Check out our Guidelines!
+              </button>
+            </Link>
           </div>
         </div>
         <div

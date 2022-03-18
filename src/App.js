@@ -46,7 +46,7 @@ function App() {
   const [defNavLink1Id, setNavLink1Id] = useState("aboutContainer");
   const [defNavLink2Id, setNavLink2Id] = useState("eventContainer");
   const [isVisible, setIsVisible] = useState(false);
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   //* This function will run when there is a route change to /hackncode
 
@@ -100,7 +100,7 @@ function App() {
   const submission = useLocation();
 
   useLayoutEffect(() => {
-    if (submission.pathname === "/hackncode/submission") {
+    if (submission.pathname === "/guidelines") {
       setIsVisible(false);
     } else {
       setIsVisible(true);
@@ -199,7 +199,7 @@ function App() {
                     ></Route>
                     <Route
                       exact
-                      path="/hackncode/submission"
+                      path="/guidelines"
                       element={<Lazy_Hnc_submission />}
                     ></Route>
                     <Route exact path="*" element={<NotFound />}></Route>

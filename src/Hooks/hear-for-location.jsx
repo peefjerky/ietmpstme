@@ -20,9 +20,8 @@ const LocationChange = (props) => {
   }, []);
 
   useLayoutEffect(() => {
-    if (pathname === "/hackncode" || pathname === "/hackncode/submission") {
+    if (pathname === "/hackncode" || pathname === "/guidelines") {
       props.apply();
-      
     } else {
       props.revert();
     }
