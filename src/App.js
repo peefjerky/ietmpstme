@@ -51,7 +51,6 @@ function App() {
   //* This function will run when there is a route change to /hackncode
 
   useEffect(() => {
-    ReactGA.initialize("");
     ReactGA.initialize("G-5196BRMP9B", {
       legacyDimensionMetric: false,
       gtagOptions: { send_page_view: true },
