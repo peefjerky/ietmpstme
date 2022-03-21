@@ -53,6 +53,8 @@ function App() {
   useEffect(() => {
     ReactGA.initialize("G-5196BRMP9B");
     ReactGA.send(window.location.pathname + window.location.search);
+    ReactGA.send({ hitType: "pageview", page: "/hackncode" });
+    ReactGA.send({ hitType: "pageview", page: "/guidelines" });
   }, []);
 
   useEffect(() => {
