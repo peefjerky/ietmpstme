@@ -50,7 +50,7 @@ const Hnc_modal_popup = (props) => {
               </p>
               <Link to="/hackncode">
                 <button
-                  className="mx-3 d-inline-block align-items-center"
+                  className="mx-0 d-inline-block align-items-center"
                   id="btn"
                 >
                   {/*  <a
