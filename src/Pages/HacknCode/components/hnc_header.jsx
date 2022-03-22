@@ -72,26 +72,24 @@ const Hnc_header = () => {
             >
               Join Our Discord!
             </button> */}
-            <p className="my-3">
-              Confused? Register through Google Forms or check out our
-              Guidelines!
-            </p>
-            <Link to="/guidelines">
-              <button
-                className="d-inline-block align-items-center"
-                id="btn_reg"
-              >
-                Check out our Guidelines!
-              </button>
-            </Link>
+            <p className="my-3">or</p>
+
             <a href="https://bit.ly/HacknCode">
               <button
-                className="d-inline-block align-items-center ms-lg-5 ms-0 ms-md-3 ms-sm-3 mt-3 mt-lg-0 mt-sm-3 mt-md-0"
+                className="d-inline-block align-items-center ms-0 mt-3 mt-lg-0 mt-sm-3 mt-md-0"
                 id="btn_reg2"
               >
                 Google Forms
               </button>
             </a>
+            <Link to="/guidelines">
+              <button
+                className="d-inline-block align-items-center ms-lg-4 ms-0 ms-md-3 ms-sm-0 mt-3 mt-lg-3 mt-sm-3 mt-md-3"
+                id="btn_reg"
+              >
+                Check out our Guidelines!
+              </button>
+            </Link>
           </div>
         </div>
         <div
