@@ -30,8 +30,8 @@ const Hnc_submission = () => {
   return (
     <div className="container-fluid" id="hncSubmission">
       <div className="row mx-3 mx-sm-5 mx-md-5 mx-lg-5 px-0 px-lg-5 px-sm-5 px-md-5 align-items-center">
-        {/* <div className="col-sm-12 col-lg-12 col-md-12 px-0 px-lg-5 px-sm-5 px-md-5">
-          <h1 className="text-center">IMPORTANT INFORMATION</h1>
+        <div className="col-sm-12 col-lg-12 col-md-12 px-0 px-lg-5 px-sm-5 px-md-5">
+          <h1 className="text-center mt-5">IMPORTANT INFORMATION</h1>
           <hr />
           <h3 className="mt-5">Themes</h3>
           <ul>
@@ -111,7 +111,7 @@ const Hnc_submission = () => {
               from wherever they are
             </li>
           </ul>
-        </div> */}
+        </div>
         {/* <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-0 px-lg-5 px-sm-5 px-md-5"> */}
         <div className="col-lg-12 col-md-12 col-sm-12 mb-5" ref={myRef}>
           <h1 className="mt-5 text-center">GUIDELINES</h1>
@@ -122,9 +122,6 @@ const Hnc_submission = () => {
             onLoadSuccess={onDocumentLoadSuccess}
             renderMode={"canvas"}
             loading={
-              /*  <div className="text-center">
-                <p>Loading PDF</p>
-              </div> */
               <ScaleLoader
                 color={"#57ffb9"}
                 loading={true}
@@ -138,8 +135,6 @@ const Hnc_submission = () => {
               <Page
                 key={`page_${index + 1}`}
                 pageNumber={index + 1}
-                /* width={width - 500} */
-                /* width={Math.round(width / 1.35)} */
                 width={width}
               />
             ))}
