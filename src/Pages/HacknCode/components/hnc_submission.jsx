@@ -3,6 +3,10 @@ import "../../../css/hnc_submission.scss";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import guidePDF from "../../../Assets/PDF/HnCGuide.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
+import img1 from "../../../Assets/Images/Guidelines/1.jpg";
+import img2 from "../../../Assets/Images/Guidelines/2.jpg";
+import img3 from "../../../Assets/Images/Guidelines/3.jpg";
+import img4 from "../../../Assets/Images/Guidelines/4.jpg";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const Hnc_submission = () => {
@@ -33,84 +37,149 @@ const Hnc_submission = () => {
         <div className="col-sm-12 col-lg-12 col-md-12 px-0 px-lg-5 px-sm-5 px-md-5">
           <h1 className="text-center mt-5">IMPORTANT INFORMATION</h1>
           <hr />
-          <h3 className="mt-5">Themes</h3>
-          <ul>
-            <li>Finance</li>
-            <li>Health</li>
-            <li>Education</li>
-            <li>Entertainment</li>
-          </ul>
+
           <h3 className="mt-5">Judgement Criteria</h3>
+          <p>
+            Judging for this challenge will be done asynchronously by a panel of
+            judges from Earth Hacks. As part of your project submission, please
+            include the following:
+          </p>
+          <ul>
+            <li>
+              Up to a 10-minute long presentation that presents your solution to
+              the judges.
+            </li>
+            <li>
+              Any other supplemental material that you would like to share with
+              the judges.
+            </li>
+          </ul>
+          <p>Judging will be based upon the following: </p>
           <ul>
             <li>Feasibility</li>
-            <li>Utility/Applicability</li>
+            <li>Utility/Application</li>
             <li>Design and UX</li>
             <li>Implementation (Functionality)</li>
           </ul>
-          <h3 className="mt-5">Problem Statement</h3>
-          <h4 className="mt-5">Education</h4>
-          <ul>
+
+          <h1 className="mt-5 text-center">SUBMISSION GUIDELINES</h1>
+          <hr />
+          <h3 className="mt-5">Steps to follow:</h3>
+          <ol>
             <li>
-              How can we replace the human connection lost through social
-              distancing?
+              During the hackathon, work on your project and update the code on
+              a GitHub repository (preferred), and make it public, either
+              through the GitHub Repository, a zip file on cloud storage,
+              anywhere: as long as it is accessible by the judges.
+              <p>
+                <b>
+                  Please remember to make your GitHub repository public before
+                  sharing it with us.
+                </b>
+              </p>
+              <img
+                src={img1}
+                alt="First Guideline"
+                className="img-fluid my-5 rounded"
+              />
             </li>
             <li>
-              Create a progressive web app which can make virtual classes more
-              interactive
+              Make sure that the following are taken into consideration before
+              submitting
+              <b> (failure to do so will result in disqualification)</b>:
+              <ul>
+                <li>Make sure you have your code link ready.</li>
+                <li>
+                  You should be ready with your PPT or Document of your project.
+                </li>
+                <li>
+                  Demo Video for the project-
+                  <ul>
+                    <li>Tell us about your project</li>
+                    <li>Demo of your project</li>
+                    <li>Video must be in English</li>
+                    <li>File name should be TeamName_HnC</li>
+                  </ul>
+                </li>
+                <li>
+                  Demo Link (optional) - Hosted / Live link of the prototype
+                </li>
+              </ul>
             </li>
             <li>
-              Build an AR/VR product which makes you feels you are working with
-              people in person
+              The submission for the project has to be made through a GitHub
+              issue that needs to be made on this:&nbsp;&nbsp;
+              <b>
+                <a href="https://github.com/IETmpstme/HacknCode-5.0-Submissions">
+                  https://github.com/IETmpstme/HacknCode-5.0-Submissions
+                </a>
+              </b>
+              <img
+                src={img2}
+                alt="Second Guideline"
+                className="img-fluid my-5 rounded"
+              />
             </li>
-            <li>Create a badge generator / photobooth</li>
-            <li>Apps that aid college students</li>
-            <li>Attendance through facial recognition system</li>
-          </ul>
-          <h4 className="mt-5">Finance</h4>
-          <ul>
-            <li>A social networking platform for NFTs</li>
             <li>
-              Build secure systems by using stronger encryption algorithms for
-              online payments / transactions
+              Make sure you read the
+              <b>
+                {" "}
+                <u>Code of Conduct:</u>
+                <a href=" https://github.com/IETmpstme/HacknCode-5.0-Submissions/blob/main/coc.md">
+                  {" "}
+                  &nbsp;
+                  <br />
+                  https://github.com/IETmpstme/HacknCode-5.0-Submissions/blob/main/coc.md
+                </a>
+              </b>
             </li>
-            <li>Using fraud detection systems for finances</li>
-            <li>Personal financial assistant</li>
             <li>
-              Build an application to educate children about financial planning
+              Click on the Issues tab and click on New Issue, to create a
+              submission issue for your hackathon project. <br />
+              Link: &nbsp;&nbsp;
+              <b>
+                <a href=" https://github.com/IETmpstme/HacknCode-5.0-Submissions/issues/new/choose">
+                  https://github.com/IETmpstme/HacknCode-5.0-Submissions/issues/new/choose
+                </a>
+              </b>
+              <img
+                src={img3}
+                alt="Third Guideline"
+                className="img-fluid my-5 rounded"
+              />
             </li>
-          </ul>
-          {}
-          <h4 className="mt-5">Entertainment</h4>
-          <ul>
+
             <li>
-              Build a creative application by combining AI with music and art
+              Click on the Get started button and you will be able to see the
+              Issue template to be followed to submit your hackathon project
+              details.
             </li>
-            <li>Build the most humorous hack</li>
-            <li>Build a discord bot for fun and engaging discord activities</li>
+            <img
+              src={img4}
+              alt="Fourth Guideline"
+              className="img-fluid my-5 rounded"
+            />
+
             <li>
-              Engage with folks from the community by building a Discord
-              integration with an application that randomly selects individuals
-              based on their interests and discord ids and allows conversation
+              <p>
+                Make sure to follow the template and complete it. Once
+                completed, submit the issue.
+              </p>
+              <p>
+                While a team can submit multiple projects, each project must
+                only be submitted once.
+                <b>
+                  If there are multiple submissions for the same project, we
+                  will consider the last one.
+                </b>
+              </p>
+
+              <p>
+                Also note that no matter the number of submissions, one team can
+                only win one set of prizes.
+              </p>
             </li>
-            <li>Build an engaging AR/VR/MR game</li>
-            <li>
-              Build a solution that provides the user with a unique
-              entertainment experience through the use of technologies of your
-              choice (AI/IoT)
-            </li>
-            <li>Create a hack that improves the mood of people</li>
-          </ul>
-          <h4 className="mt-5">Health</h4>
-          <ul>
-            <li>Smarter surveillance system in healthcare</li>
-            <li>Virtual health assistant</li>
-            <li>Improve medical and emergency communication</li>
-            <li>AR/VR In hospitals</li>
-            <li>
-              Touchless experiences in hospitals with a system to meet people
-              from wherever they are
-            </li>
-          </ul>
+          </ol>
         </div>
         {/* <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-0 px-lg-5 px-sm-5 px-md-5"> */}
         <div className="col-lg-12 col-md-12 col-sm-12 mb-5" ref={myRef}>
