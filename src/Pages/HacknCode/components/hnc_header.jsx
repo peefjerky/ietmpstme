@@ -6,7 +6,7 @@ import LaptopAnimation from "../../../components/laptopanimation";
 import { Link } from "react-router-dom";
 /* import Devfolio_Button from "../../../Assets/Images/Sponsors/Devfolio_Button.png"; */
 import "../../../App.css";
-const Hnc_header = () => {
+const Hnc_header = (props) => {
   React.useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -58,8 +58,16 @@ const Hnc_header = () => {
           <div className="hnc_typist mt-5">
             <HnCTypedReactHooks />
           </div>
+          <button
+            className="d-inline-block align-items-center ms-0 my-1 my-lg-0 my-sm-1 my-md-0"
+            id="btn_reg2"
+            style={{ width: "17rem" }}
+            onClick={props.show}
+          >
+            PROBLEM STATEMENT!
+          </button>
           <div>
-            <p className="mb-5">
+            <p className="my-5">
               We share knowledge in the fields of engineering and technology to
               encourage students to find new and innovative solutions to
               problems which have plagued mankind for decades.
@@ -140,7 +148,7 @@ const Hnc_header = () => {
               width={width}
               height="300"
               allowtransparency="true"
-              frameborder="0"
+              frameBorder="0"
               sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
             ></iframe>
             <a href="https://discord.gg/5r52GNH8Wq">

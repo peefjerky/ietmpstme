@@ -113,4 +113,21 @@
       font-size: 10px;
     }
   }
+  p,
+  ul,
+  ol {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: rgb(87, 255, 185);
+  }
+  li {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  hr {
+    background: rgb(255, 255, 255);
+    height: 2px;
+  }
 }

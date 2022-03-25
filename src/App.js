@@ -12,6 +12,7 @@ import Footer from "./components/footer.js";
 import Contact from "./components/contact";
 /* import Modal from "./components/modalb4"; */
 import GoToTop from "./components/goToTop";
+
 import HomePage from "./components/homePage";
 import "./App.css";
 import iet_logo from "./Assets/Images/IET_LOGO.webp";
@@ -225,6 +226,7 @@ function App() {
           }}
         > */}
         <Hnc_modal_popup show={modalShow} onHide={() => setModalShow(false)} />
+
         {/* </motion.div> */}
 
         {/* //!Disabled modal for Now <Modal /> */}
