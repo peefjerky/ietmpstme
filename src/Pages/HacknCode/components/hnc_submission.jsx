@@ -49,10 +49,6 @@ const Hnc_submission = () => {
               Up to a 10-minute long presentation that presents your solution to
               the judges.
             </li>
-            <li>
-              Any other supplemental material that you would like to share with
-              the judges.
-            </li>
           </ul>
           <p>Make sure you do include the following too: </p>
           <ul>
@@ -63,6 +59,10 @@ const Hnc_submission = () => {
               Link to your video(Google drive/YouTube etc)
             </li>
             <li>Link to your GitHub issue</li>
+            <li>
+              Any other supplemental material that you would like to share with
+              the judges.
+            </li>
           </ul>
           <p>Judging will be based upon the following: </p>
           <ul>
