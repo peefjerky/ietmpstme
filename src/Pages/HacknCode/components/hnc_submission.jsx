@@ -54,6 +54,16 @@ const Hnc_submission = () => {
               the judges.
             </li>
           </ul>
+          <p>Make sure you do include the following too: </p>
+          <ul>
+            <li>
+              The Link to your presentation (Google Slides/Canva etc)
+            </li>
+            <li>
+              Link to your video(Google drive/YouTube etc)
+            </li>
+            <li>Link to your GitHub issue</li>
+          </ul>
           <p>Judging will be based upon the following: </p>
           <ul>
             <li>Feasibility</li>
@@ -61,6 +71,7 @@ const Hnc_submission = () => {
             <li>Design and UX</li>
             <li>Implementation (Functionality)</li>
           </ul>
+          <p>And Final Submission to be done on <a href="https://forms.gle/2o9V584M3wZ2bhRR6">Google forms</a></p>
 
           <h1 className="mt-5 text-center">SUBMISSION GUIDELINES</h1>
           <hr />
