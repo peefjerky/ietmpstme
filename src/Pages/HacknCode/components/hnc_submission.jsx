@@ -179,6 +179,13 @@ const Hnc_submission = () => {
                 only win one set of prizes.
               </p>
             </li>
+            <li>
+              <p>
+                {/* about google form submmisions */}
+                And finally, you can submit your project through the Google Forms link provided here: &nbsp;&nbsp;
+                <a href="https://forms.gle/2o9V584M3wZ2bhRR6">https://forms.gle/2o9V584M3wZ2bhRR6</a>
+              </p>
+            </li>
           </ol>
         </div>
         {/* <div className="col-lg-12 col-md-12 col-sm-12 my-5 px-0 px-lg-5 px-sm-5 px-md-5"> */}
