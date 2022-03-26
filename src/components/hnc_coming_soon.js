@@ -9,8 +9,7 @@ const HnCTypedReactHooks2 = () => {
 
   React.useEffect(() => {
     const options = {
-      /* strings: [">_GET! SET! CODE!"] */
-      strings: [">_coming soon!"],
+      strings: [">_GET! SET! CODE!"],
       typeSpeed: 70,
       backSpeed: 60,
       loop: true,

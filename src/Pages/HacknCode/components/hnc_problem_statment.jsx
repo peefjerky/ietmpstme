@@ -26,7 +26,7 @@ const Hnc_problem_statement = (props) => {
               <HnCTypedReactHooks2 />
             </div>
             {/* !================UNCOMMENT AT 10:30 ================ */}
-            {/*   <div className="mt-5">
+              <div className="mt-5">
               <ul>
                 <li>
                   <b>Digital Futures:</b> How do we help improve people's lives
@@ -51,7 +51,7 @@ const Hnc_problem_statement = (props) => {
                   />
                 </a>
               </div>
-            </div> */}
+            </div>
             {/* !================UNCOMMENT AT 10:30 ================ */}
           </div>
         </div>
